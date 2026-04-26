@@ -28,6 +28,10 @@ window.PLAYOFFS_DATA = {
           "score": 92
         },
         {
+          "name": "Spurs 🔄",
+          "score": 88
+        },
+        {
           "name": "Cavaliers",
           "score": 87
         }
@@ -45,10 +49,6 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Lakers",
           "score": 84
-        },
-        {
-          "name": "Spurs",
-          "score": 81
         },
         {
           "name": "Knicks",
@@ -132,9 +132,9 @@ window.PLAYOFFS_DATA = {
     },
     {
       "team": "Spurs / Trail Blazers",
-      "tag": "核心缺陣",
-      "detail": "Victor Wembanyama (Questionable)、Damian Lillard (Out)",
-      "impact": "健康折扣 9.4 分"
+      "tag": "🔄 主將回歸",
+      "detail": "Victor Wembanyama 傷癒回歸（Active）、Damian Lillard (Out，拓荒者)",
+      "impact": "馬刺健康折扣大降，僅剩對手 Lillard 缺陣影響 4.2 分"
     },
     {
       "team": "76ers / Raptors",
@@ -222,8 +222,8 @@ window.PLAYOFFS_DATA = {
       {
         "matchup": "(2) San Antonio vs (7) Portland",
         "leader": "San Antonio 2-1",
-        "angle": "目前優勢方有些微主導權，但系列賽還沒有完全脫離反撲區。 傷兵面則要留意 Spurs 端有 Victor Wembanyama Questionable；Trail Blazers 端有 Damian Lillard Out。",
-        "power": 84
+        "angle": "⚡ Wembanyama 傷癒回歸，馬刺戰力大幅提升！Lillard 持續缺陣讓拓荒者進攻節奏難以建立，馬刺主動權更加穩固。",
+        "power": 88
       },
       {
         "matchup": "(3) Denver vs (6) Minnesota",
@@ -246,14 +246,14 @@ window.PLAYOFFS_DATA = {
       "text": "板凳暴徒指數（佔評分 15%）本輪已成為系列賽分水嶺。Ayo Dosunmu 43 分讓灰狼在雙核重傷下仍守住 3-1，Spurs 的 Dylan Harper 新秀爆發讓馬刺主導西南對決。"
     },
     {
-      "eyebrow": "Health Weight",
+      "eyebrow": "Return Impact ⚡",
       "title": "關鍵觀察 02",
-      "text": "Timberwolves 健康折扣已達最高值：Edwards（左膝）與 DiVincenzo（跟腱撕裂）雙雙賽季報銷風險，分數從原本 85 驟降至 74，是本輪最大變局。"
+      "text": "Wembanyama 傷癒回歸是本輪最大正面變數！馬刺從 81 分躍升至 88 分直接擠進 Tier 1，護框、持球攻堅與快攻引導讓整條進攻線完全不同。Wemby + Harper + Johnson 三核組合，是本屆最具爆發力的黑馬。"
     },
     {
-      "eyebrow": "Control Signal",
+      "eyebrow": "Health Swing",
       "title": "關鍵觀察 03",
-      "text": "Celtics 四項指標全面在線（攻守效率、球星主導、健康狀態、板凳深度），以 92 分居首。Cavaliers 靠 Max Strus 復出與整體輪替爆發力躍升至 87 分，成為最被低估的爭冠梯隊。"
+      "text": "傷兵雙向衝擊：Timberwolves Edwards + DiVincenzo 雙核重傷讓灰狼從 85 驟降至 74；Spurs Wemby 回歸則讓馬刺從 81 飆升至 88。健康折扣這一項本輪已成系列賽走向最關鍵的變數。"
     }
   ],
   "benchMob": [
