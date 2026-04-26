@@ -21,61 +21,45 @@ window.PLAYOFFS_DATA = {
     {
       "label": "Tier 1",
       "title": "爭冠第一梯",
-      "note": "系列賽控制力與健康狀態都仍在高位。",
+      "note": "系列賽控制力與健康狀態都仍在高位，晉級幾乎無懸念。",
       "teams": [
-        {
-          "name": "Celtics",
-          "score": 92
-        },
-        {
-          "name": "Thunder",
-          "score": 90
-        }
+        { "name": "Celtics", "score": 92 },
+        { "name": "Thunder", "score": 90 },
+        { "name": "Timberwolves", "score": 90 },
+        { "name": "Lakers", "score": 90 }
       ]
     },
     {
       "label": "Tier 2",
-      "title": "穩定晉級梯",
-      "note": "具備深輪次實力，但傷兵或對位開始壓縮上限。",
+      "title": "穩定領先梯",
+      "note": "具備系列賽主導權，但對位或傷兵仍有變數。",
       "teams": [
-        {
-          "name": "Timberwolves",
-          "score": 90
-        },
-        {
-          "name": "Lakers",
-          "score": 90
-        }
+        { "name": "Cavaliers", "score": 88 },
+        { "name": "Spurs", "score": 84 },
+        { "name": "Knicks", "score": 82 },
+        { "name": "Magic", "score": 76 }
       ]
     },
     {
       "label": "Tier 3",
       "title": "對位波動梯",
-      "note": "內容不差，但健康與節奏穩定度讓每場起伏偏大。",
+      "note": "仍有反撲空間，但核心傷兵讓戰力兌現率打折。",
       "teams": [
-        {
-          "name": "Cavaliers",
-          "score": 88
-        },
-        {
-          "name": "Spurs",
-          "score": 84
-        }
+        { "name": "Hawks", "score": 74 },
+        { "name": "Nuggets", "score": 72 },
+        { "name": "76ers", "score": 69 },
+        { "name": "Raptors", "score": 67 }
       ]
     },
     {
       "label": "Tier 4",
       "title": "危險邊緣梯",
-      "note": "沒有足夠緩衝，任何核心傷停都會快速放大。",
+      "note": "系列賽落後且傷兵壓力大，逆轉難度極高。",
       "teams": [
-        {
-          "name": "Knicks",
-          "score": 82
-        },
-        {
-          "name": "Hawks",
-          "score": 79
-        }
+        { "name": "Trail Blazers", "score": 64 },
+        { "name": "Pistons", "score": 63 },
+        { "name": "Rockets", "score": 60 },
+        { "name": "Suns", "score": 55 }
       ]
     }
   ],
@@ -103,17 +87,42 @@ window.PLAYOFFS_DATA = {
     {
       "label": "東區最膠著",
       "title": "Knicks vs Hawks",
-      "text": "Knicks 2-2 Hawks，暫時還沒有哪一邊真正把對位做成單向。"
+      "text": "Knicks 2-2 Hawks，暫時還沒有哪一邊真正把對位做成單向，第五戰是關鍵分水嶺。"
+    },
+    {
+      "label": "東區最穩定",
+      "title": "Celtics vs 76ers",
+      "text": "Celtics 2-1 76ers，Embiid Doubtful 讓費城進攻解題難度暴增，塞隊主場優勢明顯。"
+    },
+    {
+      "label": "東區最大冷門",
+      "title": "Magic vs Pistons",
+      "text": "Magic 2-1 Pistons，低種子一方已把對位壓力翻轉成實質優勢，下剋上風險非常真實。"
+    },
+    {
+      "label": "東區控制力最強",
+      "title": "Cavaliers vs Raptors",
+      "text": "Cavaliers 2-1 Raptors，Quickley 傷缺讓暴龍進攻節奏更難建立，騎士穩定主導。"
     },
     {
       "label": "西區最接近收官",
       "title": "Thunder vs Suns",
-      "text": "Thunder 3-0 Suns，比分已經把壓力大幅推向落後方。"
+      "text": "Thunder 3-0 Suns，Jalen Williams 雖缺陣，整體體系控制力依然碾壓，封關只差臨門一腳。"
     },
     {
-      "label": "最危險下剋上",
-      "title": "Pistons vs Magic",
-      "text": "Magic 2-1 Pistons，種子序與場上主導權正在出現錯位。"
+      "label": "西區最危險下剋上",
+      "title": "Timberwolves vs Nuggets",
+      "text": "Timberwolves 3-1 Nuggets，灰狼禁區與節奏掌控完整，金塊已到背水一戰局面。"
+    },
+    {
+      "label": "西區最受傷",
+      "title": "Lakers vs Rockets",
+      "text": "Lakers 3-0 Rockets，Luka Out、KD Questionable 讓火箭戰力大打折扣，湖人把握機會封關。"
+    },
+    {
+      "label": "西區最大變數",
+      "title": "Spurs vs Trail Blazers",
+      "text": "Spurs 2-1 Trail Blazers，Wembanyama Questionable、Lillard Out，兩隊核心健康都是最大問號。"
     }
   ],
   "series": {

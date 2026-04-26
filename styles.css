@@ -1,15 +1,15 @@
 :root {
-  --bg: #0a1224;
-  --panel: rgba(10, 18, 36, 0.72);
-  --panel-strong: rgba(15, 26, 50, 0.94);
-  --line: rgba(255, 255, 255, 0.12);
-  --text: #f4f7fb;
-  --muted: #afbdd8;
-  --accent: #ff6b35;
-  --accent-2: #34d1bf;
-  --accent-3: #ffd166;
-  --danger: #ff4d6d;
-  --shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+  --bg: #fff5ec;
+  --panel: rgba(255, 255, 255, 0.75);
+  --panel-strong: rgba(255, 255, 255, 0.95);
+  --line: rgba(180, 100, 40, 0.15);
+  --text: #2a1500;
+  --muted: #8a5a30;
+  --accent: #e85d10;
+  --accent-2: #d4880a;
+  --accent-3: #f0a500;
+  --danger: #cc2200;
+  --shadow: 0 30px 80px rgba(180, 80, 20, 0.15);
 }
 
 * {
@@ -25,9 +25,9 @@ body {
   color: var(--text);
   font-family: "Noto Sans TC", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(255, 107, 53, 0.25), transparent 26%),
-    radial-gradient(circle at 85% 18%, rgba(52, 209, 191, 0.22), transparent 20%),
-    linear-gradient(180deg, #08101f 0%, #0d1730 52%, #09111f 100%);
+    radial-gradient(circle at top left, rgba(255, 160, 80, 0.30), transparent 35%),
+    radial-gradient(circle at 85% 18%, rgba(255, 200, 100, 0.20), transparent 30%),
+    linear-gradient(180deg, #fff0e0 0%, #ffe8d0 52%, #fff4ea 100%);
 }
 
 body::before {
@@ -35,8 +35,8 @@ body::before {
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(200, 100, 30, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 100, 30, 0.06) 1px, transparent 1px);
   background-size: 28px 28px;
   pointer-events: none;
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent 92%);
