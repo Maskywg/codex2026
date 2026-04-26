@@ -533,3 +533,113 @@ h3,
     grid-template-columns: 1fr;
   }
 }
+
+/* ── 板凳暴徒指數 ── */
+.bench-mob-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.bench-card {
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+.bench-card:hover {
+  transform: translateY(-3px);
+}
+
+.bench-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.bench-role {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(232, 93, 16, 0.12);
+  border: 1px solid rgba(232, 93, 16, 0.25);
+  padding: 2px 9px;
+  border-radius: 100px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.bench-name {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--text);
+  margin: 4px 0 3px;
+}
+
+.bench-team {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.bench-index {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.bench-index-num {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.bench-fires {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.bench-highlight {
+  font-size: 0.82rem;
+  font-weight: 900;
+  color: var(--accent-3);
+  background: rgba(212, 136, 10, 0.1);
+  border-left: 3px solid var(--accent-3);
+  padding: 6px 10px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 10px;
+}
+
+.bench-note {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.bench-bar {
+  height: 4px;
+  background: rgba(232, 93, 16, 0.12);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bench-bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-3));
+  border-radius: 999px;
+}
+
+.section-sub {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}

@@ -256,6 +256,80 @@ window.PLAYOFFS_DATA = {
       "text": "Thunder 已經把系列賽差距拉開，這種主導權通常比單場手感更能預測下一步走向。"
     }
   ],
+  "benchMob": [
+    {
+      "player": "Ayo Dosunmu",
+      "team": "Timberwolves",
+      "role": "替補後衛",
+      "index": 98,
+      "fire": 5,
+      "highlight": "Game 4 單場 43 分｜季後賽替補史上第二高",
+      "note": "雙核重傷後一人扛起進攻，命中率 76%、三分 5/5、罰球 12/12，史詩級表演"
+    },
+    {
+      "player": "Dylan Harper",
+      "team": "Spurs",
+      "role": "替補後衛（新秀）",
+      "index": 92,
+      "fire": 5,
+      "highlight": "Game 3 單場 27 分｜最年輕替補 25+ 分紀錄",
+      "note": "打破 Kobe Bryant 保持 29 年的紀錄，無 Wembanyama 仍帶隊逆轉 15 分差"
+    },
+    {
+      "player": "Marcus Smart",
+      "team": "Lakers",
+      "role": "替補後衛",
+      "index": 90,
+      "fire": 5,
+      "highlight": "Game 3：20分+10助+5抄+2火鍋｜喬丹 1991 年後首見",
+      "note": "本系列場均替補 28.6 分+助攻，攻防全能，湖人板凳核心"
+    },
+    {
+      "player": "Jonathan Kuminga",
+      "team": "Hawks",
+      "role": "替補前鋒",
+      "index": 84,
+      "fire": 4,
+      "highlight": "連兩場 19-21 分｜關鍵時刻壓哨抄球",
+      "note": "鷹隊歷史首位替補球員在季後賽首節就得 10+ 分，危急時刻被放上場"
+    },
+    {
+      "player": "Payton Pritchard",
+      "team": "Celtics",
+      "role": "替補後衛",
+      "index": 82,
+      "fire": 4,
+      "highlight": "Game 3：連中兩記三分逆轉戰局",
+      "note": "終結比賽的三分球射手，高壓時刻信心十足，塞爾提克板凳第一刀"
+    },
+    {
+      "player": "Max Strus",
+      "team": "Cavaliers",
+      "role": "替補射手",
+      "index": 80,
+      "fire": 4,
+      "highlight": "Game 1：24 分、4/6 三分｜傷癒復出即爆發",
+      "note": "賽季缺陣 67 場後復出，首戰即砍生涯季後賽新高，騎士系列賽終結者"
+    },
+    {
+      "player": "Keldon Johnson",
+      "team": "Spurs",
+      "role": "第六人（年度獎得主）",
+      "index": 78,
+      "fire": 3,
+      "highlight": "本季替補得分 1081 分｜年度第六人",
+      "note": "馬刺隊史替補得分紀錄保持人，Game 3 回神砍 20 分，狀態回升中"
+    },
+    {
+      "player": "Luke Kennard",
+      "team": "Lakers",
+      "role": "替補射手",
+      "index": 75,
+      "fire": 3,
+      "highlight": "Game 1：27 分、5/5 三分｜季後賽替補新高",
+      "note": "Durant 傷缺下頂替成為得分點，三分神射本能覺醒，湖人板凳深度保障"
+    }
+  ],
   "method": [
     {
       "score": "40%",

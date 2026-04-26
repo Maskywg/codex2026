@@ -154,6 +154,32 @@ function renderDates() {
   footer.textContent = `內容依官方季後賽賽程與傷兵報告整理。資料基準日為 ${data.scheduleDate}，產生時間為 ${data.generatedAt || "未產生"}。`;
 }
 
+function renderBenchMob() {
+  const root = document.getElementById("bench-mob");
+  if (!root || !data.benchMob) return;
+  root.innerHTML = data.benchMob.map(p => {
+    const fires = "🔥".repeat(p.fire) + "🩶".repeat(5 - p.fire);
+    const bar = `<div class="bench-bar"><span style="width:${p.index}%"></span></div>`;
+    return `
+      <article class="bench-card">
+        <div class="bench-head">
+          <div>
+            <span class="bench-role">${p.role}</span>
+            <h3 class="bench-name">${p.player}</h3>
+            <span class="bench-team">${p.team}</span>
+          </div>
+          <div class="bench-index">
+            <div class="bench-index-num">${p.index}</div>
+            <div class="bench-fires">${fires}</div>
+          </div>
+        </div>
+        <div class="bench-highlight">⚡ ${p.highlight}</div>
+        <p class="bench-note">${p.note}</p>
+        ${bar}
+      </article>`;
+  }).join("");
+}
+
 renderFeatured();
 renderDates();
 renderTiers();
@@ -162,4 +188,5 @@ renderHighlights();
 renderSeries(data.series.east, "east-series");
 renderSeries(data.series.west, "west-series");
 renderAnalyses();
+renderBenchMob();
 renderMethod();
