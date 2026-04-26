@@ -25,7 +25,6 @@ window.PLAYOFFS_DATA = {
       "teams": [
         { "name": "Celtics", "score": 92 },
         { "name": "Thunder", "score": 90 },
-        { "name": "Timberwolves", "score": 90 },
         { "name": "Lakers", "score": 90 }
       ]
     },
@@ -56,6 +55,7 @@ window.PLAYOFFS_DATA = {
       "title": "危險邊緣梯",
       "note": "系列賽落後且傷兵壓力大，逆轉難度極高。",
       "teams": [
+        { "name": "Timberwolves ⚠️", "score": 68 },
         { "name": "Trail Blazers", "score": 64 },
         { "name": "Pistons", "score": 63 },
         { "name": "Rockets", "score": 60 },
@@ -64,6 +64,12 @@ window.PLAYOFFS_DATA = {
     }
   ],
   "injuries": [
+    {
+      "team": "Timberwolves",
+      "tag": "⚠️ 最新重傷",
+      "detail": "Anthony Edwards（左膝受傷，正在檢測，可能賽季報銷）、Donte DiVincenzo（右跟腱撕裂，賽季報銷），兩人均在 Game 4 上半場受傷",
+      "impact": "健康折扣 28.4 分（最高）"
+    },
     {
       "team": "Lakers / Rockets",
       "tag": "核心缺陣",
@@ -81,6 +87,12 @@ window.PLAYOFFS_DATA = {
       "tag": "核心缺陣",
       "detail": "Victor Wembanyama (Questionable)、Damian Lillard (Out)",
       "impact": "健康折扣 9.4 分"
+    },
+    {
+      "team": "76ers / Raptors",
+      "tag": "核心缺陣",
+      "detail": "Joel Embiid (Doubtful，闌尾炎術後)、Immanuel Quickley (Out，右膕繩肌拉傷)",
+      "impact": "健康折扣 11.2 分"
     }
   ],
   "highlights": [
@@ -110,9 +122,9 @@ window.PLAYOFFS_DATA = {
       "text": "Thunder 3-0 Suns，Jalen Williams 雖缺陣，整體體系控制力依然碾壓，封關只差臨門一腳。"
     },
     {
-      "label": "西區最危險下剋上",
+      "label": "⚠️ 西區最大變局",
       "title": "Timberwolves vs Nuggets",
-      "text": "Timberwolves 3-1 Nuggets，灰狼禁區與節奏掌控完整，金塊已到背水一戰局面。"
+      "text": "Timberwolves 3-1 Nuggets，但 Game 4 Edwards（左膝）與 DiVincenzo（跟腱撕裂）雙雙重傷，即便灰狼已佔系列賽主導，後續深度輪次能否繼續前行是最大問號。"
     },
     {
       "label": "西區最受傷",
@@ -168,8 +180,8 @@ window.PLAYOFFS_DATA = {
       {
         "matchup": "(3) Denver vs (6) Minnesota",
         "leader": "Minnesota 3-1",
-        "angle": "低種子一方已經把對位壓力翻轉成實質優勢，下剋上風險非常真實。 傷兵面則要留意 Nuggets 端有 Aaron Gordon Questionable；Timberwolves 端有 Anthony Edwards Questionable。",
-        "power": 90
+        "angle": "⚠️ 最新重傷警報：Anthony Edwards（左膝，可能賽季報銷）與 Donte DiVincenzo（右跟腱撕裂，賽季報銷）在 Game 4 上半場雙雙受傷。儘管 Ayo Dosunmu 挺身砍下替補生涯新高 43 分讓灰狼拿下勝利，但雙核受傷讓系列賽與季後賽前景蒙上巨大陰影。",
+        "power": 68
       },
       {
         "matchup": "(4) Los Angeles vs (5) Houston",
