@@ -51,6 +51,10 @@ window.PLAYOFFS_DATA = {
           "score": 82
         },
         {
+          "name": "76ers 🔄",
+          "score": 79
+        },
+        {
           "name": "Knicks",
           "score": 79
         }
@@ -76,10 +80,6 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Magic",
           "score": 73
-        },
-        {
-          "name": "76ers",
-          "score": 68
         },
         {
           "name": "Raptors",
@@ -138,9 +138,9 @@ window.PLAYOFFS_DATA = {
     },
     {
       "team": "76ers / Raptors",
-      "tag": "核心缺陣",
-      "detail": "Joel Embiid (Doubtful，闌尾炎術後)、Immanuel Quickley (Out，右膕繩肌拉傷)",
-      "impact": "健康折扣 11.2 分"
+      "tag": "🔄 回歸消息",
+      "detail": "Joel Embiid 傳出將回歸（闌尾炎術後，消息待官方確認）、Immanuel Quickley (Out，右膕繩肌拉傷，暴龍)",
+      "impact": "若 Embiid 確認出賽：健康折扣從 11.2 降至 3.8 分，76人分數從 68 → 79"
     }
   ],
   "highlights": [
@@ -152,7 +152,7 @@ window.PLAYOFFS_DATA = {
     {
       "label": "東區最穩定",
       "title": "Celtics vs 76ers",
-      "text": "Celtics 2-1 76ers，Embiid Doubtful 讓費城進攻解題難度暴增，塞隊主場優勢明顯。"
+      "text": "🔄 Embiid 回歸消息！若確認出賽，費城戰力從 68 飆升至 79，Celtics 2-1 的主導優勢將受到嚴峻挑戰。"
     },
     {
       "label": "東區最大冷門",
@@ -196,7 +196,7 @@ window.PLAYOFFS_DATA = {
       {
         "matchup": "(2) Boston vs (7) Philadelphia",
         "leader": "Celtics 2-1",
-        "angle": "目前優勢方有些微主導權，但系列賽還沒有完全脫離反撲區。 傷兵面則要留意 76ers 端有 Joel Embiid Doubtful。",
+        "angle": "🔄 Embiid 回歸消息震撼東區！若確認出賽，費城由劣勢方瞬間變成對等挑戰者。Celtics 2-1 的優勢需要重新評估。",
         "power": 92
       },
       {
