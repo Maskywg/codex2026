@@ -448,15 +448,14 @@ h3,
   display: inline-flex;
   align-items: center;
   min-height: 30px;
-  padding: 0 10px;
+  padding: 0 12px;
   border-radius: 999px;
   font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-weight: 900;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: rgba(200, 16, 46, 0.12);
-  color: #9a0020;
-  border: 1px solid rgba(200, 16, 46, 0.25);
+  background: #c8102e;
+  color: #ffffff;
 }
 
 .injury-impact {
