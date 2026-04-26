@@ -21,92 +21,92 @@ window.PLAYOFFS_DATA = {
     {
       "label": "Tier 1",
       "title": "爭冠第一梯",
-      "note": "系列賽控制力與健康狀態都仍在高位，晉級幾乎無懸念。",
+      "note": "攻守效率、球星主導力與板凳深度同步在線，健康狀態也有緩衝，晉級幾乎無懸念。",
       "teams": [
         {
           "name": "Celtics",
           "score": 92
         },
         {
-          "name": "Thunder",
-          "score": 90
-        },
-        {
-          "name": "Lakers",
-          "score": 90
+          "name": "Cavaliers",
+          "score": 87
         }
       ]
     },
     {
       "label": "Tier 2",
       "title": "穩定領先梯",
-      "note": "具備系列賽主導權，但對位或傷兵仍有變數。",
+      "note": "系列賽主導權明確，板凳亦有可用爆發點，但傷兵或對位仍有變數。",
       "teams": [
         {
-          "name": "Cavaliers",
-          "score": 88
+          "name": "Thunder",
+          "score": 85
         },
         {
-          "name": "Spurs",
+          "name": "Lakers",
           "score": 84
         },
         {
-          "name": "Knicks",
-          "score": 82
+          "name": "Spurs",
+          "score": 81
         },
         {
-          "name": "Magic",
-          "score": 76
+          "name": "Knicks",
+          "score": 79
         }
       ]
     },
     {
       "label": "Tier 3",
       "title": "對位波動梯",
-      "note": "仍有反撲空間，但核心傷兵讓戰力兌現率打折。",
+      "note": "板凳暴徒指數或傷兵狀況仍有波動，系列賽走向尚未定型。",
       "teams": [
         {
           "name": "Hawks",
-          "score": 74
+          "score": 77
         },
         {
           "name": "Nuggets",
-          "score": 72
+          "score": 77
+        },
+        {
+          "name": "Timberwolves ⚠️",
+          "score": 74
+        },
+        {
+          "name": "Magic",
+          "score": 73
         },
         {
           "name": "76ers",
-          "score": 69
+          "score": 68
         },
         {
           "name": "Raptors",
-          "score": 67
+          "score": 68
         }
       ]
     },
     {
       "label": "Tier 4",
       "title": "危險邊緣梯",
-      "note": "系列賽落後且傷兵壓力大，逆轉難度極高。",
+      "note": "系列賽落後且核心傷兵壓力大，板凳難以彌補差距，逆轉難度極高。",
       "teams": [
         {
-          "name": "Timberwolves ⚠️",
-          "score": 68
+          "name": "Pistons",
+          "score": 67
         },
         {
           "name": "Trail Blazers",
-          "score": 64
-        },
-        {
-          "name": "Pistons",
-          "score": 63
+          "score": 65
         },
         {
           "name": "Rockets",
-          "score": 60
+          "score": 62
         },
         {
           "name": "Suns",
-          "score": 55
+          "score": 60
         }
       ]
     }
@@ -241,19 +241,19 @@ window.PLAYOFFS_DATA = {
   },
   "analyses": [
     {
-      "eyebrow": "Health Weight",
+      "eyebrow": "Bench Mob Factor",
       "title": "關鍵觀察 01",
-      "text": "Rockets 目前吃到最大的健康折扣，代表看比分時必須同時把核心可用性算進去。"
+      "text": "板凳暴徒指數（佔評分 15%）本輪已成為系列賽分水嶺。Ayo Dosunmu 43 分讓灰狼在雙核重傷下仍守住 3-1，Spurs 的 Dylan Harper 新秀爆發讓馬刺主導西南對決。"
+    },
+    {
+      "eyebrow": "Health Weight",
+      "title": "關鍵觀察 02",
+      "text": "Timberwolves 健康折扣已達最高值：Edwards（左膝）與 DiVincenzo（跟腱撕裂）雙雙賽季報銷風險，分數從原本 85 驟降至 74，是本輪最大變局。"
     },
     {
       "eyebrow": "Control Signal",
-      "title": "關鍵觀察 02",
-      "text": "Celtics 目前仍是綜合分數最高的隊伍，代表系列賽控制力與健康狀態同時在線。"
-    },
-    {
-      "eyebrow": "Series Swing",
       "title": "關鍵觀察 03",
-      "text": "Thunder 已經把系列賽差距拉開，這種主導權通常比單場手感更能預測下一步走向。"
+      "text": "Celtics 四項指標全面在線（攻守效率、球星主導、健康狀態、板凳深度），以 92 分居首。Cavaliers 靠 Max Strus 復出與整體輪替爆發力躍升至 87 分，成為最被低估的爭冠梯隊。"
     }
   ],
   "benchMob": [
@@ -332,19 +332,24 @@ window.PLAYOFFS_DATA = {
   ],
   "method": [
     {
-      "score": "40%",
+      "score": "35%",
       "title": "攻守效率",
       "text": "看高針對性回合下，球隊能否維持穩定得失分品質。"
     },
     {
-      "score": "35%",
+      "score": "30%",
       "title": "球星主導力",
       "text": "核心球員是否能在末節與半場攻防持續解題。"
     },
     {
-      "score": "25%",
+      "score": "20%",
       "title": "健康折扣",
       "text": "核心可用性與輪替完整度，直接影響戰力分數能不能兌現。"
+    },
+    {
+      "score": "15%",
+      "title": "板凳爆發力",
+      "text": "替補球員近況熱度與板凳暴徒指數，球是圓的——這一項常常改變系列賽走向。"
     }
   ]
 };
