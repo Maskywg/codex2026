@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBA 季後賽戰力分析</title>
+    <meta
+      name="description"
+      content="2026 NBA 季後賽首頁，聚焦首輪戰況、戰力分級、攻防指標與關鍵對位。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-kicker">Playoffs 2026</span>
+            <span class="brand-name">戰力雷達</span>
+          </div>
+          <a class="top-link" href="#series">看首輪戰況</a>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="eyebrow">首頁主題</p>
+            <h1>NBA 季後賽戰力分析</h1>
+            <p class="hero-text">
+              用攻守效率、球星主導力與系列賽控制力，把首輪局勢拆成一眼就能判斷的強弱版圖。
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contenders">看奪冠梯隊</a>
+              <a class="button button-secondary" href="#method">看評分模型</a>
+            </div>
+
+            <ul class="hero-notes">
+              <li>資料基準日：2026 年 4 月 26 日</li>
+              <li>焦點範圍：首輪系列賽、爭冠熱區、傷兵權重</li>
+            </ul>
+          </section>
+
+          <aside class="hero-panel">
+            <p class="panel-label">目前最強訊號</p>
+            <div class="featured-team">
+              <span class="featured-rank">No.1</span>
+              <div>
+                <h2>Oklahoma City Thunder</h2>
+                <p>首輪 3 比 0 領先 Phoenix，攻守轉換速度與持球壓迫感都在最高檔。</p>
+              </div>
+            </div>
+
+            <div class="panel-stats">
+              <article>
+                <span>壓制力</span>
+                <strong>97 / 100</strong>
+              </article>
+              <article>
+                <span>系列賽控制</span>
+                <strong>3-0</strong>
+              </article>
+              <article>
+                <span>首頁判讀</span>
+                <strong>爭冠第一梯</strong>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="section" id="contenders">
+          <div class="section-heading">
+            <p class="eyebrow">Power Tiers</p>
+            <h2>爭冠梯隊</h2>
+          </div>
+          <div class="tiers" id="tiers"></div>
+        </section>
+
+        <section class="section" id="injuries">
+          <div class="section-heading">
+            <p class="eyebrow">Injury Watch</p>
+            <h2>傷兵修正</h2>
+          </div>
+          <div class="injury-grid" id="injury-grid"></div>
+        </section>
+
+        <section class="section highlight-strip">
+          <article>
+            <span class="strip-label">東區最膠著</span>
+            <strong>Knicks vs Hawks</strong>
+            <p>系列賽 2 比 2，兩隊都還沒拿到節奏主導權。</p>
+          </article>
+          <article>
+            <span class="strip-label">西區最接近收官</span>
+            <strong>Lakers vs Rockets</strong>
+            <p>Lakers 3 比 0 領先，末節執行力與半場穩定性明顯高一階。</p>
+          </article>
+          <article>
+            <span class="strip-label">最危險下剋上</span>
+            <strong>Timberwolves vs Nuggets</strong>
+            <p>Minnesota 3 比 1 領先，對 Denver 的禁區與節奏控制很完整。</p>
+          </article>
+        </section>
+
+        <section class="section" id="series">
+          <div class="section-heading">
+            <p class="eyebrow">First Round</p>
+            <h2>首輪系列賽雷達</h2>
+          </div>
+          <div class="conference-grid">
+            <div class="conference-card">
+              <div class="conference-title">
+                <span>Eastern Conference</span>
+                <h3>東區</h3>
+              </div>
+              <div class="series-list" id="east-series"></div>
+            </div>
+            <div class="conference-card">
+              <div class="conference-title">
+                <span>Western Conference</span>
+                <h3>西區</h3>
+              </div>
+              <div class="series-list" id="west-series"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section analysis-grid">
+          <article class="analysis-card">
+            <p class="eyebrow">Shot Creation</p>
+            <h2>關鍵觀察 01</h2>
+            <p>
+              季後賽進入半場回合後，能否靠一到兩名核心持續製造高品質出手，是戰力分級最直接的分水嶺。Thunder、Lakers、Celtics 都有穩定解題手。
+            </p>
+          </article>
+          <article class="analysis-card">
+            <p class="eyebrow">Defense Travel</p>
+            <h2>關鍵觀察 02</h2>
+            <p>
+              防守能不能跟著客場移動，決定系列賽天花板。Minnesota 能把 Denver 壓到低效，代表它的防守不是單場爆發，而是可複製的結構。
+            </p>
+          </article>
+          <article class="analysis-card">
+            <p class="eyebrow">Bench Pressure</p>
+            <h2>關鍵觀察 03</h2>
+            <p>
+              板凳並不只是加分項，到了首輪後段常常直接決定第四節續航。Cleveland 和 San Antonio 目前都靠第二陣容維持對抗強度。
+            </p>
+          </article>
+        </section>
+
+        <section class="section" id="method">
+          <div class="section-heading">
+            <p class="eyebrow">Method</p>
+            <h2>評分模型</h2>
+          </div>
+          <div class="method-grid">
+            <article class="method-card">
+              <span class="method-score">40%</span>
+              <h3>攻守效率</h3>
+              <p>看能否在高針對性的季後賽回合中維持穩定得失分品質。</p>
+            </article>
+            <article class="method-card">
+              <span class="method-score">35%</span>
+              <h3>球星主導力</h3>
+              <p>核心球員在末節與半場攻防中，能否一手扛起對位壓力。</p>
+            </article>
+            <article class="method-card">
+              <span class="method-score">25%</span>
+              <h3>系列賽控制</h3>
+              <p>比分領先、修正速度、輪替穩定度，決定一支隊伍能否連續贏。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>內容依 NBA.com 2026 季後賽官方賽程頁面整理，更新時間點為 2026 年 4 月 26 日。</p>
+      </footer>
+    </div>
+
+    <script src="./data/playoffs-data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
