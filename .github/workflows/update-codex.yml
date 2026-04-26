@@ -1,0 +1,26 @@
+name: 📊 自動更新戰力分析
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'   # 每 3 小時更新一次
+  workflow_dispatch:          # 也可手動觸發
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 安裝套件
+        run: pip install requests
+
+      - name: 抓取 ESPN 資料並更新
+        run: python3 scripts/update_codex.py
+
+      - name: 提交更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/playoffs-data.js
+          git diff --staged --quiet || git commit -m "🤖 自動更新：系列賽戰績 & 傷兵報告"
+          git push

@@ -1,5 +1,5 @@
 window.PLAYOFFS_DATA = {
-  "generatedAt": "2026-04-26T21:07:20",
+  "generatedAt": "2026-04-26T21:55:10",
   "scheduleDate": "April 26, 2026",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
@@ -23,9 +23,18 @@ window.PLAYOFFS_DATA = {
       "title": "爭冠第一梯",
       "note": "系列賽控制力與健康狀態都仍在高位，晉級幾乎無懸念。",
       "teams": [
-        { "name": "Celtics", "score": 92 },
-        { "name": "Thunder", "score": 90 },
-        { "name": "Lakers", "score": 90 }
+        {
+          "name": "Celtics",
+          "score": 92
+        },
+        {
+          "name": "Thunder",
+          "score": 90
+        },
+        {
+          "name": "Lakers",
+          "score": 90
+        }
       ]
     },
     {
@@ -33,10 +42,22 @@ window.PLAYOFFS_DATA = {
       "title": "穩定領先梯",
       "note": "具備系列賽主導權，但對位或傷兵仍有變數。",
       "teams": [
-        { "name": "Cavaliers", "score": 88 },
-        { "name": "Spurs", "score": 84 },
-        { "name": "Knicks", "score": 82 },
-        { "name": "Magic", "score": 76 }
+        {
+          "name": "Cavaliers",
+          "score": 88
+        },
+        {
+          "name": "Spurs",
+          "score": 84
+        },
+        {
+          "name": "Knicks",
+          "score": 82
+        },
+        {
+          "name": "Magic",
+          "score": 76
+        }
       ]
     },
     {
@@ -44,10 +65,22 @@ window.PLAYOFFS_DATA = {
       "title": "對位波動梯",
       "note": "仍有反撲空間，但核心傷兵讓戰力兌現率打折。",
       "teams": [
-        { "name": "Hawks", "score": 74 },
-        { "name": "Nuggets", "score": 72 },
-        { "name": "76ers", "score": 69 },
-        { "name": "Raptors", "score": 67 }
+        {
+          "name": "Hawks",
+          "score": 74
+        },
+        {
+          "name": "Nuggets",
+          "score": 72
+        },
+        {
+          "name": "76ers",
+          "score": 69
+        },
+        {
+          "name": "Raptors",
+          "score": 67
+        }
       ]
     },
     {
@@ -55,11 +88,26 @@ window.PLAYOFFS_DATA = {
       "title": "危險邊緣梯",
       "note": "系列賽落後且傷兵壓力大，逆轉難度極高。",
       "teams": [
-        { "name": "Timberwolves ⚠️", "score": 68 },
-        { "name": "Trail Blazers", "score": 64 },
-        { "name": "Pistons", "score": 63 },
-        { "name": "Rockets", "score": 60 },
-        { "name": "Suns", "score": 55 }
+        {
+          "name": "Timberwolves ⚠️",
+          "score": 68
+        },
+        {
+          "name": "Trail Blazers",
+          "score": 64
+        },
+        {
+          "name": "Pistons",
+          "score": 63
+        },
+        {
+          "name": "Rockets",
+          "score": 60
+        },
+        {
+          "name": "Suns",
+          "score": 55
+        }
       ]
     }
   ],
@@ -141,25 +189,25 @@ window.PLAYOFFS_DATA = {
     "east": [
       {
         "matchup": "(1) Detroit vs (8) Orlando",
-        "leader": "Orlando 2-1",
+        "leader": "Magic 2-1",
         "angle": "低種子一方已經把對位壓力翻轉成實質優勢，下剋上風險非常真實。 傷兵面則要留意 Magic 端有 Jonathan Isaac Out。",
         "power": 77
       },
       {
         "matchup": "(2) Boston vs (7) Philadelphia",
-        "leader": "Boston 2-1",
+        "leader": "Celtics 2-1",
         "angle": "目前優勢方有些微主導權，但系列賽還沒有完全脫離反撲區。 傷兵面則要留意 76ers 端有 Joel Embiid Doubtful。",
         "power": 92
       },
       {
         "matchup": "(3) New York vs (6) Atlanta",
-        "leader": "2-2 平手",
+        "leader": "平手 2-2",
         "angle": "目前仍是五五波對撞，雙方都還沒把節奏完全鎖進自己手裡。",
         "power": 82
       },
       {
         "matchup": "(4) Cleveland vs (5) Toronto",
-        "leader": "Cleveland 2-1",
+        "leader": "Cavaliers 2-1",
         "angle": "目前優勢方有些微主導權，但系列賽還沒有完全脫離反撲區。 傷兵面則要留意 Raptors 端有 Immanuel Quickley Out。",
         "power": 88
       }
@@ -167,7 +215,7 @@ window.PLAYOFFS_DATA = {
     "west": [
       {
         "matchup": "(1) Oklahoma City vs (8) Phoenix",
-        "leader": "Oklahoma City 3-0",
+        "leader": "Thunder 3-0",
         "angle": "Thunder 已把系列賽推進到接近收官的位置，控制權相當明顯。 傷兵面則要留意 Thunder 端有 Jalen Williams Out；Suns 端有 Mark Williams Out、Grayson Allen Questionable。",
         "power": 90
       },
@@ -179,13 +227,13 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(3) Denver vs (6) Minnesota",
-        "leader": "Minnesota 3-1",
+        "leader": "Timberwolves 3-1",
         "angle": "⚠️ 最新重傷警報：Anthony Edwards（左膝，可能賽季報銷）與 Donte DiVincenzo（右跟腱撕裂，賽季報銷）在 Game 4 上半場雙雙受傷。儘管 Ayo Dosunmu 挺身砍下替補生涯新高 43 分讓灰狼拿下勝利，但雙核受傷讓系列賽與季後賽前景蒙上巨大陰影。",
         "power": 68
       },
       {
         "matchup": "(4) Los Angeles vs (5) Houston",
-        "leader": "Los Angeles 3-0",
+        "leader": "Lakers 3-0",
         "angle": "Lakers 已把系列賽推進到接近收官的位置，控制權相當明顯。 傷兵面則要留意 Lakers 端有 Luka Doncic Out、Austin Reaves Questionable；Rockets 端有 Fred VanVleet Out、Kevin Durant Questionable。",
         "power": 90
       }
