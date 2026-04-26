@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
-  "generatedAt": "2026-04-26T21:55:10",
-  "scheduleDate": "April 26, 2026",
+  "generatedAt": "2026-04-28T00:00:00",
+  "scheduleDate": "April 28, 2026",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -30,10 +30,6 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Spurs 🔄",
           "score": 88
-        },
-        {
-          "name": "Cavaliers",
-          "score": 87
         }
       ]
     },
@@ -49,6 +45,10 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Lakers",
           "score": 84
+        },
+        {
+          "name": "Cavaliers ⚠️",
+          "score": 82
         },
         {
           "name": "Knicks",
@@ -162,7 +162,7 @@ window.PLAYOFFS_DATA = {
     {
       "label": "東區控制力最強",
       "title": "Cavaliers vs Raptors",
-      "text": "Cavaliers 2-1 Raptors，Quickley 傷缺讓暴龍進攻節奏更難建立，騎士穩定主導。"
+      "text": "⚠️ 平手 2-2！騎士 Game 4 意外告負，喪失主場優勢，系列賽完全重啟。第五戰變必勝局，心理壓力全面轉向。"
     },
     {
       "label": "西區最接近收官",
@@ -207,9 +207,9 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(4) Cleveland vs (5) Toronto",
-        "leader": "Cavaliers 2-1",
-        "angle": "目前優勢方有些微主導權，但系列賽還沒有完全脫離反撲區。 傷兵面則要留意 Raptors 端有 Immanuel Quickley Out。",
-        "power": 88
+        "leader": "平手 2-2",
+        "angle": "⚠️ 騎士 Game 4 意外失守！系列賽從 2-1 領先變成平手，主場優勢喪失。Mitchell + Garland 末節解題失靈，暴龍靠更快的球速與簡化進攻打出反撲。第五戰是關鍵分水嶺。",
+        "power": 82
       }
     ],
     "west": [
@@ -251,9 +251,9 @@ window.PLAYOFFS_DATA = {
       "text": "Wembanyama 傷癒回歸是本輪最大正面變數！馬刺從 81 分躍升至 88 分直接擠進 Tier 1，護框、持球攻堅與快攻引導讓整條進攻線完全不同。Wemby + Harper + Johnson 三核組合，是本屆最具爆發力的黑馬。"
     },
     {
-      "eyebrow": "Health Swing",
+      "eyebrow": "Upset Alert ⚠️",
       "title": "關鍵觀察 03",
-      "text": "傷兵雙向衝擊：Timberwolves Edwards + DiVincenzo 雙核重傷讓灰狼從 85 驟降至 74；Spurs Wemby 回歸則讓馬刺從 81 飆升至 88。健康折扣這一項本輪已成系列賽走向最關鍵的變數。"
+      "text": "騎士 Game 4 意外告負（2-2）是今日最大震撼——原本 Tier 1 的爭冠梯隊，一場敗仗讓分數從 87 跌至 82、退出第一梯。末節球星主導力失靈 + 主場優勢喪失，第五戰將決定整條東區格局。"
     }
   ],
   "benchMob": [
