@@ -28,8 +28,8 @@ window.PLAYOFFS_DATA = {
           "score": 92
         },
         {
-          "name": "Spurs 🔄",
-          "score": 88
+          "name": "Spurs 🔥",
+          "score": 90
         }
       ]
     },
@@ -182,7 +182,7 @@ window.PLAYOFFS_DATA = {
     {
       "label": "西區最大變數",
       "title": "Spurs vs Trail Blazers",
-      "text": "Spurs 2-1 Trail Blazers，Wembanyama Questionable、Lillard Out，兩隊核心健康都是最大問號。"
+      "text": "🔥 Spurs 3-1！Wemby 回歸後連勝，一場封關。Lillard 缺陣讓拓荒者毫無還手之力，馬刺已是西區最熱隊伍。"
     }
   ],
   "series": {
@@ -221,9 +221,9 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(2) San Antonio vs (7) Portland",
-        "leader": "San Antonio 2-1",
-        "angle": "⚡ Wembanyama 傷癒回歸，馬刺戰力大幅提升！Lillard 持續缺陣讓拓荒者進攻節奏難以建立，馬刺主動權更加穩固。",
-        "power": 88
+        "leader": "San Antonio 3-1",
+        "angle": "⚡ Wembanyama 回歸後馬刺連勝！3-1 領先，一場封關。Lillard 缺陣讓拓荒者毫無反擊手段，馬刺體系控制力全面壓制。",
+        "power": 90
       },
       {
         "matchup": "(3) Denver vs (6) Minnesota",
