@@ -454,8 +454,9 @@ h3,
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  background: rgba(255, 77, 109, 0.16);
-  color: #ffd7e1;
+  background: rgba(200, 16, 46, 0.12);
+  color: #9a0020;
+  border: 1px solid rgba(200, 16, 46, 0.25);
 }
 
 .injury-impact {
