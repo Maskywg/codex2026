@@ -44,7 +44,7 @@ window.PLAYOFFS_DATA = {
         },
         {
           "name": "Lakers",
-          "score": 84
+          "score": 80
         },
         {
           "name": "Cavaliers ⚠️",
@@ -177,7 +177,7 @@ window.PLAYOFFS_DATA = {
     {
       "label": "西區最受傷",
       "title": "Lakers vs Rockets",
-      "text": "Lakers 3-0 Rockets，Luka Out、KD Questionable 讓火箭戰力大打折扣，湖人把握機會封關。"
+      "text": "Lakers 3-1 Rockets，客場失守一場。Luka 仍缺陣讓湖人主客場表現出現落差，主場因子效應明顯——主場強壓、客場節奏不穩是湖人最需要解決的問題。"
     },
     {
       "label": "西區最大變數",
@@ -233,8 +233,8 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(4) Los Angeles vs (5) Houston",
-        "leader": "Lakers 3-0",
-        "angle": "Lakers 已把系列賽推進到接近收官的位置，控制權相當明顯。 傷兵面則要留意 Lakers 端有 Luka Doncic Out、Austin Reaves Questionable；Rockets 端有 Fred VanVleet Out、Kevin Durant Questionable。",
+        "leader": "Lakers 3-1",
+        "angle": "湖人客場失守，主場因子效應浮現——無 Luka 的湖人在客場半場回合中解題手段明顯不足。系列賽仍掌控，但若拖入 G5 主場賽，壓力將重新回到球員身上。",
         "power": 90
       }
     ]
@@ -251,9 +251,9 @@ window.PLAYOFFS_DATA = {
       "text": "Wembanyama 傷癒回歸是本輪最大正面變數！馬刺從 81 分躍升至 88 分直接擠進 Tier 1，護框、持球攻堅與快攻引導讓整條進攻線完全不同。Wemby + Harper + Johnson 三核組合，是本屆最具爆發力的黑馬。"
     },
     {
-      "eyebrow": "Upset Alert ⚠️",
+      "eyebrow": "Home Court Factor 🏠",
       "title": "關鍵觀察 03",
-      "text": "騎士 Game 4 意外告負（2-2）是今日最大震撼——原本 Tier 1 的爭冠梯隊，一場敗仗讓分數從 87 跌至 82、退出第一梯。末節球星主導力失靈 + 主場優勢喪失，第五戰將決定整條東區格局。"
+      "text": "主場因子本輪異常顯著：湖人客場失守（3-1）、騎士主場告負（2-2）——兩支球隊都在「預期該贏」的場次出了問題。無 Luka 的湖人客場解題能力不足、騎士末節心理壓力失控，都是主客場轉換下暴露的結構性弱點。"
     }
   ],
   "benchMob": [
