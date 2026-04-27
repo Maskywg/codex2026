@@ -51,10 +51,6 @@ window.PLAYOFFS_DATA = {
           "score": 82
         },
         {
-          "name": "76ers ✅",
-          "score": 79
-        },
-        {
           "name": "Knicks",
           "score": 79
         }
@@ -65,6 +61,10 @@ window.PLAYOFFS_DATA = {
       "title": "對位波動梯",
       "note": "板凳暴徒指數或傷兵狀況仍有波動，系列賽走向尚未定型。",
       "teams": [
+        {
+          "name": "76ers ⚠️",
+          "score": 71
+        },
         {
           "name": "Hawks",
           "score": 77
@@ -138,9 +138,9 @@ window.PLAYOFFS_DATA = {
     },
     {
       "team": "76ers / Raptors",
-      "tag": "✅ 主將回歸",
-      "detail": "Joel Embiid 確定回歸出賽（闌尾炎術後復出）、Immanuel Quickley (Out，右膕繩肌拉傷，暴龍)",
-      "impact": "健康折扣從 11.2 降至 3.8 分，76人分數從 68 → 79，系列賽完全重啟"
+      "tag": "⚠️ 術後復出",
+      "detail": "Joel Embiid 復出但狀態明顯未到位（闌尾炎術後），進攻效率打折、Immanuel Quickley (Out，右膕繩肌拉傷，暴龍)",
+      "impact": "帶傷上陣折扣：分數從高峰 79 回落至 71，系列賽 1-3 落後幾乎無力回天"
     }
   ],
   "highlights": [
@@ -152,7 +152,7 @@ window.PLAYOFFS_DATA = {
     {
       "label": "東區最穩定",
       "title": "Celtics vs 76ers",
-      "text": "⚡ Embiid 確定回歸！費城戰力從 68 飆升至 79，系列賽 2-1 落後但完全有得打，Celtics 主導優勢受到嚴峻挑戰。"
+      "text": "Celtics 3-1 領先，一場封關。Embiid 術後復出狀態明顯打折，費城進攻無法有效解題，塞隊主場控制力依然在線。"
     },
     {
       "label": "東區最大冷門",
@@ -196,7 +196,7 @@ window.PLAYOFFS_DATA = {
       {
         "matchup": "(2) Boston vs (7) Philadelphia",
         "leader": "Celtics 2-1",
-        "angle": "⚡ Embiid 確定回歸！費城由劣勢方瞬間變成對等挑戰者。闌尾炎術後復出的他狀態是最大未知數，但光是他站在場上就改變了 Celtics 的防守部署。",
+        "angle": "Celtics 3-1 領先，一場封關。Embiid 雖復出但術後狀態明顯未到位，費城進攻效率不如預期，塞隊系列賽主導權牢固。",
         "power": 92
       },
       {
