@@ -321,6 +321,15 @@ window.PLAYOFFS_DATA = {
       "note": "馬刺隊史替補得分紀錄保持人，Game 3 回神砍 20 分，狀態回升中"
     },
     {
+      "player": "Collin Murray-Boyles",
+      "team": "Raptors",
+      "role": "替補中鋒（新秀）",
+      "index": 76,
+      "fire": 3,
+      "highlight": "Game 4：15分+10籃板｜季後賽替補雙十",
+      "note": "暴龍新秀奇兵，G4 關鍵戰禁區撐起防線，替補雙十幫助多倫多 2-2 扳平騎士系列賽"
+    },
+    {
       "player": "Luke Kennard",
       "team": "Lakers",
       "role": "替補射手",
