@@ -25,7 +25,7 @@ window.PLAYOFFS_DATA = {
       "teams": [
         {
           "name": "Celtics",
-          "score": 92
+          "score": 94
         },
         {
           "name": "Spurs 🔥",
@@ -297,10 +297,10 @@ window.PLAYOFFS_DATA = {
       "player": "Payton Pritchard",
       "team": "Celtics",
       "role": "替補後衛",
-      "index": 82,
-      "fire": 4,
-      "highlight": "Game 3：連中兩記三分逆轉戰局",
-      "note": "終結比賽的三分球射手，高壓時刻信心十足，塞爾提克板凳第一刀"
+      "index": 95,
+      "fire": 5,
+      "highlight": "Game 4：32分 · 6顆三分 · 貢獻值 +20｜Embiid 回歸也擋不住",
+      "note": "面對 Embiid 復出的 76人毫無畏懼，三分雨打垮費城防線。替補出場卻是全場最高分，塞爾提克 3-1 封關關鍵先生"
     },
     {
       "player": "Max Strus",
