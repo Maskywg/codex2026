@@ -267,6 +267,15 @@ window.PLAYOFFS_DATA = {
       "note": "雙核重傷後一人扛起進攻，命中率 76%、三分 5/5、罰球 12/12，史詩級表演"
     },
     {
+      "player": "Payton Pritchard",
+      "team": "Celtics",
+      "role": "替補後衛",
+      "index": 95,
+      "fire": 5,
+      "highlight": "Game 4：32分 · 6顆三分 · 貢獻值 +20｜Embiid 回歸也擋不住",
+      "note": "面對 Embiid 復出的 76人毫無畏懼，三分雨打垮費城防線。替補出場卻是全場最高分，塞爾提克 3-1 封關關鍵先生"
+    },
+    {
       "player": "Dylan Harper",
       "team": "Spurs",
       "role": "替補後衛（新秀）",
@@ -292,15 +301,6 @@ window.PLAYOFFS_DATA = {
       "fire": 4,
       "highlight": "連兩場 19-21 分｜關鍵時刻壓哨抄球",
       "note": "鷹隊歷史首位替補球員在季後賽首節就得 10+ 分，危急時刻被放上場"
-    },
-    {
-      "player": "Payton Pritchard",
-      "team": "Celtics",
-      "role": "替補後衛",
-      "index": 95,
-      "fire": 5,
-      "highlight": "Game 4：32分 · 6顆三分 · 貢獻值 +20｜Embiid 回歸也擋不住",
-      "note": "面對 Embiid 復出的 76人毫無畏懼，三分雨打垮費城防線。替補出場卻是全場最高分，塞爾提克 3-1 封關關鍵先生"
     },
     {
       "player": "Max Strus",
