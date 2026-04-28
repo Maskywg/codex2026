@@ -118,7 +118,7 @@ window.PLAYOFFS_DATA = {
       "team": "Nuggets",
       "tag": "🆕 G5 無 Gordon 仍大勝",
       "detail": "Aaron Gordon（左小腿拉傷）G5 缺陣，Peyton Watson 亦在傷兵名單",
-      "impact": "缺兵之下金塊第四節 99-75 狂掃，Jokic 主宰禁區，系列賽從 1-3 追到 2-3，逆轉劇情未完"
+      "impact": "缺兵之下金塊第四節 99-75 狂掃，Jokic G5 大三元（27分/16助/12籃板）孤軍主宰，系列賽從 1-3 追到 2-3，逆轉劇情未完"
     },
     {
       "team": "Magic",
@@ -180,7 +180,7 @@ window.PLAYOFFS_DATA = {
     {
       "label": "🔥 西區最大逆轉劇情",
       "title": "Nuggets vs Timberwolves（3-2）",
-      "text": "金塊 G5 無 Aaron Gordon 仍以 125-113 勝出！Jokic 孤軍主宰禁區，系列賽從 1-3 追至 2-3。更大變局：Naz Reid G5 扭傷右腳踝（Questionable G6），灰狼三核折損，G6 主場還有沒有 Reid？逆轉劇本越來越有可能。"
+      "text": "金塊 G5 無 Aaron Gordon 仍以 125-113 勝出！Jokic 大三元（27分/16助/12籃板）孤軍主宰，系列賽從 1-3 追至 2-3。更大變局：Naz Reid G5 扭傷右腳踝（Questionable G6），灰狼三核折損，G6 主場還有沒有 Reid？逆轉劇本越來越有可能。"
     },
     {
       "label": "西區最受傷",
@@ -236,7 +236,7 @@ window.PLAYOFFS_DATA = {
       {
         "matchup": "(3) Denver vs (6) Minnesota",
         "leader": "🔥 Timberwolves 3-2（金塊 G5 大勝）",
-        "angle": "金塊無 Gordon 仍 G5 以 125-113 贏球！Jokic 孤軍主宰，系列賽從 1-3 追到 2-3。更大衝擊：Naz Reid G5 扭傷右腳踝（Questionable G6），灰狼三核同時折損，G6 主場生死戰懸念極大。",
+        "angle": "金塊無 Gordon 仍 G5 以 125-113 贏球！Jokic 大三元（27分/16助/12籃板）孤軍主宰，系列賽從 1-3 追到 2-3。更大衝擊：Naz Reid G5 扭傷右腳踝（Questionable G6），灰狼三核同時折損，G6 主場生死戰懸念極大。",
         "power": 74
       },
       {
@@ -261,7 +261,7 @@ window.PLAYOFFS_DATA = {
     {
       "eyebrow": "Injury Crisis 🏥",
       "title": "關鍵觀察 03",
-      "text": "灰狼傷兵名單升至三核！Edwards（膝蓋報銷）、DiVincenzo（跟腱報銷），G5 再加 Naz Reid（右腳踝，Questionable G6）。金塊缺 Gordon 仍 125-113 大勝，Jokic 以一人之力撐起逆轉夢。G6 灰狼主場若 Reid 無法出賽，這系列賽有可能走到 G7。"
+      "text": "灰狼傷兵名單升至三核！Edwards（膝蓋報銷）、DiVincenzo（跟腱報銷），G5 再加 Naz Reid（右腳踝，Questionable G6）。金塊缺 Gordon 仍 125-113 大勝，Jokic 大三元（27分/16助/12籃板）以一人之力撐起逆轉夢。G6 灰狼主場若 Reid 無法出賽，這系列賽有可能走到 G7。"
     }
   ],
   "benchMob": [
