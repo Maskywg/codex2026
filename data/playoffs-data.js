@@ -118,7 +118,7 @@ window.PLAYOFFS_DATA = {
       "team": "Nuggets",
       "tag": "🆕 G5 無 Gordon 仍大勝",
       "detail": "Aaron Gordon（左小腿拉傷）G5 缺陣，Peyton Watson 亦在傷兵名單",
-      "impact": "缺兵之下金塊第四節 99-75 狂掃，Jokic G5 大三元（27分/16助/12籃板）孤軍主宰，系列賽從 1-3 追到 2-3，逆轉劇情未完"
+      "impact": "金塊缺兵仍以 125-113 追回一城，Jokic G5 大三元（27分/16助/12籃板）主宰全場，但灰狼仍 3-2 握主場，系列賽主動權未失"
     },
     {
       "team": "Magic",
@@ -178,9 +178,9 @@ window.PLAYOFFS_DATA = {
       "text": "Thunder 131-122 完封太陽，4-0 率先晉級！SGA 系列賽場均 38+ 分，即便 Jalen Williams 缺陣，雷霆整體體系碾壓太陽全程，太陽在第一輪止步。雷霆成為全聯盟首支確定晉二輪的隊伍。"
     },
     {
-      "label": "🔥 西區最大逆轉劇情",
-      "title": "Nuggets vs Timberwolves（3-2）",
-      "text": "金塊 G5 無 Aaron Gordon 仍以 125-113 勝出！Jokic 大三元（27分/16助/12籃板）孤軍主宰，系列賽從 1-3 追至 2-3。更大變局：Naz Reid G5 扭傷右腳踝（Questionable G6），灰狼三核折損，G6 主場還有沒有 Reid？逆轉劇本越來越有可能。"
+      "label": "🔥 西區最大懸念系列賽",
+      "title": "Timberwolves vs Nuggets（3-2）",
+      "text": "灰狼失去 Edwards、DiVincenzo、Naz Reid 三核仍以 3-2 握主場優勢！Randle G5 砍 27 分，板凳 Hyland + Shannon Jr. 各 15 分，雜牌軍頑強抵抗。金塊 G5 靠 Jokic 大三元（27分/16助/12籃板）追回一城，但 G6 回到灰狼主場，系列賽主動權依然在明尼蘇達手中。"
     },
     {
       "label": "西區最受傷",
@@ -235,8 +235,8 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(3) Denver vs (6) Minnesota",
-        "leader": "🔥 Timberwolves 3-2（金塊 G5 大勝）",
-        "angle": "金塊無 Gordon 仍 G5 以 125-113 贏球！Jokic 大三元（27分/16助/12籃板）孤軍主宰，系列賽從 1-3 追到 2-3。更大衝擊：Naz Reid G5 扭傷右腳踝（Questionable G6），灰狼三核同時折損，G6 主場生死戰懸念極大。",
+        "leader": "🔥 Timberwolves 3-2（主場優勢在握）",
+        "angle": "三核缺陣仍領先 3-2，灰狼才是本系列真正的頑強一方。Randle 扛起進攻，板凳雙核各 15 分補位。金塊靠 Jokic 大三元（27分/16助/12籃板）追回 G5，但 G6 回到灰狼主場，封關機會仍在灰狼這邊。",
         "power": 74
       },
       {
@@ -261,7 +261,7 @@ window.PLAYOFFS_DATA = {
     {
       "eyebrow": "Injury Crisis 🏥",
       "title": "關鍵觀察 03",
-      "text": "灰狼傷兵名單升至三核！Edwards（膝蓋報銷）、DiVincenzo（跟腱報銷），G5 再加 Naz Reid（右腳踝，Questionable G6）。金塊缺 Gordon 仍 125-113 大勝，Jokic 大三元（27分/16助/12籃板）以一人之力撐起逆轉夢。G6 灰狼主場若 Reid 無法出賽，這系列賽有可能走到 G7。"
+      "text": "三核缺陣仍以 3-2 領先，灰狼的韌性才是本系列最大的故事。Randle 扛起主攻，Hyland + Shannon Jr. 板凳各 15 分頑強補位。金塊 G5 靠 Jokic 大三元（27分/16助/12籃板）追回一城，但 G6 回到灰狼主場，封關主動權仍在明尼蘇達。Naz Reid 能否上場是唯一變數。"
     }
   ],
   "benchMob": [
