@@ -79,7 +79,7 @@ window.PLAYOFFS_DATA = {
         },
         {
           "name": "Nuggets ⚠️",
-          "score": 68
+          "score": 74
         },
         {
           "name": "Raptors",
