@@ -103,10 +103,6 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Rockets",
           "score": 62
-        },
-        {
-          "name": "Suns",
-          "score": 52
         }
       ]
     }
