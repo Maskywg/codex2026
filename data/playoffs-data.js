@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
-  "generatedAt": "2026-04-28T12:00:00",
-  "scheduleDate": "April 28, 2026（4/28 早場賽果更新）",
+  "generatedAt": "2026-04-28T23:30:00",
+  "scheduleDate": "April 28, 2026（4/28 晚場更新：雷霆 4-0 掃蕩太陽 · 金塊 G5 大勝 灰狼 3-2）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -75,11 +75,11 @@ window.PLAYOFFS_DATA = {
         },
         {
           "name": "Timberwolves ⚠️",
-          "score": 71
+          "score": 67
         },
         {
-          "name": "Nuggets ⚠️",
-          "score": 74
+          "name": "Nuggets 💪",
+          "score": 79
         },
         {
           "name": "Raptors",
@@ -110,15 +110,15 @@ window.PLAYOFFS_DATA = {
   "injuries": [
     {
       "team": "Timberwolves",
-      "tag": "⚠️ 雙核重傷",
-      "detail": "Anthony Edwards（左膝，賽季報銷）、Donte DiVincenzo（右跟腱撕裂，賽季報銷），均在 G4 上半場受傷",
-      "impact": "健康折扣 28.4 分（最高）— 灰狼靠 Dosunmu 一人扛到 3-1，能否繼續晉級是最大問號"
+      "tag": "⚠️ 三核重傷",
+      "detail": "Anthony Edwards（左膝，賽季報銷）、Donte DiVincenzo（右跟腱撕裂，賽季報銷）、Naz Reid（右腳踝，G5 受傷 Questionable G6）",
+      "impact": "健康折扣急升 — G5 主力悉數受傷，第四節被金塊碾壓 24 分。Reid 能否出戰 G6 是系列賽生死關鍵"
     },
     {
       "team": "Nuggets",
-      "tag": "🆕 G5 重傷缺陣",
-      "detail": "Aaron Gordon（左小腿拉傷）G5 確認缺陣，Peyton Watson 亦在傷兵名單",
-      "impact": "金塊在 3-1 落後下又少一核心，Jokic 孤掌難鳴，本季幾乎告終"
+      "tag": "🆕 G5 無 Gordon 仍大勝",
+      "detail": "Aaron Gordon（左小腿拉傷）G5 缺陣，Peyton Watson 亦在傷兵名單",
+      "impact": "缺兵之下金塊第四節 99-75 狂掃，Jokic 主宰禁區，系列賽從 1-3 追到 2-3，逆轉劇情未完"
     },
     {
       "team": "Magic",
@@ -133,10 +133,10 @@ window.PLAYOFFS_DATA = {
       "impact": "健康折扣 19.1 分"
     },
     {
-      "team": "Thunder / Suns",
-      "tag": "核心缺陣",
-      "detail": "Jalen Williams (Out)、Mark Williams (Out)、Grayson Allen (Questionable)",
-      "impact": "即便 Jalen Williams 缺陣，雷霆體系控制力依然碾壓，完封在即"
+      "team": "Thunder",
+      "tag": "✅ 健康晉級",
+      "detail": "Jalen Williams (Out) 缺陣仍完封太陽，SGA 主宰系列賽",
+      "impact": "4-0 掃蕩成功，首支進入第二輪，等待下一輪對手"
     },
     {
       "team": "Spurs / Trail Blazers",
@@ -173,14 +173,14 @@ window.PLAYOFFS_DATA = {
       "text": "⚠️ 平手 2-2！騎士 Game 4 意外告負，喪失主場優勢，系列賽完全重啟。第五戰變必勝局，心理壓力全面轉向。"
     },
     {
-      "label": "⚡ 西區最接近收官",
-      "title": "Thunder vs Suns",
-      "text": "Thunder G4 進行中，領先 Suns 第三節。SGA 本系列平均 38+ 分，Jalen Williams 缺陣下雷霆體系依然碾壓，完封近在眼前。"
+      "label": "⚡ 西區首支晉級",
+      "title": "Thunder vs Suns ✅ 4-0 掃蕩",
+      "text": "Thunder 131-122 完封太陽，4-0 率先晉級！SGA 系列賽場均 38+ 分，即便 Jalen Williams 缺陣，雷霆整體體系碾壓太陽全程，太陽在第一輪止步。雷霆成為全聯盟首支確定晉二輪的隊伍。"
     },
     {
-      "label": "⚠️ 西區最大變局",
-      "title": "Timberwolves vs Nuggets",
-      "text": "Timberwolves 3-1 Nuggets，G5 進行中。Aaron Gordon（小腿）G5 缺陣，Peyton Watson 也傷缺，金塊核心不完整；灰狼雖無 Edwards 與 DiVincenzo，Dosunmu 一人扛旗，能否封關成本輪最受關注一戰。"
+      "label": "🔥 西區最大逆轉劇情",
+      "title": "Nuggets vs Timberwolves（3-2）",
+      "text": "金塊 G5 無 Aaron Gordon 仍以 125-113 勝出！Jokic 孤軍主宰禁區，系列賽從 1-3 追至 2-3。更大變局：Naz Reid G5 扭傷右腳踝（Questionable G6），灰狼三核折損，G6 主場還有沒有 Reid？逆轉劇本越來越有可能。"
     },
     {
       "label": "西區最受傷",
@@ -223,8 +223,8 @@ window.PLAYOFFS_DATA = {
     "west": [
       {
         "matchup": "(1) Oklahoma City vs (8) Phoenix",
-        "leader": "⚡ Thunder G4 進行中（領先）",
-        "angle": "SGA 本系列場均 38+ 分主宰對位，即便 Jalen Williams 缺陣，雷霆體系整體碾壓太陽。若 G4 贏球即完封，是本輪首支完成掃蕩的隊伍。",
+        "leader": "⚡ Thunder 4-0 ✅ 晉二輪",
+        "angle": "SGA 系列賽場均 38+ 分，G4 131-122 完封收官，全聯盟首支晉二輪。Jalen Williams 缺陣亦無礙，雷霆體系深度令人恐懼。太陽第一輪止步。",
         "power": 90
       },
       {
@@ -235,9 +235,9 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(3) Denver vs (6) Minnesota",
-        "leader": "⚠️ Timberwolves G5 進行中（3-1）",
-        "angle": "金塊 G5 缺陣：Aaron Gordon（左小腿）、Peyton Watson；灰狼亦無 Edwards（左膝報銷）、DiVincenzo（跟腱報銷）。Dosunmu 一人扛旗，Jokic 孤軍奮戰，史上最傷痕累累的封關局之一。",
-        "power": 68
+        "leader": "🔥 Timberwolves 3-2（金塊 G5 大勝）",
+        "angle": "金塊無 Gordon 仍 G5 以 125-113 贏球！Jokic 孤軍主宰，系列賽從 1-3 追到 2-3。更大衝擊：Naz Reid G5 扭傷右腳踝（Questionable G6），灰狼三核同時折損，G6 主場生死戰懸念極大。",
+        "power": 74
       },
       {
         "matchup": "(4) Los Angeles vs (5) Houston",
@@ -261,7 +261,7 @@ window.PLAYOFFS_DATA = {
     {
       "eyebrow": "Injury Crisis 🏥",
       "title": "關鍵觀察 03",
-      "text": "雙系列賽同步出現傷兵危機：灰狼 Edwards（膝蓋）、DiVincenzo（跟腱）賽季報銷，金塊 Aaron Gordon G5 缺陣。兩隊同時打破陣，最傷痕累累的封關局，Dosunmu 與 Jokic 的個人對決成了系列賽最後焦點。"
+      "text": "灰狼傷兵名單升至三核！Edwards（膝蓋報銷）、DiVincenzo（跟腱報銷），G5 再加 Naz Reid（右腳踝，Questionable G6）。金塊缺 Gordon 仍 125-113 大勝，Jokic 以一人之力撐起逆轉夢。G6 灰狼主場若 Reid 無法出賽，這系列賽有可能走到 G7。"
     }
   ],
   "benchMob": [
