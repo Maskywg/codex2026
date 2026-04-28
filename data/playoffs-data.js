@@ -75,7 +75,7 @@ window.PLAYOFFS_DATA = {
         },
         {
           "name": "Timberwolves ⚠️",
-          "score": 67
+          "score": 72
         },
         {
           "name": "Nuggets 💪",
