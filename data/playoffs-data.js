@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
-  "generatedAt": "2026-04-28T00:00:00",
-  "scheduleDate": "April 28, 2026",
+  "generatedAt": "2026-04-28T12:00:00",
+  "scheduleDate": "April 28, 2026（4/28 早場賽果更新）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -11,11 +11,11 @@ window.PLAYOFFS_DATA = {
     ]
   },
   "featured": {
-    "team": "Boston Celtics",
-    "record": "2-1",
-    "score": "92 / 100",
-    "tier": "爭冠第一梯",
-    "summary": "Celtics 目前綜合分數最高，系列賽內容與健康狀態都還保有足夠緩衝。"
+    "team": "Orlando Magic 🪄",
+    "record": "3-1",
+    "score": "82 / 100",
+    "tier": "下剋上震撼梯",
+    "summary": "最低種子封關！Banchero G1-G3 場均 22分+9籃板+7助攻主導系列賽，第八種子踩著聯盟第一種子的臉要晉級，是本輪最大的震撼。"
   },
   "tiers": [
     {
@@ -29,6 +29,10 @@ window.PLAYOFFS_DATA = {
         },
         {
           "name": "Spurs 🔥",
+          "score": 92
+        },
+        {
+          "name": "Thunder ⚡",
           "score": 90
         }
       ]
@@ -39,8 +43,8 @@ window.PLAYOFFS_DATA = {
       "note": "系列賽主導權明確，板凳亦有可用爆發點，但傷兵或對位仍有變數。",
       "teams": [
         {
-          "name": "Thunder",
-          "score": 85
+          "name": "Magic 🪄",
+          "score": 82
         },
         {
           "name": "Lakers",
@@ -48,7 +52,7 @@ window.PLAYOFFS_DATA = {
         },
         {
           "name": "Cavaliers ⚠️",
-          "score": 82
+          "score": 78
         },
         {
           "name": "Knicks",
@@ -70,16 +74,12 @@ window.PLAYOFFS_DATA = {
           "score": 77
         },
         {
-          "name": "Nuggets",
-          "score": 77
-        },
-        {
           "name": "Timberwolves ⚠️",
-          "score": 74
+          "score": 71
         },
         {
-          "name": "Magic",
-          "score": 73
+          "name": "Nuggets ⚠️",
+          "score": 68
         },
         {
           "name": "Raptors",
@@ -93,8 +93,8 @@ window.PLAYOFFS_DATA = {
       "note": "系列賽落後且核心傷兵壓力大，板凳難以彌補差距，逆轉難度極高。",
       "teams": [
         {
-          "name": "Pistons",
-          "score": 67
+          "name": "Pistons 💀",
+          "score": 55
         },
         {
           "name": "Trail Blazers",
@@ -106,7 +106,7 @@ window.PLAYOFFS_DATA = {
         },
         {
           "name": "Suns",
-          "score": 60
+          "score": 52
         }
       ]
     }
@@ -114,9 +114,21 @@ window.PLAYOFFS_DATA = {
   "injuries": [
     {
       "team": "Timberwolves",
-      "tag": "⚠️ 最新重傷",
-      "detail": "Anthony Edwards（左膝受傷，正在檢測，可能賽季報銷）、Donte DiVincenzo（右跟腱撕裂，賽季報銷），兩人均在 Game 4 上半場受傷",
-      "impact": "健康折扣 28.4 分（最高）"
+      "tag": "⚠️ 雙核重傷",
+      "detail": "Anthony Edwards（左膝，賽季報銷）、Donte DiVincenzo（右跟腱撕裂，賽季報銷），均在 G4 上半場受傷",
+      "impact": "健康折扣 28.4 分（最高）— 灰狼靠 Dosunmu 一人扛到 3-1，能否繼續晉級是最大問號"
+    },
+    {
+      "team": "Nuggets",
+      "tag": "🆕 G5 重傷缺陣",
+      "detail": "Aaron Gordon（左小腿拉傷）G5 確認缺陣，Peyton Watson 亦在傷兵名單",
+      "impact": "金塊在 3-1 落後下又少一核心，Jokic 孤掌難鳴，本季幾乎告終"
+    },
+    {
+      "team": "Magic",
+      "tag": "🆕 G4 受傷",
+      "detail": "Franz Wagner（右小腿拉傷）G4 第三節退場，最終仍以 94-88 贏球",
+      "impact": "若 Wagner 無法出賽 G5，Banchero 將需更大份量，封關難度略升"
     },
     {
       "team": "Lakers / Rockets",
@@ -128,26 +140,26 @@ window.PLAYOFFS_DATA = {
       "team": "Thunder / Suns",
       "tag": "核心缺陣",
       "detail": "Jalen Williams (Out)、Mark Williams (Out)、Grayson Allen (Questionable)",
-      "impact": "健康折扣 18.9 分"
+      "impact": "即便 Jalen Williams 缺陣，雷霆體系控制力依然碾壓，完封在即"
     },
     {
       "team": "Spurs / Trail Blazers",
       "tag": "🔄 主將回歸",
       "detail": "Victor Wembanyama 傷癒回歸（Active）、Damian Lillard (Out，拓荒者)",
-      "impact": "馬刺健康折扣大降，僅剩對手 Lillard 缺陣影響 4.2 分"
+      "impact": "馬刺健康折扣大降，Wemby + Harper + Johnson 三核全開"
     },
     {
       "team": "76ers / Raptors",
       "tag": "⚠️ 術後復出",
-      "detail": "Joel Embiid 復出但狀態明顯未到位（闌尾炎術後），進攻效率打折、Immanuel Quickley (Out，右膕繩肌拉傷，暴龍)",
-      "impact": "帶傷上陣折扣：分數從高峰 79 回落至 71，系列賽 1-3 落後幾乎無力回天"
+      "detail": "Joel Embiid 復出但狀態明顯未到位（闌尾炎術後）、Immanuel Quickley (Out，暴龍)",
+      "impact": "費城系列賽 1-3 落後，幾乎無力回天"
     }
   ],
   "highlights": [
     {
-      "label": "東區最膠著",
-      "title": "Knicks vs Hawks",
-      "text": "Knicks 2-2 Hawks，暫時還沒有哪一邊真正把對位做成單向，第五戰是關鍵分水嶺。"
+      "label": "🚨 東區最大冷門",
+      "title": "Magic vs Pistons",
+      "text": "Magic 3-1 Pistons！第八種子踩著聯盟第一種子的臉要晉級。Banchero G1-G3 場均 22+/9+/7+，G4 魔術被追到只差 1 分仍守住，最後 9 分連下收尾。Franz Wagner G4 受傷退場，但封關之路仍清晰可見。"
     },
     {
       "label": "東區最穩定",
@@ -155,9 +167,9 @@ window.PLAYOFFS_DATA = {
       "text": "Celtics 3-1 領先，一場封關。Embiid 術後復出狀態明顯打折，費城進攻無法有效解題，塞隊主場控制力依然在線。"
     },
     {
-      "label": "東區最大冷門",
-      "title": "Magic vs Pistons",
-      "text": "Magic 2-1 Pistons，低種子一方已把對位壓力翻轉成實質優勢，下剋上風險非常真實。"
+      "label": "東區最膠著",
+      "title": "Knicks vs Hawks",
+      "text": "Knicks 2-2 Hawks，第五戰在麥迪遜廣場花園登場。雙方都沒有把節奏完全鎖進自己手裡，老鷹主力 CJ McCollum G4 17 分頑強死撐，主場因子將是 G5 關鍵。"
     },
     {
       "label": "東區控制力最強",
@@ -165,14 +177,14 @@ window.PLAYOFFS_DATA = {
       "text": "⚠️ 平手 2-2！騎士 Game 4 意外告負，喪失主場優勢，系列賽完全重啟。第五戰變必勝局，心理壓力全面轉向。"
     },
     {
-      "label": "西區最接近收官",
+      "label": "⚡ 西區最接近收官",
       "title": "Thunder vs Suns",
-      "text": "Thunder 3-0 Suns，Jalen Williams 雖缺陣，整體體系控制力依然碾壓，封關只差臨門一腳。"
+      "text": "Thunder G4 進行中，領先 Suns 第三節。SGA 本系列平均 38+ 分，Jalen Williams 缺陣下雷霆體系依然碾壓，完封近在眼前。"
     },
     {
       "label": "⚠️ 西區最大變局",
       "title": "Timberwolves vs Nuggets",
-      "text": "Timberwolves 3-1 Nuggets，但 Game 4 Edwards（左膝）與 DiVincenzo（跟腱撕裂）雙雙重傷，即便灰狼已佔系列賽主導，後續深度輪次能否繼續前行是最大問號。"
+      "text": "Timberwolves 3-1 Nuggets，G5 進行中。Aaron Gordon（小腿）G5 缺陣，Peyton Watson 也傷缺，金塊核心不完整；灰狼雖無 Edwards 與 DiVincenzo，Dosunmu 一人扛旗，能否封關成本輪最受關注一戰。"
     },
     {
       "label": "西區最受傷",
@@ -180,80 +192,80 @@ window.PLAYOFFS_DATA = {
       "text": "Lakers 3-1 Rockets，客場失守一場。Luka 仍缺陣讓湖人主客場表現出現落差，主場因子效應明顯——主場強壓、客場節奏不穩是湖人最需要解決的問題。"
     },
     {
-      "label": "西區最大變數",
+      "label": "🔥 西區最大變數",
       "title": "Spurs vs Trail Blazers",
-      "text": "🔥 Spurs 3-1！Wemby 回歸後連勝，一場封關。Lillard 缺陣讓拓荒者毫無還手之力，馬刺已是西區最熱隊伍。"
+      "text": "Spurs 3-1！Wemby 回歸後連勝，一場封關。Lillard 缺陣讓拓荒者毫無還手之力，馬刺已是西區最熱隊伍。Harper + Wemby + Johnson 三核全開，下一輪令人期待。"
     }
   ],
   "series": {
     "east": [
       {
         "matchup": "(1) Detroit vs (8) Orlando",
-        "leader": "Magic 2-1",
-        "angle": "低種子一方已經把對位壓力翻轉成實質優勢，下剋上風險非常真實。 傷兵面則要留意 Magic 端有 Jonathan Isaac Out。",
-        "power": 77
+        "leader": "🚨 Magic 3-1",
+        "angle": "封關在即的最大冷門！Banchero 全系列主宰對位，G4 Wagner 右小腿拉傷退場，魔術仍靠末節 9-0 收尾。Cade Cunningham G4 砍 27 分但 9 失誤，活塞內線 Jalen Duren 犯滿退場，背水一戰。",
+        "power": 64
       },
       {
         "matchup": "(2) Boston vs (7) Philadelphia",
-        "leader": "Celtics 2-1",
-        "angle": "Celtics 3-1 領先，一場封關。Embiid 雖復出但術後狀態明顯未到位，費城進攻效率不如預期，塞隊系列賽主導權牢固。",
+        "leader": "Celtics 3-1",
+        "angle": "Celtics 一場封關。Embiid 雖復出但術後狀態明顯未到位，費城進攻效率不如預期，塞隊系列賽主導權牢固。Payton Pritchard 替補爆發是本系列最大驚喜之一。",
         "power": 92
       },
       {
         "matchup": "(3) New York vs (6) Atlanta",
         "leader": "平手 2-2",
-        "angle": "目前仍是五五波對撞，雙方都還沒把節奏完全鎖進自己手裡。",
+        "angle": "G5 在麥迪遜廣場花園進行。CJ McCollum（原 Trae Young 交易所得）G4 17 分頑強，老鷹 2-2 強迫決勝局。尼克主場聲勢是最大變數。",
         "power": 82
       },
       {
         "matchup": "(4) Cleveland vs (5) Toronto",
         "leader": "平手 2-2",
         "angle": "⚠️ 騎士 Game 4 意外失守！系列賽從 2-1 領先變成平手，主場優勢喪失。Mitchell + Garland 末節解題失靈，暴龍靠更快的球速與簡化進攻打出反撲。第五戰是關鍵分水嶺。",
-        "power": 82
+        "power": 78
       }
     ],
     "west": [
       {
         "matchup": "(1) Oklahoma City vs (8) Phoenix",
-        "leader": "Thunder 3-0",
-        "angle": "Thunder 已把系列賽推進到接近收官的位置，控制權相當明顯。 傷兵面則要留意 Thunder 端有 Jalen Williams Out；Suns 端有 Mark Williams Out、Grayson Allen Questionable。",
+        "leader": "⚡ Thunder G4 進行中（領先）",
+        "angle": "SGA 本系列場均 38+ 分主宰對位，即便 Jalen Williams 缺陣，雷霆體系整體碾壓太陽。若 G4 贏球即完封，是本輪首支完成掃蕩的隊伍。",
         "power": 90
       },
       {
         "matchup": "(2) San Antonio vs (7) Portland",
-        "leader": "San Antonio 3-1",
-        "angle": "⚡ Wembanyama 回歸後馬刺連勝！3-1 領先，一場封關。Lillard 缺陣讓拓荒者毫無反擊手段，馬刺體系控制力全面壓制。",
-        "power": 90
+        "leader": "🔥 San Antonio 3-1",
+        "angle": "Wembanyama 回歸後馬刺連勝！一場封關。Lillard 缺陣讓拓荒者毫無反擊手段，Wemby + Harper + Johnson 三核組合全面壓制，西區最熱門黑馬。",
+        "power": 92
       },
       {
         "matchup": "(3) Denver vs (6) Minnesota",
-        "leader": "Timberwolves 3-1",
-        "angle": "⚠️ 最新重傷警報：Anthony Edwards（左膝，可能賽季報銷）與 Donte DiVincenzo（右跟腱撕裂，賽季報銷）在 Game 4 上半場雙雙受傷。儘管 Ayo Dosunmu 挺身砍下替補生涯新高 43 分讓灰狼拿下勝利，但雙核受傷讓系列賽與季後賽前景蒙上巨大陰影。",
+        "leader": "⚠️ Timberwolves G5 進行中（3-1）",
+        "angle": "金塊 G5 缺陣：Aaron Gordon（左小腿）、Peyton Watson；灰狼亦無 Edwards（左膝報銷）、DiVincenzo（跟腱報銷）。Dosunmu 一人扛旗，Jokic 孤軍奮戰，史上最傷痕累累的封關局之一。",
         "power": 68
       },
       {
         "matchup": "(4) Los Angeles vs (5) Houston",
         "leader": "Lakers 3-1",
         "angle": "湖人客場失守，主場因子效應浮現——無 Luka 的湖人在客場半場回合中解題手段明顯不足。系列賽仍掌控，但若拖入 G5 主場賽，壓力將重新回到球員身上。",
-        "power": 90
+        "power": 80
       }
     ]
   },
   "analyses": [
     {
-      "eyebrow": "Bench Mob Factor",
+      "eyebrow": "🚨 Upset Alert",
       "title": "關鍵觀察 01",
-      "text": "板凳暴徒指數（佔評分 15%）本輪已成為系列賽分水嶺。Ayo Dosunmu 43 分讓灰狼在雙核重傷下仍守住 3-1，Spurs 的 Dylan Harper 新秀爆發讓馬刺主導西南對決。"
+      "text": "Magic 3-1 Pistons 是本輪最震撼逆轉！Banchero G1-G3 場均 22/9/7 全面主導，G4 被追至 1 分差仍靠末節 9-0 收尾。Wagner 右小腿傷缺是唯一變數，但第八種子幹掉聯盟第一種子的劇本已走到門口。"
     },
     {
       "eyebrow": "Return Impact ⚡",
       "title": "關鍵觀察 02",
-      "text": "Wembanyama 傷癒回歸是本輪最大正面變數！馬刺從 81 分躍升至 88 分直接擠進 Tier 1，護框、持球攻堅與快攻引導讓整條進攻線完全不同。Wemby + Harper + Johnson 三核組合，是本屆最具爆發力的黑馬。"
+      "text": "Wembanyama 傷癒回歸是本輪最大正面變數！馬刺擠進 Tier 1，護框、持球攻堅與快攻引導讓整條進攻線完全不同。Wemby + Harper + Johnson 三核組合，是本屆最具爆發力的黑馬，即將完成首輪封關。"
     },
     {
-      "eyebrow": "Home Court Factor 🏠",
+      "eyebrow": "Injury Crisis 🏥",
       "title": "關鍵觀察 03",
-      "text": "主場因子本輪異常顯著：湖人客場失守（3-1）、騎士主場告負（2-2）——兩支球隊都在「預期該贏」的場次出了問題。無 Luka 的湖人客場解題能力不足、騎士末節心理壓力失控，都是主客場轉換下暴露的結構性弱點。"
+      "text": "雙系列賽同步出現傷兵危機：灰狼 Edwards（膝蓋）、DiVincenzo（跟腱）賽季報銷，金塊 Aaron Gordon G5 缺陣。兩隊同時打破陣，最傷痕累累的封關局，Dosunmu 與 Jokic 的個人對決成了系列賽最後焦點。"
     }
   ],
   "benchMob": [
