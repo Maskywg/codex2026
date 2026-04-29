@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
-  "generatedAt": "2026-04-28T23:30:00",
-  "scheduleDate": "April 28, 2026（4/28 晚場更新：雷霆 4-0 掃蕩太陽 · 金塊 G5 大勝 灰狼 3-2）",
+  "generatedAt": "2026-04-29T01:00:00",
+  "scheduleDate": "April 29, 2026（4/29 更新：76人 G5 客場 113-97 大勝塞爾提克，系列賽追成 3-2）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -24,8 +24,8 @@ window.PLAYOFFS_DATA = {
       "note": "攻守效率、球星主導力與板凳深度同步在線，健康狀態也有緩衝，晉級幾乎無懸念。",
       "teams": [
         {
-          "name": "Celtics",
-          "score": 94
+          "name": "Celtics ⚠️",
+          "score": 88
         },
         {
           "name": "Spurs 🔥",
@@ -158,9 +158,9 @@ window.PLAYOFFS_DATA = {
       "text": "Magic 3-1 Pistons！第八種子踩著聯盟第一種子的臉要晉級。Banchero G1-G3 場均 22+/9+/7+，G4 魔術被追到只差 1 分仍守住，最後 9 分連下收尾。Franz Wagner G4 受傷退場，但封關之路仍清晰可見。"
     },
     {
-      "label": "東區最穩定",
+      "label": "⚠️ 東區最大變數",
       "title": "Celtics vs 76ers",
-      "text": "Celtics 3-1 領先，一場封關。Embiid 術後復出狀態明顯打折，費城進攻無法有效解題，塞隊主場控制力依然在線。"
+      "text": "Celtics 3-2！76人 G5 客場 113-97 大勝，主場 TD Garden 竟守不住。Embiid 術後復出火力全開，費城從 1-3 一步步追回，G6 回到費城主場，塞爾提克封關之路突然充滿變數。"
     },
     {
       "label": "東區最膠著",
@@ -203,9 +203,9 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(2) Boston vs (7) Philadelphia",
-        "leader": "Celtics 3-1",
-        "angle": "Celtics 一場封關。Embiid 雖復出但術後狀態明顯未到位，費城進攻效率不如預期，塞隊系列賽主導權牢固。Payton Pritchard 替補爆發是本系列最大驚喜之一。",
-        "power": 92
+        "leader": "⚠️ Celtics 3-2",
+        "angle": "76人 G5 客場 113-97 大勝！TD Garden 主場優勢蒸發，塞爾提克主場接連失守。Embiid 術後狀態回升，G6 回費城打，系列賽完全重啟。塞爾提克本輪穩定性令人存疑。",
+        "power": 88
       },
       {
         "matchup": "(3) New York vs (6) Atlanta",
