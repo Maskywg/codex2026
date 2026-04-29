@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2026 NBA 選秀觀戰指南</title>
+    <title>NBA 季後賽戰力分析</title>
     <meta
       name="description"
-      content="2026 NBA 選秀專題頁，整理選秀時間、樂透機率、熱門新秀與球隊看點。"
+      content="2026 NBA 季後賽首頁，聚焦首輪戰況、戰力分級、攻防指標與關鍵對位。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,140 +17,186 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="hero" id="top">
-      <nav class="topbar" aria-label="主選單">
-        <a class="brand" href="#top" aria-label="回到頁首">
-          <span>Draft Board</span>
-          <strong>2026</strong>
-        </a>
-        <div class="nav-links">
-          <a href="#timeline">時程</a>
-          <a href="#lottery">樂透</a>
-          <a href="#prospects">新秀</a>
-          <a href="#sources">來源</a>
-        </div>
-      </nav>
-
-      <section class="hero-content">
-        <div class="hero-copy">
-          <p class="eyebrow">NBA Draft 2026</p>
-          <h1>下一個門面，從布魯克林開始。</h1>
-          <p>
-            6 月 23、24 日，NBA 選秀回到 Barclays Center。這份頁面把官方時程、樂透機率、
-            熱門新秀與球隊需求整理成一個可以快速瀏覽的選秀看板。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#prospects">看熱門新秀</a>
-            <a class="button secondary" href="#lottery">看樂透機率</a>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-kicker">Playoffs 2026</span>
+            <span class="brand-name">戰力雷達</span>
           </div>
-        </div>
+          <a class="top-link" href="#series">看首輪戰況</a>
+        </nav>
 
-        <aside class="draft-card" aria-label="選秀主資訊">
-          <span class="card-label">Main Event</span>
-          <strong>June 23-24</strong>
-          <p>Barclays Center, Brooklyn</p>
-          <dl>
-            <div>
-              <dt>第一輪</dt>
-              <dd>6/23 8 PM ET</dd>
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="eyebrow">首頁主題</p>
+            <h1>NBA 季後賽戰力分析</h1>
+            <p class="hero-text">
+              用攻守效率、球星主導力與系列賽控制力，把首輪局勢拆成一眼就能判斷的強弱版圖。
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contenders">看奪冠梯隊</a>
+              <a class="button button-secondary" href="#method">看評分模型</a>
+              <a class="button" href="https://www.espn.com/nba/playoff-bracket" target="_blank" style="background:linear-gradient(135deg,#d32f2f,#e53935);color:#fff;font-weight:900;letter-spacing:1px;">🏆 ESPN Bracket ↗</a>
             </div>
-            <div>
-              <dt>第二輪</dt>
-              <dd>6/24 8 PM ET</dd>
+
+            <ul class="hero-notes">
+              <li>資料基準日：2026 年 4 月 26 日</li>
+              <li>焦點範圍：首輪系列賽、爭冠熱區、傷兵權重</li>
+            </ul>
+          </section>
+
+          <aside class="hero-panel">
+            <p class="panel-label">目前最強訊號</p>
+            <div class="featured-team">
+              <span class="featured-rank">No.1</span>
+              <div>
+                <h2>Oklahoma City Thunder</h2>
+                <p>首輪 3 比 0 領先 Phoenix，攻守轉換速度與持球壓迫感都在最高檔。</p>
+              </div>
             </div>
-            <div>
-              <dt>轉播</dt>
-              <dd>ABC / ESPN</dd>
+
+            <div class="panel-stats">
+              <article>
+                <span>壓制力</span>
+                <strong>97 / 100</strong>
+              </article>
+              <article>
+                <span>系列賽控制</span>
+                <strong>3-0</strong>
+              </article>
+              <article>
+                <span>首頁判讀</span>
+                <strong>爭冠第一梯</strong>
+              </article>
             </div>
-          </dl>
-        </aside>
-      </section>
-    </header>
-
-    <main>
-      <section class="quick-stats" aria-label="重點數字">
-        <article>
-          <span>Lottery Date</span>
-          <strong>May 10</strong>
-          <p>決定前 4 順位，抽籤球隊依機率競爭狀元籤。</p>
-        </article>
-        <article>
-          <span>Top Odds</span>
-          <strong>14.0%</strong>
-          <p>Washington、Indiana、Brooklyn 目前並列最高狀元機率。</p>
-        </article>
-        <article>
-          <span>Total Picks</span>
-          <strong>60</strong>
-          <p>兩輪完整選秀，每隊原則上各有一個首輪與次輪席位。</p>
-        </article>
-      </section>
-
-      <section class="section split" id="timeline">
-        <div class="section-copy">
-          <p class="eyebrow">Calendar</p>
-          <h2>選秀前關鍵日程</h2>
-          <p>
-            從 early entry 截止、G League Combine、正式 Combine 到退選期限，每個節點都會改變
-            球探報告與首輪排序。
-          </p>
+          </aside>
         </div>
-        <div class="timeline" id="timeline-list"></div>
-      </section>
+      </header>
 
-      <section class="section" id="lottery">
-        <div class="section-heading">
-          <p class="eyebrow">Lottery Watch</p>
-          <h2>狀元籤機率前段班</h2>
-        </div>
-        <div class="lottery-grid" id="lottery-grid"></div>
-      </section>
+      <main>
+        <section class="section" id="contenders">
+          <div class="section-heading">
+            <p class="eyebrow">Power Tiers</p>
+            <h2>爭冠梯隊</h2>
+          </div>
+          <div class="tiers" id="tiers"></div>
+        </section>
 
-      <section class="section prospects-section" id="prospects">
-        <div class="section-heading">
-          <p class="eyebrow">Prospect Board</p>
-          <h2>熱門新秀看板</h2>
-        </div>
-        <div class="prospect-controls" role="tablist" aria-label="新秀篩選">
-          <button class="filter-button active" type="button" data-filter="all">全部</button>
-          <button class="filter-button" type="button" data-filter="wing">側翼</button>
-          <button class="filter-button" type="button" data-filter="guard">後衛</button>
-          <button class="filter-button" type="button" data-filter="frontcourt">前場</button>
-        </div>
-        <div class="prospect-grid" id="prospect-grid"></div>
-      </section>
+        <section class="section" id="injuries">
+          <div class="section-heading">
+            <p class="eyebrow">Injury Watch</p>
+            <h2>傷兵修正</h2>
+          </div>
+          <div class="injury-grid" id="injury-grid"></div>
+        </section>
 
-      <section class="section board-section">
-        <div class="board-panel">
-          <p class="eyebrow">Front Office Notes</p>
-          <h2>三個選秀夜觀察</h2>
-          <div class="notes-grid" id="notes-grid"></div>
-        </div>
-      </section>
+        <section class="section highlight-strip">
+          <article>
+            <span class="strip-label">東區最膠著</span>
+            <strong>Knicks vs Hawks</strong>
+            <p>系列賽 2 比 2，兩隊都還沒拿到節奏主導權。</p>
+          </article>
+          <article>
+            <span class="strip-label">西區最接近收官</span>
+            <strong>Lakers vs Rockets</strong>
+            <p>Lakers 3 比 0 領先，末節執行力與半場穩定性明顯高一階。</p>
+          </article>
+          <article>
+            <span class="strip-label">最危險下剋上</span>
+            <strong>Timberwolves vs Nuggets</strong>
+            <p>Minnesota 3 比 1 領先，對 Denver 的禁區與節奏控制很完整。</p>
+          </article>
+        </section>
 
-      <section class="section sources" id="sources">
-        <div>
-          <p class="eyebrow">Sources</p>
-          <h2>資料來源與更新說明</h2>
-        </div>
-        <ul>
-          <li>
-            NBA 官方：2026 選秀日期、場館、轉播、Combine 與 Lottery 時程。
-          </li>
-          <li>
-            NBA 官方：2026 選秀順位與樂透機率，頁面更新於 2026 年 4 月 20 日。
-          </li>
-          <li>
-            Sports Illustrated NBA Draft：熱門新秀趨勢與 Dybantsa、Peterson、Boozer 的球探概況。
-          </li>
-        </ul>
-      </section>
-    </main>
+        <section class="section" id="series">
+          <div class="section-heading">
+            <p class="eyebrow">First Round</p>
+            <h2>首輪系列賽雷達</h2>
+          </div>
+          <div class="conference-grid">
+            <div class="conference-card">
+              <div class="conference-title">
+                <span>Eastern Conference</span>
+                <h3>東區</h3>
+              </div>
+              <div class="series-list" id="east-series"></div>
+            </div>
+            <div class="conference-card">
+              <div class="conference-title">
+                <span>Western Conference</span>
+                <h3>西區</h3>
+              </div>
+              <div class="series-list" id="west-series"></div>
+            </div>
+          </div>
+        </section>
 
-    <footer class="footer">
-      <p>2026 NBA Draft Watch Page · 更新基準：2026-04-30</p>
-    </footer>
+        <section class="section analysis-grid">
+          <article class="analysis-card">
+            <p class="eyebrow">Shot Creation</p>
+            <h2>關鍵觀察 01</h2>
+            <p>
+              季後賽進入半場回合後，能否靠一到兩名核心持續製造高品質出手，是戰力分級最直接的分水嶺。Thunder、Lakers、Celtics 都有穩定解題手。
+            </p>
+          </article>
+          <article class="analysis-card">
+            <p class="eyebrow">Defense Travel</p>
+            <h2>關鍵觀察 02</h2>
+            <p>
+              防守能不能跟著客場移動，決定系列賽天花板。Minnesota 能把 Denver 壓到低效，代表它的防守不是單場爆發，而是可複製的結構。
+            </p>
+          </article>
+          <article class="analysis-card">
+            <p class="eyebrow">Bench Pressure</p>
+            <h2>關鍵觀察 03</h2>
+            <p>
+              板凳並不只是加分項，到了首輪後段常常直接決定第四節續航。Cleveland 和 San Antonio 目前都靠第二陣容維持對抗強度。
+            </p>
+          </article>
+        </section>
 
-    <script src="./script.js"></script>
+        <section class="section" id="bench-mob-section">
+          <div class="section-heading">
+            <p class="eyebrow">Bench Mob Index</p>
+            <h2>🔥 板凳暴徒指數</h2>
+            <p class="section-sub">球是圓的——這些替補球員隨時可能改變系列賽走向</p>
+          </div>
+          <div class="bench-mob-grid" id="bench-mob"></div>
+        </section>
+
+        <section class="section" id="method">
+          <div class="section-heading">
+            <p class="eyebrow">Method</p>
+            <h2>評分模型</h2>
+          </div>
+          <div class="method-grid">
+            <article class="method-card">
+              <span class="method-score">40%</span>
+              <h3>攻守效率</h3>
+              <p>看能否在高針對性的季後賽回合中維持穩定得失分品質。</p>
+            </article>
+            <article class="method-card">
+              <span class="method-score">35%</span>
+              <h3>球星主導力</h3>
+              <p>核心球員在末節與半場攻防中，能否一手扛起對位壓力。</p>
+            </article>
+            <article class="method-card">
+              <span class="method-score">25%</span>
+              <h3>系列賽控制</h3>
+              <p>比分領先、修正速度、輪替穩定度，決定一支隊伍能否連續贏。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>內容依 NBA.com 2026 季後賽官方賽程頁面整理，更新時間點為 2026 年 4 月 26 日。</p>
+      </footer>
+    </div>
+
+    <script src="./data/playoffs-data.js?v=20260429f"></script>
+    <script src="./script.js?v=20260429f"></script>
   </body>
 </html>

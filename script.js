@@ -1,201 +1,192 @@
-const draftData = {
-  timeline: [
-    {
-      date: "Apr 24",
-      title: "Early Entry 申請截止",
-      text: "想投入 2026 NBA Draft 的 early entry 球員需在美東時間 11:59 PM 前完成申請。"
-    },
-    {
-      date: "May 8-10",
-      title: "NBA G League Combine",
-      text: "芝加哥預熱場，部分球員會藉由這裡爭取正式 Combine 入場券。"
-    },
-    {
-      date: "May 10",
-      title: "NBA Draft Lottery",
-      text: "抽出前四順位，Washington、Indiana、Brooklyn 目前並列最高狀元機率。"
-    },
-    {
-      date: "May 10-17",
-      title: "NBA Draft Combine",
-      text: "體測、面試、對抗賽與醫療資訊會重塑首輪排序。"
-    },
-    {
-      date: "Jun 13",
-      title: "Early Entry 退選截止",
-      text: "球員需在美東時間 5 PM 前決定是否保留選秀資格。"
-    },
-    {
-      date: "Jun 23-24",
-      title: "Draft Nights",
-      text: "第一輪 6 月 23 日，第二輪 6 月 24 日，兩晚皆於 8 PM ET 開始。"
-    }
-  ],
-  lottery: [
-    { team: "Washington", record: "17-65", odds: 14 },
-    { team: "Indiana", record: "19-63", odds: 14 },
-    { team: "Brooklyn", record: "20-62", odds: 14 },
-    { team: "Utah", record: "22-60", odds: 11.5 },
-    { team: "Sacramento", record: "22-60", odds: 11.5 },
-    { team: "Memphis", record: "25-57", odds: 9 },
-    { team: "New Orleans", record: "26-56", odds: 6.8 },
-    { team: "Dallas", record: "26-56", odds: 6.7 },
-    { team: "Chicago", record: "31-51", odds: 4.5 },
-    { team: "Milwaukee", record: "32-50", odds: 3 }
-  ],
-  prospects: [
-    {
-      name: "AJ Dybantsa",
-      school: "BYU",
-      role: "6'9 側翼",
-      type: "wing",
-      text: "兼具身材、運動能力與雙向天花板，若外線穩定度繼續提升，會是狀元討論核心。",
-      tags: ["two-way upside", "shot creation", "transition"]
-    },
-    {
-      name: "Darryn Peterson",
-      school: "Kansas",
-      role: "後衛",
-      type: "guard",
-      text: "純得分能力突出，能持球、接球與高難度投籃；健康狀態會影響最終順位。",
-      tags: ["pull-up scoring", "handle", "tough shots"]
-    },
-    {
-      name: "Cameron Boozer",
-      school: "Duke",
-      role: "前場核心",
-      type: "frontcourt",
-      text: "籃板、傳球與護框讓他不只是得分手，而是能撐起攻防架構的高地板新秀。",
-      tags: ["rebounding", "passing", "rim protection"]
-    },
-    {
-      name: "Kingston Flemings",
-      school: "Houston",
-      role: "後衛",
-      type: "guard",
-      text: "爆發型後場，若能把組織與防守穩定性補上，會持續逼近前三集團。",
-      tags: ["burst", "paint touch", "pressure"]
-    },
-    {
-      name: "Caleb Wilson",
-      school: "UNC",
-      role: "前場",
-      type: "frontcourt",
-      text: "長度、活動力與防守覆蓋面是賣點，適合需要前場機動性的重建球隊。",
-      tags: ["length", "switching", "finishing"]
-    },
-    {
-      name: "Mikel Brown Jr.",
-      school: "Louisville",
-      role: "控球後衛",
-      type: "guard",
-      text: "節奏感與傳控創造力讓他有首輪上升空間，關鍵在於對抗與防守承受度。",
-      tags: ["playmaking", "tempo", "touch"]
-    }
-  ],
-  notes: [
-    {
-      title: "狀元籤不是單純選最好球員",
-      text: "Dybantsa、Peterson、Boozer 的排序很可能取決於抽中球隊缺口：側翼門面、持球得分或前場支點。"
-    },
-    {
-      title: "Combine 會改變中段首輪",
-      text: "體測數據、醫療報告與面試通常對第 8 到第 25 順位影響最大，尤其是角色定位還沒定型的球員。"
-    },
-    {
-      title: "籤權交易會讓順位更複雜",
-      text: "NBA 官方順位已包含多個可能轉讓註記；樂透結果出爐後，實際持有者才會更清楚。"
-    }
+const fallbackData = {
+  generatedAt: "",
+  scheduleDate: "資料尚未更新",
+  sources: { schedule: "", injuryReports: [] },
+  featured: {
+    team: "Oklahoma City Thunder",
+    record: "3-0",
+    score: "97 / 100",
+    tier: "爭冠第一梯",
+    summary: "尚未載入自動更新資料，請先執行更新腳本。"
+  },
+  tiers: [],
+  injuries: [],
+  highlights: [],
+  series: { east: [], west: [] },
+  analyses: [],
+  method: [
+    { score: "40%", title: "攻守效率", text: "看高針對性回合下，球隊能否維持穩定得失分品質。" },
+    { score: "35%", title: "球星主導力", text: "核心球員是否能在末節與半場攻防持續解題。" },
+    { score: "25%", title: "健康折扣", text: "核心可用性與輪替完整度，直接影響戰力分數能不能兌現。" }
   ]
 };
 
-function renderTimeline() {
-  const root = document.getElementById("timeline-list");
-  root.innerHTML = draftData.timeline
+const data = window.PLAYOFFS_DATA || fallbackData;
+
+function renderTiers() {
+  const root = document.getElementById("tiers");
+  root.innerHTML = data.tiers
+    .map(
+      (tier) => `
+        <article class="tier-card">
+          <span class="power-badge">${tier.label}</span>
+          <h3>${tier.title}</h3>
+          <p>${tier.note}</p>
+          <ul class="tier-list">
+            ${tier.teams
+              .map(
+                (team) => `
+                  <li>
+                    <span>${team.name}</span>
+                    <span class="score-number">${team.score}</span>
+                  </li>
+                `
+              )
+              .join("")}
+          </ul>
+        </article>
+      `
+    )
+    .join("");
+}
+
+function renderInjuries() {
+  const root = document.getElementById("injury-grid");
+  root.innerHTML = data.injuries
+    .map(
+      (item) => `
+        <article class="injury-card">
+          <span class="injury-tag">${item.tag}</span>
+          <h3>${item.team}</h3>
+          <p>${item.detail}</p>
+          <span class="injury-impact">${item.impact}</span>
+        </article>
+      `
+    )
+    .join("");
+}
+
+function renderSeries(group, targetId) {
+  const root = document.getElementById(targetId);
+  root.innerHTML = group
+    .map(
+      (item) => `
+        <article class="series-card">
+          <div class="series-head">
+            <strong>${item.matchup}</strong>
+            <span class="series-meta">${item.leader}</span>
+          </div>
+          <p>${item.angle}</p>
+          <div class="series-strength">
+            <small>戰力熱度</small>
+            <div class="strength-bar" aria-hidden="true">
+              <span style="width: ${item.power}%"></span>
+            </div>
+            <small>${item.power}</small>
+          </div>
+        </article>
+      `
+    )
+    .join("");
+}
+
+function renderHighlights() {
+  const root = document.querySelector(".highlight-strip");
+  root.innerHTML = data.highlights
     .map(
       (item) => `
         <article>
-          <time>${item.date}</time>
+          <span class="strip-label">${item.label}</span>
+          <strong>${item.title}</strong>
+          <p>${item.text}</p>
+        </article>
+      `
+    )
+    .join("");
+}
+
+function renderAnalyses() {
+  const root = document.querySelector(".analysis-grid");
+  root.innerHTML = data.analyses
+    .map(
+      (item) => `
+        <article class="analysis-card">
+          <p class="eyebrow">${item.eyebrow}</p>
+          <h2>${item.title}</h2>
+          <p>${item.text}</p>
+        </article>
+      `
+    )
+    .join("");
+}
+
+function renderMethod() {
+  const root = document.querySelector(".method-grid");
+  root.innerHTML = data.method
+    .map(
+      (item) => `
+        <article class="method-card">
+          <span class="method-score">${item.score}</span>
+          <h3>${item.title}</h3>
+          <p>${item.text}</p>
+        </article>
+      `
+    )
+    .join("");
+}
+
+function renderFeatured() {
+  document.querySelector(".featured-team h2").textContent = data.featured.team;
+  document.querySelector(".featured-team p").textContent = data.featured.summary;
+
+  const stats = document.querySelectorAll(".panel-stats strong");
+  stats[0].textContent = data.featured.score;
+  stats[1].textContent = data.featured.record;
+  stats[2].textContent = data.featured.tier;
+}
+
+function renderDates() {
+  const heroNotes = document.querySelectorAll(".hero-notes li");
+  heroNotes[0].textContent = `資料基準日：${data.scheduleDate}`;
+  heroNotes[1].textContent = `最近更新：${data.generatedAt || "未產生資料"}`;
+
+  const footer = document.querySelector(".footer p");
+  footer.textContent = `內容依官方季後賽賽程與傷兵報告整理。資料基準日為 ${data.scheduleDate}，產生時間為 ${data.generatedAt || "未產生"}。`;
+}
+
+function renderBenchMob() {
+  const root = document.getElementById("bench-mob");
+  if (!root || !data.benchMob) return;
+  root.innerHTML = data.benchMob.map(p => {
+    const fires = "🔥".repeat(p.fire) + "🩶".repeat(5 - p.fire);
+    const bar = `<div class="bench-bar"><span style="width:${p.index}%"></span></div>`;
+    return `
+      <article class="bench-card">
+        <div class="bench-head">
           <div>
-            <h3>${item.title}</h3>
-            <p>${item.text}</p>
+            <span class="bench-role">${p.role}</span>
+            <h3 class="bench-name">${p.player}</h3>
+            <span class="bench-team">${p.team}</span>
           </div>
-        </article>
-      `
-    )
-    .join("");
-}
-
-function renderLottery() {
-  const root = document.getElementById("lottery-grid");
-  root.innerHTML = draftData.lottery
-    .map((team, index) => {
-      const height = Math.max(18, team.odds * 5);
-      return `
-        <article class="lottery-card" style="--bar-height: ${height}%">
-          <div class="rank-number">${index + 1}</div>
-          <h3>${team.team}</h3>
-          <span class="lottery-odds">${team.odds.toFixed(1)}% No.1 odds</span>
-          <p>${team.record}</p>
-        </article>
-      `;
-    })
-    .join("");
-}
-
-function renderProspects(filter = "all") {
-  const root = document.getElementById("prospect-grid");
-  const prospects =
-    filter === "all"
-      ? draftData.prospects
-      : draftData.prospects.filter((prospect) => prospect.type === filter);
-
-  root.innerHTML = prospects
-    .map(
-      (prospect) => `
-        <article class="prospect-card">
-          <header>
-            <div>
-              <span class="prospect-meta">${prospect.school} · ${prospect.role}</span>
-              <h3>${prospect.name}</h3>
-            </div>
-          </header>
-          <p>${prospect.text}</p>
-          <div class="skill-tags">
-            ${prospect.tags.map((tag) => `<span>${tag}</span>`).join("")}
+          <div class="bench-index">
+            <div class="bench-index-num">${p.index}</div>
+            <div class="bench-fires">${fires}</div>
           </div>
-        </article>
-      `
-    )
-    .join("");
+        </div>
+        <div class="bench-highlight">⚡ ${p.highlight}</div>
+        <p class="bench-note">${p.note}</p>
+        ${bar}
+      </article>`;
+  }).join("");
 }
 
-function renderNotes() {
-  const root = document.getElementById("notes-grid");
-  root.innerHTML = draftData.notes
-    .map(
-      (note) => `
-        <article class="note-card">
-          <h3>${note.title}</h3>
-          <p>${note.text}</p>
-        </article>
-      `
-    )
-    .join("");
-}
-
-function bindFilters() {
-  document.querySelectorAll(".filter-button").forEach((button) => {
-    button.addEventListener("click", () => {
-      document.querySelectorAll(".filter-button").forEach((item) => item.classList.remove("active"));
-      button.classList.add("active");
-      renderProspects(button.dataset.filter);
-    });
-  });
-}
-
-renderTimeline();
-renderLottery();
-renderProspects();
-renderNotes();
-bindFilters();
+renderFeatured();
+renderDates();
+renderTiers();
+renderInjuries();
+renderHighlights();
+renderSeries(data.series.east, "east-series");
+renderSeries(data.series.west, "west-series");
+renderAnalyses();
+renderBenchMob();
+renderMethod();

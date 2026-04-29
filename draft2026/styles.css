@@ -1,0 +1,534 @@
+:root {
+  --ink: #f7f4ea;
+  --muted: #c7c0ad;
+  --bg: #090b0f;
+  --panel: rgba(19, 23, 31, 0.78);
+  --panel-strong: rgba(23, 29, 39, 0.92);
+  --line: rgba(255, 255, 255, 0.14);
+  --gold: #f4c95d;
+  --blue: #52b6ff;
+  --red: #f45b69;
+  --green: #55d6a7;
+  --shadow: 0 26px 70px rgba(0, 0, 0, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Noto Sans TC", system-ui, sans-serif;
+  background: var(--bg);
+}
+
+a {
+  color: inherit;
+}
+
+.hero {
+  min-height: 88vh;
+  padding: 24px clamp(18px, 4vw, 56px) 48px;
+  background:
+    linear-gradient(90deg, rgba(9, 11, 15, 0.95) 0%, rgba(9, 11, 15, 0.8) 48%, rgba(9, 11, 15, 0.52) 100%),
+    url("https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=2200&q=80") center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.brand,
+.nav-links a,
+.button {
+  text-decoration: none;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.brand span,
+.eyebrow,
+.card-label,
+.quick-stats span,
+.prospect-meta,
+.lottery-odds {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.brand span,
+.eyebrow,
+.card-label {
+  color: var(--gold);
+  font-size: 0.78rem;
+}
+
+.brand strong,
+h1,
+h2,
+h3,
+.draft-card strong,
+.rank-number {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 0.95;
+}
+
+.brand strong {
+  font-size: 2.1rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.hero-content {
+  width: min(1180px, 100%);
+  margin: 72px auto 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 28px;
+  align-items: end;
+}
+
+.hero-copy h1 {
+  max-width: 780px;
+  margin: 10px 0 18px;
+  font-size: clamp(4.2rem, 10vw, 9rem);
+}
+
+.hero-copy p:not(.eyebrow) {
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.85;
+  margin: 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.button {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border-radius: 999px;
+  font-weight: 900;
+}
+
+.button.primary {
+  background: var(--gold);
+  color: #141006;
+}
+
+.button.secondary {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.draft-card,
+.quick-stats article,
+.timeline article,
+.lottery-card,
+.prospect-card,
+.board-panel,
+.sources {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.draft-card {
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.draft-card strong {
+  display: block;
+  margin-top: 18px;
+  font-size: 4.4rem;
+  color: var(--gold);
+}
+
+.draft-card p {
+  margin: 8px 0 24px;
+  color: var(--muted);
+}
+
+.draft-card dl {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.draft-card dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.draft-card dt {
+  color: var(--muted);
+}
+
+.draft-card dd {
+  margin: 0;
+  font-weight: 900;
+}
+
+main,
+.footer {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.quick-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: -34px;
+  position: relative;
+  z-index: 2;
+}
+
+.quick-stats article {
+  border-radius: 8px;
+  padding: 22px;
+  background: var(--panel-strong);
+}
+
+.quick-stats span {
+  color: var(--blue);
+  font-size: 0.72rem;
+}
+
+.quick-stats strong {
+  display: block;
+  margin: 8px 0;
+  font-size: 2rem;
+}
+
+.quick-stats p,
+.section-copy p,
+.timeline p,
+.lottery-card p,
+.prospect-card p,
+.note-card p,
+.sources li,
+.footer p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.section {
+  margin-top: 68px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.section-copy h2,
+.section-heading h2,
+.board-panel h2,
+.sources h2 {
+  margin: 8px 0 0;
+  font-size: clamp(3rem, 6vw, 5.4rem);
+}
+
+.timeline {
+  display: grid;
+  gap: 12px;
+}
+
+.timeline article {
+  border-radius: 8px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  gap: 18px;
+}
+
+.timeline time {
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.timeline h3,
+.timeline p,
+.lottery-card h3,
+.lottery-card p,
+.prospect-card h3,
+.prospect-card p,
+.note-card h3,
+.note-card p {
+  margin: 0;
+}
+
+.lottery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.lottery-card {
+  border-radius: 8px;
+  padding: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lottery-card::before {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: var(--bar-height);
+  background: linear-gradient(180deg, rgba(244, 201, 93, 0.28), rgba(244, 201, 93, 0));
+  pointer-events: none;
+}
+
+.rank-number {
+  color: rgba(255, 255, 255, 0.18);
+  font-size: 4.5rem;
+}
+
+.lottery-card h3 {
+  font-size: 1rem;
+  position: relative;
+}
+
+.lottery-odds {
+  display: inline-flex;
+  margin: 16px 0 8px;
+  color: var(--gold);
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.prospects-section {
+  padding: 34px;
+  margin-left: -34px;
+  margin-right: -34px;
+  background: linear-gradient(135deg, rgba(82, 182, 255, 0.12), rgba(244, 91, 105, 0.08));
+  border-block: 1px solid var(--line);
+}
+
+.prospect-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  min-height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 16px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.06);
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.filter-button.active {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.prospect-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.prospect-card {
+  border-radius: 8px;
+  padding: 22px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.prospect-card header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: start;
+}
+
+.prospect-card h3 {
+  font-size: 2.35rem;
+}
+
+.prospect-meta {
+  color: var(--green);
+  font-size: 0.72rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.skill-tags span {
+  padding: 7px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.board-panel {
+  border-radius: 8px;
+  padding: 30px;
+  background:
+    linear-gradient(120deg, rgba(244, 201, 93, 0.12), transparent 45%),
+    var(--panel-strong);
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.note-card {
+  border-top: 3px solid var(--gold);
+  padding-top: 16px;
+}
+
+.note-card h3 {
+  font-size: 1.1rem;
+}
+
+.sources {
+  border-radius: 8px;
+  padding: 28px;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  gap: 26px;
+}
+
+.sources ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.footer {
+  padding: 34px 0 46px;
+}
+
+@media (max-width: 980px) {
+  .hero-content,
+  .split,
+  .sources {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-stats,
+  .lottery-grid,
+  .prospect-grid,
+  .notes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .draft-card {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-content {
+    margin-top: 44px;
+  }
+
+  .hero-copy h1 {
+    font-size: 4.2rem;
+  }
+
+  .quick-stats,
+  .lottery-grid,
+  .prospect-grid,
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline article {
+    grid-template-columns: 1fr;
+  }
+
+  .prospects-section {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 24px 16px;
+  }
+}
