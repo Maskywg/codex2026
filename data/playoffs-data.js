@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "April 29, 2026（更新：馬刺 4-1 晉二輪 · Brunson 39分 尼克 3-2 領先 · Reaves 傷缺 湖人雙核全滅）",
+  "scheduleDate": "April 29, 2026（更新：太陽/拓荒者已淘汰移除 · 馬刺+雷霆備戰二輪 · Brunson 39分 尼克 3-2）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -19,14 +19,10 @@ window.PLAYOFFS_DATA = {
   },
   "tiers": [
     {
-      "label": "Tier 1",
-      "title": "爭冠第一梯",
-      "note": "攻守效率、球星主導力與板凳深度同步在線，健康狀態也有緩衝，晉級幾乎無懸念。",
+      "label": "✅ 已晉二輪",
+      "title": "首輪晉級確定",
+      "note": "系列賽已完成，等待第二輪對手。戰力評分供二輪對位參考。",
       "teams": [
-        {
-          "name": "Celtics ⚠️",
-          "score": 88
-        },
         {
           "name": "Spurs 🔥",
           "score": 94
@@ -34,6 +30,17 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Thunder ⚡",
           "score": 90
+        }
+      ]
+    },
+    {
+      "label": "Tier 1",
+      "title": "爭冠第一梯",
+      "note": "攻守效率、球星主導力與板凳深度同步在線，健康狀態也有緩衝，晉級幾乎無懸念。",
+      "teams": [
+        {
+          "name": "Celtics ⚠️",
+          "score": 88
         }
       ]
     },
@@ -47,16 +54,16 @@ window.PLAYOFFS_DATA = {
           "score": 82
         },
         {
-          "name": "Lakers ⚠️",
-          "score": 74
+          "name": "Knicks 🔥",
+          "score": 83
         },
         {
           "name": "Cavaliers ⚠️",
           "score": 78
         },
         {
-          "name": "Knicks 🔥",
-          "score": 83
+          "name": "Lakers ⚠️",
+          "score": 74
         }
       ]
     },
@@ -66,20 +73,20 @@ window.PLAYOFFS_DATA = {
       "note": "板凳暴徒指數或傷兵狀況仍有波動，系列賽走向尚未定型。",
       "teams": [
         {
-          "name": "76ers 💪",
-          "score": 76
-        },
-        {
-          "name": "Hawks",
-          "score": 77
-        },
-        {
           "name": "Timberwolves ⚠️",
           "score": 72
         },
         {
           "name": "Nuggets 💪",
           "score": 79
+        },
+        {
+          "name": "Hawks",
+          "score": 77
+        },
+        {
+          "name": "76ers 💪",
+          "score": 76
         },
         {
           "name": "Raptors",
@@ -95,10 +102,6 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Pistons 💀",
           "score": 55
-        },
-        {
-          "name": "Trail Blazers",
-          "score": 65
         },
         {
           "name": "Rockets",
@@ -145,16 +148,16 @@ window.PLAYOFFS_DATA = {
       "impact": "Durant 若能出戰將是系列賽最大變數，全力上陣火箭反撲機會大增"
     },
     {
-      "team": "Thunder",
-      "tag": "✅ 健康晉級",
-      "detail": "Jalen Williams（Out）缺陣仍完封太陽，SGA 主宰系列賽",
-      "impact": "4-0 掃蕩成功，首支進入第二輪，等待下一輪對手"
+      "team": "Thunder ✅",
+      "tag": "健康備戰二輪",
+      "detail": "Jalen Williams（Out）缺陣仍 4-0 掃蕩太陽，SGA 系列賽場均 38+ 分，目前全隊健康",
+      "impact": "首支晉二輪，等待灰狼/金塊勝者。Williams 若能回歸，雷霆戰力再上一層"
     },
     {
       "team": "Spurs ✅",
-      "tag": "健康封關",
-      "detail": "Victor Wembanyama 傷癒回歸全程健康，Damian Lillard（拓荒者，Out）",
-      "impact": "馬刺 4-1 晉二輪，Wemby G5 封關戰 17/14/6，板凳 Champagnie 亦爆發"
+      "tag": "健康備戰二輪",
+      "detail": "Victor Wembanyama 傷癒全程健康，Wemby + Fox + Harper 三核齊備",
+      "impact": "馬刺 4-1 晉二輪，等待灰狼/金塊勝者。G5 封關 Champagnie 三分爆發，士氣最高"
     },
     {
       "team": "76ers / Raptors",
