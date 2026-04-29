@@ -305,6 +305,15 @@ window.PLAYOFFS_DATA = {
       "note": "打破 Kobe Bryant 保持 29 年的紀錄，無 Wembanyama 仍帶隊逆轉 15 分差"
     },
     {
+      "player": "Julian Champagnie",
+      "team": "Spurs",
+      "role": "替補前鋒",
+      "index": 91,
+      "fire": 5,
+      "highlight": "G5 封關戰：19分 · 三分 5/7 · 要命三分連轟｜Spurs 4-1 晉二輪",
+      "note": "馬刺封關夜三分箭雨摧枯拉朽，前三節就奠定勝局。與 Wemby、Harper 並列封關功臣，是本系列最超值的替補暴徒"
+    },
+    {
       "player": "Marcus Smart",
       "team": "Lakers",
       "role": "替補後衛",
@@ -339,6 +348,24 @@ window.PLAYOFFS_DATA = {
       "fire": 3,
       "highlight": "本季替補得分 1081 分｜年度第六人",
       "note": "馬刺隊史替補得分紀錄保持人，Game 3 回神砍 20 分，狀態回升中"
+    },
+    {
+      "player": "Bones Hyland",
+      "team": "Timberwolves",
+      "role": "替補後衛",
+      "index": 78,
+      "fire": 4,
+      "highlight": "G5：15分 · 3顆三分｜雙核缺陣頂住金塊反撲",
+      "note": "Edwards + Randle 不在，Hyland 在主力板凳填補得分真空。G5 靠三分穩住節奏，確保灰狼 3-2 保住主動權"
+    },
+    {
+      "player": "Terrence Shannon Jr.",
+      "team": "Timberwolves",
+      "role": "替補後衛",
+      "index": 77,
+      "fire": 4,
+      "highlight": "G5：15分 · 積極對抗｜Jokic 大三元下仍頑強貢獻",
+      "note": "面對 Jokic 大三元仍不放棄，Hyland + Shannon Jr. 合力 30 分支撐薄弱的板凳深度。是灰狼能在雙核重傷下撐到 3-2 的關鍵理由"
     },
     {
       "player": "Collin Murray-Boyles",
