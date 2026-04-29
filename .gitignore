@@ -30,3 +30,9 @@ dist/
 build/
 coverage/
 .cache/
+
+# Generated image assets
+generated/**/*.png
+generated/**/*.jpg
+generated/**/*.jpeg
+generated/**/*.webp
