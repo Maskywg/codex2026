@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
-  "generatedAt": "2026-04-29T01:00:00",
-  "scheduleDate": "April 29, 2026（4/29 更新：76人 G5 客場 113-97 大勝塞爾提克，系列賽追成 3-2）",
+  "generatedAt": "2026-04-29T12:00:00",
+  "scheduleDate": "April 29, 2026（更新：馬刺 4-1 晉二輪 · Brunson 39分 尼克 3-2 領先 · Reaves 傷缺 湖人雙核全滅）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -29,7 +29,7 @@ window.PLAYOFFS_DATA = {
         },
         {
           "name": "Spurs 🔥",
-          "score": 92
+          "score": 94
         },
         {
           "name": "Thunder ⚡",
@@ -47,16 +47,16 @@ window.PLAYOFFS_DATA = {
           "score": 82
         },
         {
-          "name": "Lakers",
-          "score": 80
+          "name": "Lakers ⚠️",
+          "score": 74
         },
         {
           "name": "Cavaliers ⚠️",
           "score": 78
         },
         {
-          "name": "Knicks",
-          "score": 79
+          "name": "Knicks 🔥",
+          "score": 83
         }
       ]
     },
@@ -66,8 +66,8 @@ window.PLAYOFFS_DATA = {
       "note": "板凳暴徒指數或傷兵狀況仍有波動，系列賽走向尚未定型。",
       "teams": [
         {
-          "name": "76ers ⚠️",
-          "score": 71
+          "name": "76ers 💪",
+          "score": 76
         },
         {
           "name": "Hawks",
@@ -122,27 +122,39 @@ window.PLAYOFFS_DATA = {
     },
     {
       "team": "Magic",
-      "tag": "🆕 G4 受傷",
-      "detail": "Franz Wagner（右小腿拉傷）G4 第三節退場，最終仍以 94-88 贏球",
-      "impact": "若 Wagner 無法出賽 G5，Banchero 將需更大份量，封關難度略升"
+      "tag": "🆕 G5 傷兵",
+      "detail": "Franz Wagner（右小腿拉傷，Questionable G5）、Jonathan Isaac（膝蓋，Day-to-Day）",
+      "impact": "Wagner 若缺陣，Banchero 需獨撐封關大局，魔術進攻多樣性下降"
     },
     {
-      "team": "Lakers / Rockets",
-      "tag": "核心缺陣",
-      "detail": "Luka Doncic (Out)、Austin Reaves (Questionable)、Fred VanVleet (Out)、Kevin Durant (Questionable)",
-      "impact": "健康折扣 19.1 分"
+      "team": "Pistons",
+      "tag": "G5 傷兵",
+      "detail": "Kevin Huerter（內收肌拉傷，Questionable G5）",
+      "impact": "活塞已處落後 1-3，傷兵影響有限"
+    },
+    {
+      "team": "Lakers",
+      "tag": "🚨 雙核全滅",
+      "detail": "Luka Dončić（Out）、Austin Reaves（Out，G5 確定缺陣）",
+      "impact": "湖人主力全報銷，G5 主場靠體系迎戰。3-1 領先仍有優勢，但攻堅能力大打折扣"
+    },
+    {
+      "team": "Rockets",
+      "tag": "傷兵觀察",
+      "detail": "Fred VanVleet（Out）、Kevin Durant（Day-to-Day）",
+      "impact": "Durant 若能出戰將是系列賽最大變數，全力上陣火箭反撲機會大增"
     },
     {
       "team": "Thunder",
       "tag": "✅ 健康晉級",
-      "detail": "Jalen Williams (Out) 缺陣仍完封太陽，SGA 主宰系列賽",
+      "detail": "Jalen Williams（Out）缺陣仍完封太陽，SGA 主宰系列賽",
       "impact": "4-0 掃蕩成功，首支進入第二輪，等待下一輪對手"
     },
     {
-      "team": "Spurs / Trail Blazers",
-      "tag": "🔄 主將回歸",
-      "detail": "Victor Wembanyama 傷癒回歸（Active）、Damian Lillard (Out，拓荒者)",
-      "impact": "馬刺健康折扣大降，Wemby + Harper + Johnson 三核全開"
+      "team": "Spurs ✅",
+      "tag": "健康封關",
+      "detail": "Victor Wembanyama 傷癒回歸全程健康，Damian Lillard（拓荒者，Out）",
+      "impact": "馬刺 4-1 晉二輪，Wemby G5 封關戰 17/14/6，板凳 Champagnie 亦爆發"
     },
     {
       "team": "76ers / Raptors",
@@ -163,9 +175,9 @@ window.PLAYOFFS_DATA = {
       "text": "Celtics 3-2！76人 G5 客場 113-97 大勝，主場 TD Garden 竟守不住。Embiid 術後復出火力全開，費城從 1-3 一步步追回，G6 回到費城主場，塞爾提克封關之路突然充滿變數。"
     },
     {
-      "label": "東區最膠著",
-      "title": "Knicks vs Hawks",
-      "text": "Knicks 2-2 Hawks，第五戰在麥迪遜廣場花園登場。雙方都沒有把節奏完全鎖進自己手裡，老鷹主力 CJ McCollum G4 17 分頑強死撐，主場因子將是 G5 關鍵。"
+      "label": "🔥 東區得分爆發",
+      "title": "Knicks vs Hawks（3-2 尼克領先）",
+      "text": "Brunson G5 砍 39 分！尼克主場 126-97 大勝，領先 3-2，G6 客場亞特蘭大打封關。老鷹從 2-2 打平到落入下風，主場優勢已轉移。"
     },
     {
       "label": "東區控制力最強",
@@ -183,14 +195,14 @@ window.PLAYOFFS_DATA = {
       "text": "灰狼失去 Edwards、DiVincenzo、Naz Reid 三核仍以 3-2 握主場優勢！Randle G5 砍 27 分，板凳 Hyland + Shannon Jr. 各 15 分，雜牌軍頑強抵抗。金塊 G5 靠 Jokic 大三元（27分/16助/12籃板）追回一城，但 G6 回到灰狼主場，系列賽主動權依然在明尼蘇達手中。"
     },
     {
-      "label": "西區最受傷",
-      "title": "Lakers vs Rockets",
-      "text": "Lakers 3-1 Rockets，客場失守一場。Luka 仍缺陣讓湖人主客場表現出現落差，主場因子效應明顯——主場強壓、客場節奏不穩是湖人最需要解決的問題。"
+      "label": "🚨 西區雙核全滅",
+      "title": "Lakers vs Rockets（3-1 湖人領先）",
+      "text": "湖人雪上加霜！Luka Dončić OUT，Austin Reaves 也確定缺陣 G5，雙核同時報銷。湖人 G5 主場迎戰火箭，能否不靠雙星守住系列賽？Kevin Durant（Day-to-Day）狀態也是火箭關鍵變數。"
     },
     {
-      "label": "🔥 西區最大變數",
-      "title": "Spurs vs Trail Blazers",
-      "text": "Spurs 3-1！Wemby 回歸後連勝，一場封關。Lillard 缺陣讓拓荒者毫無還手之力，馬刺已是西區最熱隊伍。Harper + Wemby + Johnson 三核全開，下一輪令人期待。"
+      "label": "✅ 西區第二支晉級",
+      "title": "Spurs vs Trail Blazers ✅ 4-1",
+      "text": "馬刺 4-1 淘汰拓荒者！G5 Wemby 17分/14籃板/6阻攻，Fox 21分，板凳 Champagnie 爆發 19分（5/7三分），全隊均衡輸出。下一輪等待灰狼/金塊勝者，年輕雙核 Wemby + Harper 令人期待。"
     }
   ],
   "series": {
@@ -209,9 +221,9 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(3) New York vs (6) Atlanta",
-        "leader": "平手 2-2",
-        "angle": "G5 在麥迪遜廣場花園進行。CJ McCollum（原 Trae Young 交易所得）G4 17 分頑強，老鷹 2-2 強迫決勝局。尼克主場聲勢是最大變數。",
-        "power": 82
+        "leader": "🔥 Knicks 3-2",
+        "angle": "Brunson G5 砍 39 分，尼克主場 126-97 大勝，系列賽掌控回到手中。G6 客場亞特蘭大封關，老鷹若無法在主場翻轉，季後賽將提前結束。",
+        "power": 83
       },
       {
         "matchup": "(4) Cleveland vs (5) Toronto",
@@ -229,9 +241,9 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(2) San Antonio vs (7) Portland",
-        "leader": "🔥 San Antonio 3-1",
-        "angle": "Wembanyama 回歸後馬刺連勝！一場封關。Lillard 缺陣讓拓荒者毫無反擊手段，Wemby + Harper + Johnson 三核組合全面壓制，西區最熱門黑馬。",
-        "power": 92
+        "leader": "✅ Spurs 4-1 晉二輪",
+        "angle": "馬刺封關！G5 Wemby 17/14/6，Fox 21分，板凳 Champagnie 19分（5/7三分）爆發。全隊均衡輸出，下一輪等灰狼/金塊勝者，Wemby + Harper 雙核令人期待。",
+        "power": 94
       },
       {
         "matchup": "(3) Denver vs (6) Minnesota",
@@ -241,9 +253,9 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(4) Los Angeles vs (5) Houston",
-        "leader": "Lakers 3-1",
-        "angle": "湖人客場失守，主場因子效應浮現——無 Luka 的湖人在客場半場回合中解題手段明顯不足。系列賽仍掌控，但若拖入 G5 主場賽，壓力將重新回到球員身上。",
-        "power": 80
+        "leader": "🚨 Lakers 3-1（雙核皆缺）",
+        "angle": "Luka + Reaves 雙核全滅，G5 主場迎戰火箭。湖人能否在主場靠體系守住？Kevin Durant（Day-to-Day）若全力上陣，火箭反撲機會大增。系列賽最大懸念之一。",
+        "power": 74
       }
     ]
   },
