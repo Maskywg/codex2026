@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "April 29, 2026（更新：太陽/拓荒者已淘汰移除 · 馬刺+雷霆備戰二輪 · Brunson 39分 尼克 3-2）",
+  "scheduleDate": "April 29, 2026（更新：Luka 左腿筋二級拉傷 · 樂觀預估二輪 5/6-5/10 回歸 · Shams 持謹慎態度）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -137,9 +137,9 @@ window.PLAYOFFS_DATA = {
     },
     {
       "team": "Lakers",
-      "tag": "🚨 雙核全滅",
-      "detail": "Luka Dončić（Out）、Austin Reaves（Out，G5 確定缺陣）",
-      "impact": "湖人主力全報銷，G5 主場靠體系迎戰。3-1 領先仍有優勢，但攻堅能力大打折扣"
+      "tag": "🚨 Luka 最新傷情更新",
+      "detail": "Luka Dončić（左腿筋二級拉傷 Grade 2，4/26 已恢復場上簡單移動）、Austin Reaves（Out）",
+      "impact": "樂觀預估：5/6-5/10 回歸，正好落在二輪前幾場。保守預估（Shams）：尚未進行全速對抗練習，可能錯過二輪首場。湖人首輪收官速度決定 Luka 緩衝時間"
     },
     {
       "team": "Rockets",
