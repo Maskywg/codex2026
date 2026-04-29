@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "April 29, 2026（更新：Luka 左腿筋二級拉傷 · 樂觀預估二輪 5/6-5/10 回歸 · Shams 持謹慎態度）",
+  "scheduleDate": "April 29, 2026（更新：Luka Grade 2 腿筋二輪 5/6-5/10 回歸 · Gordon 左小腿反覆 G6 賽前決定 · 強行復出有阿基里斯風險）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -119,9 +119,9 @@ window.PLAYOFFS_DATA = {
     },
     {
       "team": "Nuggets",
-      "tag": "🆕 G5 無 Gordon 仍大勝",
-      "detail": "Aaron Gordon（左小腿拉傷）G5 缺陣，Peyton Watson 亦在傷兵名單",
-      "impact": "金塊缺兵仍以 125-113 追回一城，Jokic G5 大三元（27分/16助/12籃板）主宰全場，但灰狼仍 3-2 握主場，系列賽主動權未失"
+      "tag": "🚑 Gordon 反覆受傷・G6 賽前決定",
+      "detail": "Aaron Gordon（左小腿緊繃，本季僅出賽 36 場）：G3 缺陣 → G4 帶傷復出僅 23 分鐘且移動受限 → G5 再度缺陣。官方標記 G6（4/30）為 Game-time Decision。Peyton Watson 亦在傷兵名單",
+      "impact": "強行復出有升級為嚴重拉傷或阿基里斯腱傷的風險，教練 Adelman 態度謹慎。Gordon 缺陣下金塊禁區護框與正面對抗大幅下滑，Jokic 需承擔更多無掩護的單打壓力。若晉二輪，Gordon 狀態將逐場觀察"
     },
     {
       "team": "Magic",
