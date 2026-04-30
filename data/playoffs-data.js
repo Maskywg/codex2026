@@ -62,8 +62,8 @@ window.PLAYOFFS_DATA = {
           "score": 78
         },
         {
-          "name": "Lakers ⚠️",
-          "score": 74
+          "name": "Lakers 💪",
+          "score": 80
         }
       ]
     },
@@ -138,8 +138,8 @@ window.PLAYOFFS_DATA = {
     {
       "team": "Lakers",
       "tag": "🚨 Luka 最新傷情更新",
-      "detail": "Luka Dončić（左腿筋二級拉傷 Grade 2，4/26 已恢復場上簡單移動）、Austin Reaves（Out）",
-      "impact": "樂觀預估：5/6-5/10 回歸，正好落在二輪前幾場。保守預估（Shams）：尚未進行全速對抗練習，可能錯過二輪首場。湖人首輪收官速度決定 Luka 緩衝時間"
+      "detail": "Luka Dončić（左腿筋二級拉傷 Grade 2，樂觀預估 5/6-5/10 回歸）、Austin Reaves（✅ 回歸出戰）",
+      "impact": "Reaves 回歸大幅提升湖人第二持球點與末節解題能力，Luka 缺陣壓力明顯減輕。若 Reaves 狀態在線，湖人收官能力回升一個等級"
     },
     {
       "team": "Rockets",
@@ -200,7 +200,7 @@ window.PLAYOFFS_DATA = {
     {
       "label": "🚨 西區雙核全滅",
       "title": "Lakers vs Rockets（3-1 湖人領先）",
-      "text": "湖人雪上加霜！Luka Dončić OUT，Austin Reaves 也確定缺陣 G5，雙核同時報銷。湖人 G5 主場迎戰火箭，能否不靠雙星守住系列賽？Kevin Durant（Day-to-Day）狀態也是火箭關鍵變數。"
+      "text": "Austin Reaves 確定回歸！湖人第二持球核心重返，Luka 缺陣壓力大幅減輕。Reaves 在線代表末節執行力與三分威脅同步回升，湖人封關主動性明顯提升。Kevin Durant（Day-to-Day）仍是火箭最後一張牌。"
     },
     {
       "label": "✅ 西區第二支晉級",
@@ -256,8 +256,8 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(4) Los Angeles vs (5) Houston",
-        "leader": "🚨 Lakers 3-1（雙核皆缺）",
-        "angle": "Luka + Reaves 雙核全滅，G5 主場迎戰火箭。湖人能否在主場靠體系守住？Kevin Durant（Day-to-Day）若全力上陣，火箭反撲機會大增。系列賽最大懸念之一。",
+        "leader": "💪 Lakers 3-1（Reaves 回歸）",
+        "angle": "Austin Reaves 確定回歸出戰！湖人從雙核全滅回到有第二解題手，封關主動性大幅回升。Luka 仍缺陣，但 Reaves 在線已讓局勢完全不同。Kevin Durant（Day-to-Day）是火箭能否反撲的唯一懸念。",
         "power": 74
       }
     ]
