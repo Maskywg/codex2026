@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "April 30, 2026（更新：Cunningham vs Banchero G5 各砍 45 分史詩對決 · 活塞 116-109 · 騎士 125-120 G5 第四節壓制 · 騎士 3-2 領先）",
+  "scheduleDate": "April 30, 2026（更新：活塞 116-109 · 騎士 125-120 · 火箭 99-93 Durant 缺陣逆轉湖人 · 三大系列賽全面拉鋸）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -62,8 +62,8 @@ window.PLAYOFFS_DATA = {
           "score": 82
         },
         {
-          "name": "Lakers 💪",
-          "score": 80
+          "name": "Lakers ⚠️",
+          "score": 74
         }
       ]
     },
@@ -198,9 +198,9 @@ window.PLAYOFFS_DATA = {
       "text": "灰狼失去 Edwards、DiVincenzo、Naz Reid 三核仍以 3-2 握主場優勢！Randle G5 砍 27 分，板凳 Hyland + Shannon Jr. 各 15 分，雜牌軍頑強抵抗。金塊 G5 靠 Jokic 大三元（27分/16助/12籃板）追回一城，但 G6 回到灰狼主場，系列賽主動權依然在明尼蘇達手中。"
     },
     {
-      "label": "🚨 西區雙核全滅",
-      "title": "Lakers vs Rockets（3-1 湖人領先）",
-      "text": "Austin Reaves 確定回歸！湖人第二持球核心重返，Luka 缺陣壓力大幅減輕。Reaves 在線代表末節執行力與三分威脅同步回升，湖人封關主動性明顯提升。Kevin Durant（Day-to-Day）仍是火箭最後一張牌。"
+      "label": "🔥 西區最大逆轉變數",
+      "title": "Lakers vs Rockets（3-2 湖人仍領先）",
+      "text": "火箭 G5 客場 99-93 勝出，Durant 缺陣照打！Jabari Smith Jr. 三分爆發、Tari Eason 禁區對抗、Reed Sheppard 第四節 4 分衝刺，雜牌軍硬把系列賽追成 3-2。Reaves 回歸仍砍 13 分，但湖人末節失守。G6 回火箭主場，沒有 Durant 的火箭已能逼出第六戰，懸念再起。"
     },
     {
       "label": "✅ 西區第二支晉級",
@@ -256,8 +256,8 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(4) Los Angeles vs (5) Houston",
-        "leader": "💪 Lakers 3-1（Reaves 回歸）",
-        "angle": "Austin Reaves 確定回歸出戰！湖人從雙核全滅回到有第二解題手，封關主動性大幅回升。Luka 仍缺陣，但 Reaves 在線已讓局勢完全不同。Kevin Durant（Day-to-Day）是火箭能否反撲的唯一懸念。",
+        "leader": "⚠️ Lakers 3-2（火箭追回一城）",
+        "angle": "火箭 G5 客場 99-93 勝出！Durant 仍缺陣，靠 Jabari Smith Jr. 三分爆發、Tari Eason 強攻禁區、Sheppard 第四節急救 4 分，成功把系列賽拉成 3-2。Reaves 回歸砍 13 分仍不敵，湖人末節失守。G6 回休士頓主場，Luka 缺陣的湖人能否在客場封關？系列賽完全打開。",
         "power": 74
       }
     ]
