@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "April 30, 2026（更新：Cunningham vs Banchero G5 各砍 45 分史詩對決 · 活塞 116-109 逆轉 · 系列賽 3-2）",
+  "scheduleDate": "April 30, 2026（更新：Cunningham vs Banchero G5 各砍 45 分史詩對決 · 活塞 116-109 · 騎士 115-105 Mitchell 末節大爆發 · 騎士 3-2 領先）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -58,8 +58,8 @@ window.PLAYOFFS_DATA = {
           "score": 83
         },
         {
-          "name": "Cavaliers ⚠️",
-          "score": 78
+          "name": "Cavaliers 🔥",
+          "score": 82
         },
         {
           "name": "Lakers ⚠️",
@@ -183,9 +183,9 @@ window.PLAYOFFS_DATA = {
       "text": "Brunson G5 砍 39 分！尼克主場 126-97 大勝，領先 3-2，G6 客場亞特蘭大打封關。老鷹從 2-2 打平到落入下風，主場優勢已轉移。"
     },
     {
-      "label": "東區控制力最強",
-      "title": "Cavaliers vs Raptors",
-      "text": "⚠️ 平手 2-2！騎士 Game 4 意外告負，喪失主場優勢，系列賽完全重啟。第五戰變必勝局，心理壓力全面轉向。"
+      "label": "🔥 Mitchell 末節大爆發",
+      "title": "Cavaliers vs Raptors（3-2）",
+      "text": "G5 Mitchell 全場 30 分，末節獨自接管比賽！Harden 28分/5抄截，Mobley 25分（11/13 FG）全員出力，騎士主場 115-105 取勝，系列賽從 2-2 平手重奪主導權。G6 多倫多客場打封關，封館氣氛將是關鍵。"
     },
     {
       "label": "⚡ 西區首支晉級",
@@ -230,9 +230,9 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(4) Cleveland vs (5) Toronto",
-        "leader": "平手 2-2",
-        "angle": "⚠️ 騎士 Game 4 意外失守！系列賽從 2-1 領先變成平手，主場優勢喪失。Mitchell + Garland 末節解題失靈，暴龍靠更快的球速與簡化進攻打出反撲。第五戰是關鍵分水嶺。",
-        "power": 78
+        "leader": "🔥 Cavaliers 3-2",
+        "angle": "Mitchell G5 末節大爆發！主場 115-105 逆轉勝，騎士重奪系列賽控制權。Mitchell 全場 30 分（13/23 FG，4/10三分），Harden 28分/4助/5抄截，Mobley 25分/8籃板（11/13 FG）。第四節騎士一舉定勝負，G6 客場多倫多打封關。",
+        "power": 82
       }
     ],
     "west": [
