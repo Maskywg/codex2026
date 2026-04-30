@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "April 29, 2026（更新：Luka Grade 2 腿筋二輪 5/6-5/10 回歸 · Gordon 左小腿反覆 G6 賽前決定 · 強行復出有阿基里斯風險）",
+  "scheduleDate": "April 30, 2026（更新：Cunningham vs Banchero G5 各砍 45 分史詩對決 · 活塞 116-109 逆轉 · 系列賽 3-2）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -11,11 +11,11 @@ window.PLAYOFFS_DATA = {
     ]
   },
   "featured": {
-    "team": "Orlando Magic 🪄",
-    "record": "3-1",
-    "score": "82 / 100",
-    "tier": "下剋上震撼梯",
-    "summary": "最低種子封關！Banchero G1-G3 場均 22分+9籃板+7助攻主導系列賽，第八種子踩著聯盟第一種子的臉要晉級，是本輪最大的震撼。"
+    "team": "⚡ G5 史詩對決：Cunningham vs Banchero",
+    "record": "各砍 45 分",
+    "score": "活塞 116 - 109 魔術",
+    "tier": "2026 季後賽最佳個人表演",
+    "summary": "Cade Cunningham 45分/4籃/5助（13/23 FG，5/8三分）；Paolo Banchero 45分/9籃/7助（17/31 FG，6/11三分）。兩人同場各砍 45 分，是 2026 季後賽首輪最高水準的個人對決，系列賽戰至 3-2 懸念再起。"
   },
   "tiers": [
     {
@@ -168,9 +168,9 @@ window.PLAYOFFS_DATA = {
   ],
   "highlights": [
     {
-      "label": "🚨 東區最大冷門",
-      "title": "Magic vs Pistons",
-      "text": "Magic 3-1 Pistons！第八種子踩著聯盟第一種子的臉要晉級。Banchero G1-G3 場均 22+/9+/7+，G4 魔術被追到只差 1 分仍守住，最後 9 分連下收尾。Franz Wagner G4 受傷退場，但封關之路仍清晰可見。"
+      "label": "🔥 東區史詩對決",
+      "title": "Magic vs Pistons（3-2）",
+      "text": "G5 兩人各砍 45 分！Cunningham 45分/4籃/5助（13/23，5/8三分），上半場 27 分平 2026 季後賽紀錄；Banchero 45分/9籃/7助（17/31，6/11三分），Wagner 缺陣下獨撐仍敵不過。活塞主場 116-109 保住命脈，從 1-3 打成 3-2。G6 回奧蘭多，Cade 徹底覺醒，系列賽走向完全打開。"
     },
     {
       "label": "⚠️ 東區最大變數",
@@ -212,9 +212,9 @@ window.PLAYOFFS_DATA = {
     "east": [
       {
         "matchup": "(1) Detroit vs (8) Orlando",
-        "leader": "🚨 Magic 3-1",
-        "angle": "封關在即的最大冷門！Banchero 全系列主宰對位，G4 Wagner 右小腿拉傷退場，魔術仍靠末節 9-0 收尾。Cade Cunningham G4 砍 27 分但 9 失誤，活塞內線 Jalen Duren 犯滿退場，背水一戰。",
-        "power": 64
+        "leader": "🔥 Magic 3-2（G5 史詩對決）",
+        "angle": "Cunningham 45分（5/8三分）vs Banchero 45分（6/11三分），兩人同場各砍 45 分，活塞主場 116-109 逆轉！Wagner 缺陣下 Banchero 獨撐仍不夠，Cunningham 上半場就砍 27 分創個人紀錄，Cade 徹底覺醒。G6 回奧蘭多，系列賽懸念再起。",
+        "power": 72
       },
       {
         "matchup": "(2) Boston vs (7) Philadelphia",
@@ -264,9 +264,9 @@ window.PLAYOFFS_DATA = {
   },
   "analyses": [
     {
-      "eyebrow": "🚨 Upset Alert",
+      "eyebrow": "🔥 史詩對決 45 vs 45",
       "title": "關鍵觀察 01",
-      "text": "Magic 3-1 Pistons 是本輪最震撼逆轉！Banchero G1-G3 場均 22/9/7 全面主導，G4 被追至 1 分差仍靠末節 9-0 收尾。Wagner 右小腿傷缺是唯一變數，但第八種子幹掉聯盟第一種子的劇本已走到門口。"
+      "text": "G5 成為本輪最偉大的個人對決：Cunningham 45分（5/8三分，上半場 27 分平季後賽紀錄） vs Banchero 45分（17/31，6/11三分）。Wagner 缺陣反而讓 Banchero 全場主宰，但 Cade 更高效。系列賽 3-2，G6 回奧蘭多，這組對決已成本屆首輪最大看點。"
     },
     {
       "eyebrow": "Return Impact ⚡",
