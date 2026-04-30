@@ -326,15 +326,6 @@ window.PLAYOFFS_DATA = {
       "note": "本系列場均替補 28.6 分+助攻，攻防全能，湖人板凳核心"
     },
     {
-      "player": "Jonathan Kuminga",
-      "team": "Hawks",
-      "role": "替補前鋒",
-      "index": 84,
-      "fire": 4,
-      "highlight": "連兩場 19-21 分｜關鍵時刻壓哨抄球",
-      "note": "鷹隊歷史首位替補球員在季後賽首節就得 10+ 分，危急時刻被放上場"
-    },
-    {
       "player": "Max Strus",
       "team": "Cavaliers",
       "role": "替補射手",
