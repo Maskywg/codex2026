@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "April 30, 2026（更新：活塞 116-109 · 騎士 125-120 · 火箭 99-93 Durant 缺陣逆轉湖人 · Jabari 22分+Eason 18分 · 三大系列賽全面拉鋸 · 5/2 三場 G6 決生死）",
+  "scheduleDate": "May 1, 2026（更新：活塞戰力重估 80分↑ · Cade G5 45分創隊史季後賽紀錄 · 5/2 三場 G6 決生死 · ORL leads DET 3-2）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -49,6 +49,10 @@ window.PLAYOFFS_DATA = {
       "title": "穩定領先梯",
       "note": "系列賽主導權明確，板凳亦有可用爆發點，但傷兵或對位仍有變數。",
       "teams": [
+        {
+          "name": "Pistons 🔥",
+          "score": 80
+        },
         {
           "name": "Magic 🪄",
           "score": 82
@@ -102,12 +106,7 @@ window.PLAYOFFS_DATA = {
       "label": "Tier 4",
       "title": "危險邊緣梯",
       "note": "系列賽落後且核心傷兵壓力大，板凳難以彌補差距，逆轉難度極高。",
-      "teams": [
-        {
-          "name": "Pistons 💀",
-          "score": 55
-        }
-      ]
+      "teams": []
     }
   ],
   "injuries": [
@@ -169,8 +168,8 @@ window.PLAYOFFS_DATA = {
   "highlights": [
     {
       "label": "🔥 東區史詩對決",
-      "title": "Magic vs Pistons（3-2）",
-      "text": "G5 兩人各砍 45 分！Cunningham 45分/4籃/5助（13/23，5/8三分），上半場 27 分平 2026 季後賽紀錄；Banchero 45分/9籃/7助（17/31，6/11三分），Wagner 缺陣下獨撐仍敵不過。活塞主場 116-109 保住命脈，從 1-3 打成 3-2。G6 回奧蘭多，Cade 徹底覺醒，系列賽走向完全打開。"
+      "title": "Magic vs Pistons（Magic 3-2 · G6 奧蘭多）",
+      "text": "G5 史詩：Cunningham 45分（13/23，5/8三分，14/14 罰球）vs Banchero 45分（17/31，6/11三分）——NBA 史上僅第二次兩位對手各砍 45 分。Cade 系列賽場均 30+，上半場 27 分創球隊季後賽紀錄，從 1-3 逼到 2-3。G6 奧蘭多，Wagner/Isaac 傷勢未定，活塞是 Vegas 盤口熱門（-3.5）——這是 #1 種子的反攻時刻。"
     },
     {
       "label": "⚠️ 東區最大變數",
@@ -212,9 +211,9 @@ window.PLAYOFFS_DATA = {
     "east": [
       {
         "matchup": "(1) Detroit vs (8) Orlando",
-        "leader": "🔥 Magic 3-2（G5 史詩對決）",
-        "angle": "Cunningham 45分（5/8三分）vs Banchero 45分（6/11三分），兩人同場各砍 45 分，活塞主場 116-109 逆轉！Wagner 缺陣下 Banchero 獨撐仍不夠，Cunningham 上半場就砍 27 分創個人紀錄，Cade 徹底覺醒。G6 回奧蘭多，系列賽懸念再起。",
-        "power": 72
+        "leader": "🔥 Magic 3-2（G6 奧蘭多主場 · 活塞客場封關挑戰）",
+        "angle": "G5 史詩對決：Cunningham 45分（14/14 罰球，上半場 27 分創球隊季後賽紀錄）vs Banchero 45分（6/11三分），活塞主場 116-109 逆轉保命！Cade 系列賽場均 30+ 分，Vegas 盤口活塞 G6 仍是熱門（-3.5）。Wagner、Isaac 傷勢不確定，Banchero 要一個人扛。",
+        "power": 80
       },
       {
         "matchup": "(2) Boston vs (7) Philadelphia",
