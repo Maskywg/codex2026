@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "April 30, 2026（更新：活塞 116-109 · 騎士 125-120 · 火箭 99-93 Durant 缺陣逆轉湖人 · 三大系列賽全面拉鋸）",
+  "scheduleDate": "April 30, 2026（更新：活塞 116-109 · 騎士 125-120 · 火箭 99-93 Durant 缺陣逆轉湖人 · Jabari 22分+Eason 18分 · 三大系列賽全面拉鋸 · 5/2 三場 G6 決生死）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -91,6 +91,10 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Raptors",
           "score": 68
+        },
+        {
+          "name": "Rockets 🔥",
+          "score": 70
         }
       ]
     },
@@ -102,10 +106,6 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Pistons 💀",
           "score": 55
-        },
-        {
-          "name": "Rockets",
-          "score": 62
         }
       ]
     }
@@ -387,6 +387,24 @@ window.PLAYOFFS_DATA = {
       "fire": 3,
       "highlight": "Game 1：27 分、5/5 三分｜季後賽替補新高",
       "note": "Durant 傷缺下頂替成為得分點，三分神射本能覺醒，湖人板凳深度保障"
+    },
+    {
+      "player": "Jabari Smith Jr.",
+      "team": "Rockets",
+      "role": "起始前鋒（Durant 缺陣後扛大旗）",
+      "index": 83,
+      "fire": 4,
+      "highlight": "G5：22分 · 三分 4/9 · 關鍵時刻一箭定江山｜Durant 缺陣仍贏湖人",
+      "note": "Durant 仍在傷兵名單，Jabari 站出來三分開轟，4/9 命中率帶領火箭客場 99-93 逆轉湖人，成功把系列賽拉成 3-2。從第一輪選秀到季後賽扛旗，這場 G5 是他個人最重要的宣言"
+    },
+    {
+      "player": "Tari Eason",
+      "team": "Rockets",
+      "role": "替補前鋒（禁區砲台）",
+      "index": 77,
+      "fire": 4,
+      "highlight": "G5：18分 · 強攻禁區 · 對位 LeBron 不落下風｜系列賽逆轉功臣",
+      "note": "Durant 缺陣時火箭禁區依賴 Eason 身體對抗，G5 砍 18 分強攻內線，讓湖人防線疲於奔命。搭配 Jabari 的三分威脅，兩人共同撐起火箭 G5 勝利"
     }
   ],
   "method": [
