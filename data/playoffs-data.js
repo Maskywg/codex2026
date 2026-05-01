@@ -408,6 +408,24 @@ window.PLAYOFFS_DATA = {
       "note": "Durant 傷缺下頂替成為得分點，三分神射本能覺醒，湖人板凳深度保障"
     },
     {
+      "player": "Jaden McDaniels",
+      "team": "Timberwolves",
+      "role": "新秀前鋒（臨危受命先發）",
+      "index": 90,
+      "fire": 5,
+      "highlight": "G6 封關戰：32分 · 10籃板 · 13/25投 · +16｜三核全倒下主宰全場",
+      "note": "Edwards、DiVincenzo、Reid 三核盡失，McDaniels 站出來用 45 分鐘場均主宰比賽。中距離切入、不靠三分、閱讀防線的能力遠超新秀應有的水準。這場 32 分是整個系列賽最關鍵的個人表演，讓灰狼帶傷晉二輪"
+    },
+    {
+      "player": "Terrence Shannon Jr.",
+      "team": "Timberwolves",
+      "role": "新秀後衛（心理保險絲）",
+      "index": 82,
+      "fire": 4,
+      "highlight": "G5：24分 · G6封關：24分 · 5/5罰球｜連場雙位數撐住薄弱板凳",
+      "note": "三分 1/7 不好看，但 5/5 罰球代表他持續往籃框衝，用身體換殺傷。Jokic 大三元的夜裡灰狼還能贏，Shannon Jr. 的 24 分是不讓隊伍崩潰的那根釘子。職業心態超齡，新秀年就拿出 playoff 級別的自我認知"
+    },
+    {
       "player": "Jabari Smith Jr.",
       "team": "Rockets",
       "role": "起始前鋒（Durant 缺陣後扛大旗）",
