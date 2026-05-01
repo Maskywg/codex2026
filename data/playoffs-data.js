@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "May 1, 2026（更新：76人 G6 106-93 Maxey 爆發！打進 G7 · 等灰狼 G6 / 騎士 G6 結果）",
+  "scheduleDate": "May 1, 2026（更新：灰狼三核重傷仍 4-2 淘汰金塊晉二輪 · 76人 G7 · 等騎士 G6 · 活塞/湖人 G6）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -34,6 +34,10 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Knicks 🔥",
           "score": 83
+        },
+        {
+          "name": "Timberwolves 💪",
+          "score": 75
         }
       ]
     },
@@ -77,14 +81,6 @@ window.PLAYOFFS_DATA = {
       "note": "板凳暴徒指數或傷兵狀況仍有波動，系列賽走向尚未定型。",
       "teams": [
         {
-          "name": "Timberwolves ⚠️",
-          "score": 72
-        },
-        {
-          "name": "Nuggets 💪",
-          "score": 79
-        },
-        {
           "name": "76ers 🔥",
           "score": 80
         },
@@ -109,6 +105,10 @@ window.PLAYOFFS_DATA = {
       "title": "首輪出局",
       "note": "賽季結束。評分僅供參考，不再更新。",
       "teams": [
+        {
+          "name": "Nuggets ❌",
+          "score": 79
+        },
         {
           "name": "Hawks ❌",
           "score": 77
@@ -207,9 +207,9 @@ window.PLAYOFFS_DATA = {
       "text": "Thunder 131-122 完封太陽，4-0 率先晉級！SGA 系列賽場均 38+ 分，即便 Jalen Williams 缺陣，雷霆整體體系碾壓太陽全程，太陽在第一輪止步。雷霆成為全聯盟首支確定晉二輪的隊伍。"
     },
     {
-      "label": "🔥 西區最大懸念系列賽",
-      "title": "Timberwolves vs Nuggets（3-2）",
-      "text": "灰狼失去 Edwards、DiVincenzo、Naz Reid 三核仍以 3-2 握主場優勢！Randle G5 砍 27 分，板凳 Hyland + Shannon Jr. 各 15 分，雜牌軍頑強抵抗。金塊 G5 靠 Jokic 大三元（27分/16助/12籃板）追回一城，但 G6 回到灰狼主場，系列賽主動權依然在明尼蘇達手中。"
+      "label": "✅ 西區最不可思議的晉級",
+      "title": "Timberwolves 4-2 淘汰 Nuggets ❌",
+      "text": "Edwards 左膝報銷、DiVincenzo 跟腱撕裂、Naz Reid 腳踝受傷——三核盡失的灰狼竟然 4-2 淘汰金塊！Randle 扛起主攻，Hyland + Shannon Jr. 板凳各自撐場，Jokic 大三元也擋不住。金塊衛冕夢碎，Jokic 再一次在系列賽中孤立無援。灰狼帶傷晉二輪，等待雷霆或馬刺。"
     },
     {
       "label": "🔥 西區最大逆轉變數",
@@ -264,9 +264,9 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(3) Denver vs (6) Minnesota",
-        "leader": "🔥 Timberwolves 3-2（主場優勢在握）",
-        "angle": "三核缺陣仍領先 3-2，灰狼才是本系列真正的頑強一方。Randle 扛起進攻，板凳雙核各 15 分補位。金塊靠 Jokic 大三元（27分/16助/12籃板）追回 G5，但 G6 回到灰狼主場，封關機會仍在灰狼這邊。",
-        "power": 74
+        "leader": "✅ Timberwolves 4-2 晉二輪",
+        "angle": "Edwards、DiVincenzo、Naz Reid 三核盡失，灰狼仍 4-2 淘汰金塊！Randle 扛主攻，板凳雜牌軍頑強補位，Jokic 大三元也救不了金塊。這是本屆首輪最不可思議的系列賽——沒有明星核心照樣晉二輪，等待雷霆或馬刺。",
+        "power": 75
       },
       {
         "matchup": "(4) Los Angeles vs (5) Houston",
