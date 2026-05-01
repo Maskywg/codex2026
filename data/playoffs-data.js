@@ -128,8 +128,8 @@ window.PLAYOFFS_DATA = {
     {
       "team": "Timberwolves",
       "tag": "⚠️ 三核重傷",
-      "detail": "Anthony Edwards（左膝，賽季報銷）、Donte DiVincenzo（右跟腱撕裂，賽季報銷）、Naz Reid（右腳踝，G5 受傷 Questionable G6）",
-      "impact": "健康折扣急升 — G5 主力悉數受傷，第四節被金塊碾壓 24 分。Reid 能否出戰 G6 是系列賽生死關鍵"
+      "detail": "Anthony Edwards（左膝，賽季報銷）、Donte DiVincenzo（右跟腱撕裂，賽季報銷）、Naz Reid（右腳踝傷勢，G5 受傷 → G6 帶傷出賽 34 分鐘砍 15 分）",
+      "impact": "Reid 帶傷硬撐 G6 封關戰，34 分鐘 15 分證明傷勢不影響戰力。灰狼在三核重傷下仍 4-2 晉二輪，韌性令人嘆服"
     },
     {
       "team": "Nuggets",
@@ -295,7 +295,7 @@ window.PLAYOFFS_DATA = {
     {
       "eyebrow": "三核全倒仍晉級 🐺",
       "title": "關鍵觀察 04",
-      "text": "Edwards 左膝報銷、DiVincenzo 跟腱撕裂、Naz Reid 腳踝骨折——灰狼用一群無名之輩打敗了 Jokic 大三元。Dosunmu G4 單場 43 分（替補史上第二高）、Randle 場場扛主攻、Hyland + Shannon Jr. 板凳各 15 分，這支隊的韌性不靠天賦，靠的是沒有退路的人。金塊輸的不是系列賽，是輸給了傷痛下仍死戰的那種精神。"
+      "text": "Edwards 左膝報銷、DiVincenzo 跟腱撕裂、Naz Reid 右腳踝傷勢帶傷出賽——灰狼用一群無名之輩打敗了 Jokic 大三元。Dosunmu G4 單場 43 分（替補史上第二高）、Randle 場場扛主攻、Hyland + Shannon Jr. 板凳各自補位，這支隊的韌性不靠天賦，靠的是沒有退路的人。金塊輸的不是系列賽，是輸給了傷痛下仍死戰的那種精神。"
     }
   ],
   "benchMob": [
