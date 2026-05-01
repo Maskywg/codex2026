@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "May 1, 2026（更新：活塞戰力重估 80分↑ · Cade G5 45分創隊史季後賽紀錄 · 5/2 三場 G6 決生死 · ORL leads DET 3-2）",
+  "scheduleDate": "May 1, 2026（更新：Knicks 4-2 屠殺老鷹晉二輪 · G6 今日決生死：塞爾提克封關 / 騎士封關 / 灰狼封關 · 老鷹賽季結束）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -30,6 +30,10 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Thunder ⚡",
           "score": 90
+        },
+        {
+          "name": "Knicks 🔥",
+          "score": 83
         }
       ]
     },
@@ -58,10 +62,6 @@ window.PLAYOFFS_DATA = {
           "score": 82
         },
         {
-          "name": "Knicks 🔥",
-          "score": 83
-        },
-        {
           "name": "Cavaliers 🔥",
           "score": 82
         },
@@ -85,10 +85,6 @@ window.PLAYOFFS_DATA = {
           "score": 79
         },
         {
-          "name": "Hawks ❌",
-          "score": 77
-        },
-        {
           "name": "76ers 💪",
           "score": 76
         },
@@ -107,6 +103,25 @@ window.PLAYOFFS_DATA = {
       "title": "危險邊緣梯",
       "note": "系列賽落後且核心傷兵壓力大，板凳難以彌補差距，逆轉難度極高。",
       "teams": []
+    },
+    {
+      "label": "❌ 已淘汰",
+      "title": "首輪出局",
+      "note": "賽季結束。評分僅供參考，不再更新。",
+      "teams": [
+        {
+          "name": "Hawks ❌",
+          "score": 77
+        },
+        {
+          "name": "Suns ❌",
+          "score": 55
+        },
+        {
+          "name": "Trail Blazers ❌",
+          "score": 52
+        }
+      ]
     }
   ],
   "injuries": [
