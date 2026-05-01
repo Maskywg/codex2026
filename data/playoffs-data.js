@@ -283,9 +283,9 @@ window.PLAYOFFS_DATA = {
       "text": "G5 成為本輪最偉大的個人對決：Cunningham 45分（5/8三分，上半場 27 分平季後賽紀錄） vs Banchero 45分（17/31，6/11三分）。Wagner 缺陣反而讓 Banchero 全場主宰，但 Cade 更高效。系列賽 3-2，G6 回奧蘭多，這組對決已成本屆首輪最大看點。"
     },
     {
-      "eyebrow": "Return Impact ⚡",
+      "eyebrow": "最後的救贖？還是歹戲拖棚？",
       "title": "關鍵觀察 02",
-      "text": "Wembanyama 傷癒回歸是本輪最大正面變數！馬刺擠進 Tier 1，護框、持球攻堅與快攻引導讓整條進攻線完全不同。Wemby + Harper + Johnson 三核組合，是本屆最具爆發力的黑馬，即將完成首輪封關。"
+      "text": "76人從 1-3 打到 3-3——Embiid 術後帶傷、Maxey G6 費城主場大爆發，106-93 逼出 G7。這是 Embiid 生涯敘事的決定性時刻：G7 贏了，「術後逆轉 Celtics」值一千萬字；輸了，「差一點」的標籤再貼一層。歹戲拖棚跟救贖，差的只有一場比賽的距離。"
     },
     {
       "eyebrow": "Injury Crisis 🏥",
