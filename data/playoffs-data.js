@@ -381,15 +381,6 @@ window.PLAYOFFS_DATA = {
       "note": "Edwards + Randle 不在，Hyland 在主力板凳填補得分真空。G5 靠三分穩住節奏，確保灰狼 3-2 保住主動權"
     },
     {
-      "player": "Terrence Shannon Jr.",
-      "team": "Timberwolves",
-      "role": "替補後衛",
-      "index": 77,
-      "fire": 4,
-      "highlight": "G5：15分 · G6 封關戰 24分｜三核全倒仍雙位數撐場",
-      "note": "G5 + G6 連場得分，封關戰 24分 9-20 FG 5-5 罰球全力爆發。灰狼三核盡失，Shannon Jr. 用行動證明雜牌軍也能贏系列賽"
-    },
-    {
       "player": "Collin Murray-Boyles",
       "team": "Raptors",
       "role": "替補中鋒（新秀）",
@@ -420,10 +411,10 @@ window.PLAYOFFS_DATA = {
       "player": "Terrence Shannon Jr.",
       "team": "Timberwolves",
       "role": "新秀後衛（心理保險絲）",
-      "index": 82,
-      "fire": 4,
-      "highlight": "G5：24分 · G6封關：24分 · 5/5罰球｜連場雙位數撐住薄弱板凳",
-      "note": "三分 1/7 不好看，但 5/5 罰球代表他持續往籃框衝，用身體換殺傷。Jokic 大三元的夜裡灰狼還能贏，Shannon Jr. 的 24 分是不讓隊伍崩潰的那根釘子。職業心態超齡，新秀年就拿出 playoff 級別的自我認知"
+      "index": 86,
+      "fire": 5,
+      "highlight": "G5：24分 · G6封關：24分 · 5/5罰球 · 系列賽場均貢獻｜三核全倒下連場撐住底線",
+      "note": "三分 1/7 不好看，但 5/5 罰球代表他持續往籃框衝，用身體換殺傷。Edwards、DiVincenzo 先後報銷，Shannon Jr. 連兩場 24 分，在 Jokic 大三元的夜裡讓灰狼不崩潰。職業心態超齡，新秀年就拿出 playoff 級別的自我認知，是雜牌軍能晉二輪最重要的心理支柱"
     },
     {
       "player": "Jabari Smith Jr.",
