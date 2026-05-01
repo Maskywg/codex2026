@@ -85,7 +85,7 @@ window.PLAYOFFS_DATA = {
           "score": 79
         },
         {
-          "name": "Hawks",
+          "name": "Hawks ❌",
           "score": 77
         },
         {
@@ -177,9 +177,9 @@ window.PLAYOFFS_DATA = {
       "text": "Celtics 3-2！76人 G5 客場 113-97 大勝，主場 TD Garden 竟守不住。Embiid 術後復出火力全開，費城從 1-3 一步步追回，G6 回到費城主場，塞爾提克封關之路突然充滿變數。"
     },
     {
-      "label": "🔥 東區得分爆發",
-      "title": "Knicks vs Hawks（3-2 尼克領先）",
-      "text": "Brunson G5 砍 39 分！尼克主場 126-97 大勝，領先 3-2，G6 客場亞特蘭大打封關。老鷹從 2-2 打平到落入下風，主場優勢已轉移。"
+      "label": "✅ 東區封關屠殺",
+      "title": "Knicks 4-2 淘汰 Hawks ❌",
+      "text": "G6 尼克 140-89 大屠殺！半場領先 47 分創 NBA 季後賽半場領先紀錄，全場差距 51 分。Robinson 與老鷹 Daniels 互毆雙雙被驅逐出場——這場根本是一面倒的處決。Brunson 主宰系列賽，尼克晉二輪。老鷹賽季結束。"
     },
     {
       "label": "🔥 東區主場收官力",
@@ -223,8 +223,8 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(3) New York vs (6) Atlanta",
-        "leader": "🔥 Knicks 3-2",
-        "angle": "Brunson G5 砍 39 分，尼克主場 126-97 大勝，系列賽掌控回到手中。G6 客場亞特蘭大封關，老鷹若無法在主場翻轉，季後賽將提前結束。",
+        "leader": "✅ Knicks 4-2 晉二輪",
+        "angle": "G6 尼克 140-89 屠殺！半場領先 47 分打破 NBA 季後賽半場領先紀錄，全場差距 51 分。Robinson 與老鷹 Daniels 互毆雙雙被驅逐，老鷹早早繳械。老鷹無緣二輪，尼克等待東區二輪對手。",
         "power": 83
       },
       {
