@@ -288,9 +288,9 @@ window.PLAYOFFS_DATA = {
       "text": "76人從 1-3 打到 3-3——Embiid 術後帶傷、Maxey G6 費城主場大爆發，106-93 逼出 G7。這是 Embiid 生涯敘事的決定性時刻：G7 贏了，「術後逆轉 Celtics」值一千萬字；輸了，「差一點」的標籤再貼一層。歹戲拖棚跟救贖，差的只有一場比賽的距離。"
     },
     {
-      "eyebrow": "Injury Crisis 🏥",
+      "eyebrow": "Knicks 化學效應 🔥",
       "title": "關鍵觀察 03",
-      "text": "三核缺陣仍以 3-2 領先，灰狼的韌性才是本系列最大的故事。Randle 扛起主攻，Hyland + Shannon Jr. 板凳各 15 分頑強補位。金塊 G5 靠 Jokic 大三元（27分/16助/12籃板）追回一城，但 G6 回到灰狼主場，封關主動權仍在明尼蘇達。Naz Reid 能否上場是唯一變數。"
+      "text": "140-89 不是意外，是整隊同頻的產物。OG + Bridges 雙翼碾壓、Hart 拼搶文化、Brunson 真正的季後賽解題手——Thibodeau 把這支隊打成整體第一。但老鷹沒有 Trae Young 是軟 6 號種子，真正考驗是二輪碰上 Celtics 或 76人。化學效應能帶他們走到東區決賽門口，但要進去，Brunson 必須在逆境下交出一場 G7 等級的答案，KAT 的季後賽存在感也是最大未知數。"
     }
   ],
   "benchMob": [
