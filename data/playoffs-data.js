@@ -291,6 +291,11 @@ window.PLAYOFFS_DATA = {
       "eyebrow": "Knicks 化學效應 🔥",
       "title": "關鍵觀察 03",
       "text": "140-89 不是意外，是整隊同頻的產物。OG + Bridges 雙翼碾壓、Hart 拼搶文化、Brunson 真正的季後賽解題手——Thibodeau 把這支隊打成整體第一。但老鷹沒有 Trae Young 是軟 6 號種子，真正考驗是二輪碰上 Celtics 或 76人。化學效應能帶他們走到東區決賽門口，但要進去，Brunson 必須在逆境下交出一場 G7 等級的答案，KAT 的季後賽存在感也是最大未知數。"
+    },
+    {
+      "eyebrow": "三核全倒仍晉級 🐺",
+      "title": "關鍵觀察 04",
+      "text": "Edwards 左膝報銷、DiVincenzo 跟腱撕裂、Naz Reid 腳踝骨折——灰狼用一群無名之輩打敗了 Jokic 大三元。Dosunmu G4 單場 43 分（替補史上第二高）、Randle 場場扛主攻、Hyland + Shannon Jr. 板凳各 15 分，這支隊的韌性不靠天賦，靠的是沒有退路的人。金塊輸的不是系列賽，是輸給了傷痛下仍死戰的那種精神。"
     }
   ],
   "benchMob": [
