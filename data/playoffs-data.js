@@ -305,98 +305,26 @@ window.PLAYOFFS_DATA = {
       "role": "替補後衛",
       "index": 98,
       "fire": 5,
-      "highlight": "Game 4 單場 43 分｜季後賽替補史上第二高",
-      "note": "雙核重傷後一人扛起進攻，命中率 76%、三分 5/5、罰球 12/12，史詩級表演"
+      "highlight": "G4 單場 43 分｜季後賽替補史上第二高",
+      "note": "雙核重傷後一人扛起進攻，命中率 76%、三分 5/5、罰球 12/12。這不是爆發，這是在沒有退路的夜晚獨力撐住一支傷兵隊伍——史詩"
     },
     {
       "player": "Payton Pritchard",
       "team": "Celtics",
       "role": "替補後衛",
-      "index": 95,
+      "index": 93,
       "fire": 5,
-      "highlight": "Game 4：32分 · 6顆三分 · 貢獻值 +20｜Embiid 回歸也擋不住",
-      "note": "面對 Embiid 復出的 76人毫無畏懼，三分雨打垮費城防線。替補出場卻是全場最高分，塞爾提克 3-1 封關關鍵先生"
+      "highlight": "G4：32分 · 6顆三分 · +20｜Embiid 回歸也擋不住",
+      "note": "替補出場卻是全場最高分，三分雨打垮費城防線。塞爾提克系列賽關鍵先生，每到生死關頭就站出來"
     },
     {
       "player": "Dylan Harper",
       "team": "Spurs",
       "role": "替補後衛（新秀）",
-      "index": 92,
-      "fire": 5,
-      "highlight": "Game 3 單場 27 分｜最年輕替補 25+ 分紀錄",
-      "note": "打破 Kobe Bryant 保持 29 年的紀錄，無 Wembanyama 仍帶隊逆轉 15 分差"
-    },
-    {
-      "player": "Julian Champagnie",
-      "team": "Spurs",
-      "role": "替補前鋒",
       "index": 91,
       "fire": 5,
-      "highlight": "G5 封關戰：19分 · 三分 5/7 · 要命三分連轟｜Spurs 4-1 晉二輪",
-      "note": "馬刺封關夜三分箭雨摧枯拉朽，前三節就奠定勝局。與 Wemby、Harper 並列封關功臣，是本系列最超值的替補暴徒"
-    },
-    {
-      "player": "Marcus Smart",
-      "team": "Lakers",
-      "role": "替補後衛",
-      "index": 90,
-      "fire": 5,
-      "highlight": "Game 3：20分+10助+5抄+2火鍋｜喬丹 1991 年後首見",
-      "note": "本系列場均替補 28.6 分+助攻，攻防全能，湖人板凳核心"
-    },
-    {
-      "player": "Jonathan Kuminga",
-      "team": "Hawks",
-      "role": "替補前鋒",
-      "index": 84,
-      "fire": 4,
-      "highlight": "連兩場 19-21 分｜關鍵時刻壓哨抄球",
-      "note": "鷹隊歷史首位替補球員在季後賽首節就得 10+ 分，危急時刻被放上場"
-    },
-    {
-      "player": "Max Strus",
-      "team": "Cavaliers",
-      "role": "替補射手",
-      "index": 80,
-      "fire": 4,
-      "highlight": "Game 1：24 分、4/6 三分｜傷癒復出即爆發",
-      "note": "賽季缺陣 67 場後復出，首戰即砍生涯季後賽新高，騎士系列賽終結者"
-    },
-    {
-      "player": "Keldon Johnson",
-      "team": "Spurs",
-      "role": "第六人（年度獎得主）",
-      "index": 78,
-      "fire": 3,
-      "highlight": "本季替補得分 1081 分｜年度第六人",
-      "note": "馬刺隊史替補得分紀錄保持人，Game 3 回神砍 20 分，狀態回升中"
-    },
-    {
-      "player": "Bones Hyland",
-      "team": "Timberwolves",
-      "role": "替補後衛",
-      "index": 78,
-      "fire": 4,
-      "highlight": "G5：15分 · 3顆三分｜雙核缺陣頂住金塊反撲",
-      "note": "Edwards + Randle 不在，Hyland 在主力板凳填補得分真空。G5 靠三分穩住節奏，確保灰狼 3-2 保住主動權"
-    },
-    {
-      "player": "Collin Murray-Boyles",
-      "team": "Raptors",
-      "role": "替補中鋒（新秀）",
-      "index": 76,
-      "fire": 3,
-      "highlight": "Game 4：15分+10籃板｜季後賽替補雙十",
-      "note": "暴龍新秀奇兵，G4 關鍵戰禁區撐起防線，替補雙十幫助多倫多 2-2 扳平騎士系列賽"
-    },
-    {
-      "player": "Luke Kennard",
-      "team": "Lakers",
-      "role": "替補射手",
-      "index": 75,
-      "fire": 3,
-      "highlight": "Game 1：27 分、5/5 三分｜季後賽替補新高",
-      "note": "Durant 傷缺下頂替成為得分點，三分神射本能覺醒，湖人板凳深度保障"
+      "highlight": "G3 單場 27 分｜最年輕替補 25+ 分紀錄",
+      "note": "打破 Kobe Bryant 保持 29 年的紀錄，無 Wembanyama 仍帶隊逆轉 15 分差。新秀不該打出這種比賽，但他就是打了"
     },
     {
       "player": "Jaden McDaniels",
@@ -405,7 +333,16 @@ window.PLAYOFFS_DATA = {
       "index": 90,
       "fire": 5,
       "highlight": "G6 封關戰：32分 · 10籃板 · 13/25投 · +16｜三核全倒下主宰全場",
-      "note": "Edwards、DiVincenzo、Reid 三核盡失，McDaniels 站出來用 45 分鐘場均主宰比賽。中距離切入、不靠三分、閱讀防線的能力遠超新秀應有的水準。這場 32 分是整個系列賽最關鍵的個人表演，讓灰狼帶傷晉二輪"
+      "note": "Edwards、DiVincenzo、Reid 三核盡失，McDaniels 用 45 分鐘中距離切入主宰比賽。閱讀防線的能力遠超新秀應有的水準，這場 32 分是整個系列賽最關鍵的個人表演"
+    },
+    {
+      "player": "Marcus Smart",
+      "team": "Lakers",
+      "role": "替補後衛",
+      "index": 88,
+      "fire": 5,
+      "highlight": "G3：20分+10助+5抄+2火鍋｜1991年後首見｜場均替補 28.6分",
+      "note": "G3 全能表現是歷史級別的替補攻守數據，但更難得的是整個系列賽持續輸出。湖人板凳有他，末節才有解題能力"
     },
     {
       "player": "Terrence Shannon Jr.",
@@ -413,8 +350,8 @@ window.PLAYOFFS_DATA = {
       "role": "新秀後衛（心理保險絲）",
       "index": 86,
       "fire": 5,
-      "highlight": "G5：24分 · G6封關：24分 · 5/5罰球 · 系列賽場均貢獻｜三核全倒下連場撐住底線",
-      "note": "三分 1/7 不好看，但 5/5 罰球代表他持續往籃框衝，用身體換殺傷。Edwards、DiVincenzo 先後報銷，Shannon Jr. 連兩場 24 分，在 Jokic 大三元的夜裡讓灰狼不崩潰。職業心態超齡，新秀年就拿出 playoff 級別的自我認知，是雜牌軍能晉二輪最重要的心理支柱"
+      "highlight": "G5：24分 · G6封關：24分 · 5/5罰球｜三核全倒下連場撐住底線",
+      "note": "三分 1/7 不好看，但 5/5 罰球代表他持續往籃框衝。Jokic 大三元的夜裡灰狼還能贏，Shannon Jr. 的 24 分是不讓隊伍崩潰的那根釘子。職業心態超齡"
     },
     {
       "player": "Jabari Smith Jr.",
@@ -422,17 +359,71 @@ window.PLAYOFFS_DATA = {
       "role": "起始前鋒（Durant 缺陣後扛大旗）",
       "index": 83,
       "fire": 4,
-      "highlight": "G5：22分 · 三分 4/9 · 關鍵時刻一箭定江山｜Durant 缺陣仍贏湖人",
-      "note": "Durant 仍在傷兵名單，Jabari 站出來三分開轟，4/9 命中率帶領火箭客場 99-93 逆轉湖人，成功把系列賽拉成 3-2。從第一輪選秀到季後賽扛旗，這場 G5 是他個人最重要的宣言"
+      "highlight": "G5：22分 · 三分 4/9 · 關鍵一箭｜Durant 缺陣仍贏湖人",
+      "note": "Durant 傷缺，Jabari 站出來三分開轟，帶領火箭客場 99-93 逆轉湖人。從第一輪選秀到季後賽扛旗，這場 G5 是他個人最重要的宣言"
+    },
+    {
+      "player": "Julian Champagnie",
+      "team": "Spurs",
+      "role": "替補前鋒",
+      "index": 81,
+      "fire": 4,
+      "highlight": "G5 封關戰：19分 · 三分 5/7｜Spurs 4-1 晉二輪",
+      "note": "馬刺封關夜三分箭雨摧枯拉朽，前三節就奠定勝局。封關功臣，但影響力集中在一場——這是與 Harper 的最大差別"
+    },
+    {
+      "player": "Max Strus",
+      "team": "Cavaliers",
+      "role": "替補射手",
+      "index": 80,
+      "fire": 4,
+      "highlight": "G1：24分 · 4/6三分｜傷癒復出即爆發",
+      "note": "賽季缺陣 67 場後復出，首戰砍生涯季後賽新高，騎士系列賽定心丸"
+    },
+    {
+      "player": "Bones Hyland",
+      "team": "Timberwolves",
+      "role": "替補後衛",
+      "index": 77,
+      "fire": 4,
+      "highlight": "G5：15分 · 3顆三分｜雙核缺陣頂住金塊反撲",
+      "note": "Edwards + Randle 不在，Hyland 在板凳填補得分真空，G5 三分穩住節奏，確保灰狼主動權不失手"
     },
     {
       "player": "Tari Eason",
       "team": "Rockets",
       "role": "替補前鋒（禁區砲台）",
-      "index": 77,
+      "index": 76,
       "fire": 4,
-      "highlight": "G5：18分 · 強攻禁區 · 對位 LeBron 不落下風｜系列賽逆轉功臣",
-      "note": "Durant 缺陣時火箭禁區依賴 Eason 身體對抗，G5 砍 18 分強攻內線，讓湖人防線疲於奔命。搭配 Jabari 的三分威脅，兩人共同撐起火箭 G5 勝利"
+      "highlight": "G5：18分 · 強攻禁區 · 對位 LeBron 不落下風",
+      "note": "Durant 缺陣時禁區依賴 Eason 身體對抗，G5 砍 18 分讓湖人防線疲於奔命。搭配 Jabari 三分威脅，兩人共同撐起逆轉"
+    },
+    {
+      "player": "Luke Kennard",
+      "team": "Lakers",
+      "role": "替補射手",
+      "index": 74,
+      "fire": 3,
+      "highlight": "G1：27分 · 5/5三分｜替補神射",
+      "note": "G1 神準五星全中，Durant 傷缺下製造了一個高光夜晚。後續場次的持續性是評分天花板的關鍵變數"
+    },
+    {
+      "player": "Keldon Johnson",
+      "team": "Spurs",
+      "role": "第六人（年度獎得主）",
+      "index": 73,
+      "fire": 3,
+      "highlight": "本季替補得分 1081 分｜年度第六人｜G3 回神 20 分",
+      "note": "馬刺隊史替補得分紀錄保持人，整個系列賽角色履行穩定，G3 有高光。年度獎加持，但季後賽爆發力不如 Harper、Champagnie"
+    },
+    {
+      "player": "Collin Murray-Boyles",
+      "team": "Raptors",
+      "role": "替補中鋒（新秀）",
+      "index": 72,
+      "fire": 3,
+      "highlight": "G4：15分+10籃板｜季後賽替補雙十",
+      "note": "暴龍新秀奇兵，G4 禁區撐起防線，替補雙十幫助多倫多 2-2 扳平騎士。系列賽仍在進行，天花板尚未揭曉"
     }
   ],
   "method": [
