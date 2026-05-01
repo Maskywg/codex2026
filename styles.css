@@ -163,6 +163,24 @@ h3,
   margin: 0 0 24px;
 }
 
+.hero-title-photo {
+  width: min(420px, 100%);
+  margin: 0 0 24px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.34);
+}
+
+.hero-title-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .hero-actions {
   grid-auto-flow: column;
   justify-content: start;
@@ -550,6 +568,10 @@ h3,
 
   .hero-copy h1 {
     font-size: 4rem;
+  }
+
+  .hero-title-photo {
+    width: 100%;
   }
 
   .featured-team {
