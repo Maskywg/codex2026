@@ -11,11 +11,11 @@ window.PLAYOFFS_DATA = {
     ]
   },
   "featured": {
-    "team": "⚡ G5 史詩對決：Cunningham vs Banchero",
-    "record": "各砍 45 分",
-    "score": "活塞 116 - 109 魔術",
-    "tier": "2026 季後賽最佳個人表演",
-    "summary": "Cade Cunningham 45分/4籃/5助（13/23 FG，5/8三分）；Paolo Banchero 45分/9籃/7助（17/31 FG，6/11三分）。兩人同場各砍 45 分，是 2026 季後賽首輪最高水準的個人對決，系列賽戰至 3-2 懸念再起。"
+    "team": "San Antonio Spurs 🌹",
+    "record": "4-1 晉二輪",
+    "score": "94 / 100",
+    "tier": "爭冠第一梯",
+    "summary": "首輪完成度最高的爭冠熱門：Wembanyama 傷癒全程健康，Fox 持球解題，Harper 新秀即戰力——三核齊備。板凳 Champagnie 封關三分爆發、Johnson 年度第六人穩定輸出，現正靜待灰狼/雷霆的二輪挑戰者。"
   },
   "tiers": [
     {
