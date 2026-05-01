@@ -354,6 +354,15 @@ window.PLAYOFFS_DATA = {
       "note": "三分 1/7 不好看，但 5/5 罰球代表他持續往籃框衝。Jokic 大三元的夜裡灰狼還能贏，Shannon Jr. 的 24 分是不讓隊伍崩潰的那根釘子。職業心態超齡"
     },
     {
+      "player": "Jabari Smith Jr.",
+      "team": "Rockets",
+      "role": "起始前鋒（Durant 缺陣後扛大旗）",
+      "index": 83,
+      "fire": 4,
+      "highlight": "G5：22分 · 三分 4/9 · 關鍵一箭｜Durant 缺陣仍贏湖人",
+      "note": "Durant 傷缺，Jabari 站出來三分開轟，帶領火箭客場 99-93 逆轉湖人。從第一輪選秀到季後賽扛旗，這場 G5 是他個人最重要的宣言"
+    },
+    {
       "player": "Julian Champagnie",
       "team": "Spurs",
       "role": "替補前鋒",
@@ -381,6 +390,15 @@ window.PLAYOFFS_DATA = {
       "note": "Edwards + Randle 不在，Hyland 在板凳填補得分真空，G5 三分穩住節奏，確保灰狼主動權不失手"
     },
     {
+      "player": "Tari Eason",
+      "team": "Rockets",
+      "role": "替補前鋒（禁區砲台）",
+      "index": 76,
+      "fire": 4,
+      "highlight": "G5：18分 · 強攻禁區 · 對位 LeBron 不落下風",
+      "note": "Durant 缺陣時禁區依賴 Eason 身體對抗，G5 砍 18 分讓湖人防線疲於奔命。搭配 Jabari 三分威脅，兩人共同撐起逆轉"
+    },
+    {
       "player": "Luke Kennard",
       "team": "Lakers",
       "role": "替補射手",
@@ -397,6 +415,15 @@ window.PLAYOFFS_DATA = {
       "fire": 3,
       "highlight": "本季替補得分 1081 分｜年度第六人｜G3 回神 20 分",
       "note": "馬刺隊史替補得分紀錄保持人，整個系列賽角色履行穩定，G3 有高光。年度獎加持，但季後賽爆發力不如 Harper、Champagnie"
+    },
+    {
+      "player": "Collin Murray-Boyles",
+      "team": "Raptors",
+      "role": "替補中鋒（新秀）",
+      "index": 72,
+      "fire": 3,
+      "highlight": "G4：15分+10籃板｜季後賽替補雙十",
+      "note": "暴龍新秀奇兵，G4 禁區撐起防線，替補雙十幫助多倫多 2-2 扳平騎士。系列賽仍在進行，天花板尚未揭曉"
     }
   ],
   "method": [
