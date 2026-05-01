@@ -209,7 +209,7 @@ window.PLAYOFFS_DATA = {
     {
       "label": "✅ 西區最不可思議的晉級",
       "title": "Timberwolves 4-2 淘汰 Nuggets ❌",
-      "text": "Edwards 左膝報銷、DiVincenzo 跟腱撕裂、Naz Reid 腳踝受傷——三核盡失的灰狼竟然 4-2 淘汰金塊！Randle 扛起主攻，Hyland + Shannon Jr. 板凳各自撐場，Jokic 大三元也擋不住。金塊衛冕夢碎，Jokic 再一次在系列賽中孤立無援。灰狼帶傷晉二輪，等待雷霆或馬刺。"
+      "text": "G6 灰狼 110-98！Jaden McDaniels 32分主宰全場，帶傷出戰的 Naz Reid 砍 15分，Shannon Jr. 24分，Randle 18分——三核盡失，雜牌軍用集體意志把金塊送回家。Jokic 縱有再多大三元，也救不了一支只剩他一個人的隊伍。灰狼 4-2 晉二輪，等待雷霆或馬刺。"
     },
     {
       "label": "🔥 西區最大逆轉變數",
@@ -265,7 +265,7 @@ window.PLAYOFFS_DATA = {
       {
         "matchup": "(3) Denver vs (6) Minnesota",
         "leader": "✅ Timberwolves 4-2 晉二輪",
-        "angle": "Edwards、DiVincenzo、Naz Reid 三核盡失，灰狼仍 4-2 淘汰金塊！Randle 扛主攻，板凳雜牌軍頑強補位，Jokic 大三元也救不了金塊。這是本屆首輪最不可思議的系列賽——沒有明星核心照樣晉二輪，等待雷霆或馬刺。",
+        "angle": "G6 灰狼 110-98 封關！McDaniels 32分主宰、帶傷的 Naz Reid 15分、Shannon Jr. 24分，Randle 18分。三核全倒仍拿下系列賽，Jokic 孤立無援，金塊衛冕夢碎。灰狼帶傷晉二輪，等待雷霆或馬刺。",
         "power": 75
       },
       {
@@ -386,8 +386,8 @@ window.PLAYOFFS_DATA = {
       "role": "替補後衛",
       "index": 77,
       "fire": 4,
-      "highlight": "G5：15分 · 積極對抗｜Jokic 大三元下仍頑強貢獻",
-      "note": "面對 Jokic 大三元仍不放棄，Hyland + Shannon Jr. 合力 30 分支撐薄弱的板凳深度。是灰狼能在雙核重傷下撐到 3-2 的關鍵理由"
+      "highlight": "G5：15分 · G6 封關戰 24分｜三核全倒仍雙位數撐場",
+      "note": "G5 + G6 連場得分，封關戰 24分 9-20 FG 5-5 罰球全力爆發。灰狼三核盡失，Shannon Jr. 用行動證明雜牌軍也能贏系列賽"
     },
     {
       "player": "Collin Murray-Boyles",
