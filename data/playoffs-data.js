@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "May 1, 2026（更新：Knicks 4-2 屠殺老鷹晉二輪 · G6 今日決生死：塞爾提克封關 / 騎士封關 / 灰狼封關 · 老鷹賽季結束）",
+  "scheduleDate": "May 1, 2026（更新：76人 G6 106-93 Maxey 爆發！打進 G7 · 等灰狼 G6 / 騎士 G6 結果）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -85,8 +85,8 @@ window.PLAYOFFS_DATA = {
           "score": 79
         },
         {
-          "name": "76ers 💪",
-          "score": 76
+          "name": "76ers 🔥",
+          "score": 80
         },
         {
           "name": "Raptors",
@@ -187,9 +187,9 @@ window.PLAYOFFS_DATA = {
       "text": "G5 史詩：Cunningham 45分（13/23，5/8三分，14/14 罰球）vs Banchero 45分（17/31，6/11三分）——NBA 史上僅第二次兩位對手各砍 45 分。Cade 系列賽場均 30+，上半場 27 分創球隊季後賽紀錄，從 1-3 逼到 2-3。G6 奧蘭多，Wagner/Isaac 傷勢未定，活塞是 Vegas 盤口熱門（-3.5）——這是 #1 種子的反攻時刻。"
     },
     {
-      "label": "⚠️ 東區最大變數",
-      "title": "Celtics vs 76ers",
-      "text": "Celtics 3-2！76人 G5 客場 113-97 大勝，主場 TD Garden 竟守不住。Embiid 術後復出火力全開，費城從 1-3 一步步追回，G6 回到費城主場，塞爾提克封關之路突然充滿變數。"
+      "label": "🔥 東區最強逆轉劇本",
+      "title": "Celtics vs 76ers → G7！（3-3）",
+      "text": "76人 G6 費城主場 106-93！Maxey 大爆發主宰全場，塞爾提克從 3-1 領先被追到 3-3，竟然打進 G7！Embiid 術後復出從廢到神，費城主場 TD Garden 完全守不住，現在 G7 回波士頓，塞爾提克能否在主場完成終局？"
     },
     {
       "label": "✅ 東區封關屠殺",
@@ -232,8 +232,8 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(2) Boston vs (7) Philadelphia",
-        "leader": "⚠️ Celtics 3-2",
-        "angle": "76人 G5 客場 113-97 大勝！TD Garden 主場優勢蒸發，塞爾提克主場接連失守。Embiid 術後狀態回升，G6 回費城打，系列賽完全重啟。塞爾提克本輪穩定性令人存疑。",
+        "leader": "🔥 3-3 打到 G7！",
+        "angle": "76人 G6 費城主場 106-93 大勝！Maxey 爆發主宰全場，塞爾提克主客場連續失守。Embiid 術後從 1-3 一路追到 3-3，費城奇蹟式重啟系列賽。G7 回 TD Garden，塞爾提克主場命運戰，這系列賽已徹底失控。",
         "power": 88
       },
       {
