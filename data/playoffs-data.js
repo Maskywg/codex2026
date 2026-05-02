@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "May 2, 2026（更新：活塞 G6 93-79 封關魔術晉二輪 · 76人 G7 · 等騎士 G6 · 湖人 G6）",
+  "scheduleDate": "May 2, 2026（更新：活塞/魔術 3-3 G7 · 騎士/暴龍 3-3 G7 · 76人 G7 · 湖人 G6）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -38,10 +38,6 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Timberwolves 💪",
           "score": 75
-        },
-        {
-          "name": "Pistons 🔥",
-          "score": 80
         }
       ]
     },
@@ -61,6 +57,14 @@ window.PLAYOFFS_DATA = {
       "title": "穩定領先梯",
       "note": "系列賽主導權明確，板凳亦有可用爆發點，但傷兵或對位仍有變數。",
       "teams": [
+        {
+          "name": "Pistons 🔥",
+          "score": 80
+        },
+        {
+          "name": "Magic 🪄",
+          "score": 82
+        },
         {
           "name": "Cavaliers 🔥",
           "score": 82
@@ -117,10 +121,6 @@ window.PLAYOFFS_DATA = {
           "name": "Trail Blazers ❌",
           "score": 52
         },
-        {
-          "name": "Magic ❌",
-          "score": 82
-        }
       ]
     }
   ],
@@ -138,10 +138,10 @@ window.PLAYOFFS_DATA = {
       "impact": "強行復出有升級為嚴重拉傷或阿基里斯腱傷的風險，教練 Adelman 態度謹慎。Gordon 缺陣下金塊禁區護框與正面對抗大幅下滑，Jokic 需承擔更多無掩護的單打壓力。若晉二輪，Gordon 狀態將逐場觀察"
     },
     {
-      "team": "Pistons",
-      "tag": "G5 傷兵",
-      "detail": "Kevin Huerter（內收肌拉傷，Questionable G5）",
-      "impact": "活塞已處落後 1-3，傷兵影響有限"
+      "team": "Magic",
+      "tag": "🚨 G7 關鍵傷勢",
+      "detail": "Franz Wagner（右小腿拉傷，G7 出賽狀況未定）、Jonathan Isaac（膝蓋，Day-to-Day）",
+      "impact": "Wagner 若缺席 G7，Banchero 需獨撐大局，魔術進攻多樣性大幅下降。活塞主場 G7 優勢加上魔術傷兵壓力，形勢對底特律有利"
     },
     {
       "team": "Lakers",
@@ -176,9 +176,9 @@ window.PLAYOFFS_DATA = {
   ],
   "highlights": [
     {
-      "label": "✅ 東區最強逆轉",
-      "title": "Pistons 4-3 逆轉淘汰 Magic ❌",
-      "text": "G6 活塞客場 93-79 封關！1-3 落後後連追三場，Cunningham 系列賽場均 30+ 分主宰終局。G5 史詩 45 vs 45 後，G6 活塞防守體系鎖死 Banchero，Wagner 傷缺成壓垮魔術的最後一根稻草。NBA 史上最精彩的首輪系列賽之一，活塞晉二輪。"
+      "label": "🔥 東區生死大戰",
+      "title": "Pistons vs Magic → G7！（3-3）",
+      "text": "活塞 G6 客場 93-79 扳平！從 1-3 落後連追三場，3-3 強迫 G7。Cunningham 系列賽場均 30+ 分，G5 史詩 45 vs 45 後繼續主宰，防守鎖死 Banchero。G7 回底特律主場，Wagner 傷勢成關鍵變數——這系列賽已成本屆最精彩首輪對決。"
     },
     {
       "label": "🔥 東區最強逆轉劇本",
@@ -191,9 +191,9 @@ window.PLAYOFFS_DATA = {
       "text": "G6 尼克 140-89 大屠殺！半場領先 47 分創 NBA 季後賽半場領先紀錄，全場差距 51 分。Robinson 與老鷹 Daniels 互毆雙雙被驅逐出場——這場根本是一面倒的處決。Brunson 主宰系列賽，尼克晉二輪。老鷹賽季結束。"
     },
     {
-      "label": "🔥 東區主場收官力",
-      "title": "Cavaliers vs Raptors（3-2）",
-      "text": "G5 主場 125-120！第四節 25-17 壓制暴龍，Harden 23分/9籃/5助、Mobley 23分/9籃，Schroder 19分三核輪流得分。籃板 48-35 大幅壓制，Barrett 25分/12籃、Barnes 11助拚到底仍差一截。騎士 G6 客場多倫多打封關，主動權在手。"
+      "label": "🔥 東區又一個 G7",
+      "title": "Raptors vs Cavaliers → G7！（3-3）",
+      "text": "暴龍 G6 主場 112-110 絕殺！騎士 3-2 領先本以為可以客場封關，卻被多倫多主場氣勢壓垮，兩分之差送進 G7。Barrett、Barnes 拚死守住主場，系列賽再起懸念。G7 回克里夫蘭，騎士主場優勢反撲，但暴龍已證明客場也能贏。"
     },
     {
       "label": "⚡ 西區首支晉級",
@@ -220,8 +220,8 @@ window.PLAYOFFS_DATA = {
     "east": [
       {
         "matchup": "(1) Detroit vs (8) Orlando",
-        "leader": "✅ Pistons 4-3 晉二輪",
-        "angle": "G6 活塞客場 93-79 封關！Cunningham 系列賽場均 30+ 分，從 1-3 落後連追三場完成逆轉。G5 史詩 45 vs 45 對決後，G6 活塞防守鎖死 Banchero，Wagner 傷勢終究成為魔術的致命傷。活塞晉二輪，東區 #1 種子守住門面。",
+        "leader": "🔥 3-3 打到 G7！（活塞主場）",
+        "angle": "活塞 G6 客場 93-79 扳平！從 1-3 落後連追三場打成 3-3，Cunningham 系列賽場均 30+ 主宰攻防兩端。G7 回底特律主場，Wagner 傷勢是魔術最大隱憂，Banchero 恐需獨扛。活塞主場優勢加上氣勢，G7 是底特律的天時地利。",
         "power": 80
       },
       {
@@ -238,8 +238,8 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(4) Cleveland vs (5) Toronto",
-        "leader": "🔥 Cavaliers 3-2",
-        "angle": "G5 主場 125-120 勝出，第四節 25-17 壓制收尾！Harden 23分/9籃/5助（4/8三分），Mobley 23分/9籃（8/13 FG），Schroder 19分。暴龍 Barrett 25分/12籃、Barnes 11助拚到底仍不夠。騎士第四節執行力與籃板優勢（48-35）是勝負關鍵。G6 客場多倫多打封關。",
+        "leader": "🔥 3-3 打到 G7！（騎士主場）",
+        "angle": "暴龍 G6 多倫多主場 112-110 逼平！騎士 3-2 領先後客場失守，系列賽再度懸念。G7 回克里夫蘭主場，騎士主場優勢是最大依仗，但暴龍 Barrett、Barnes 主場士氣正旺——東區第四席位 G7 見真章。",
         "power": 82
       }
     ],
