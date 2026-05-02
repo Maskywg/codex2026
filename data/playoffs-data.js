@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "May 2, 2026（更新：活塞/魔術 3-3 G7 · 騎士/暴龍 3-3 G7 · 76人 G7 · 湖人 G6）",
+  "scheduleDate": "May 2, 2026（更新：湖人 4-2 晉二輪 · 活塞/魔術 3-3 G7 · 騎士/暴龍 3-3 G7 · 塞爾/76人 G7）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -38,6 +38,10 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Timberwolves 💪",
           "score": 75
+        },
+        {
+          "name": "Lakers ⚠️",
+          "score": 74
         }
       ]
     },
@@ -69,10 +73,6 @@ window.PLAYOFFS_DATA = {
           "name": "Cavaliers 🔥",
           "score": 82
         },
-        {
-          "name": "Lakers ⚠️",
-          "score": 74
-        }
       ]
     },
     {
@@ -87,10 +87,6 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Raptors",
           "score": 68
-        },
-        {
-          "name": "Rockets 🔥",
-          "score": 70
         }
       ]
     },
@@ -121,6 +117,10 @@ window.PLAYOFFS_DATA = {
           "name": "Trail Blazers ❌",
           "score": 52
         },
+        {
+          "name": "Rockets ❌",
+          "score": 70
+        }
       ]
     }
   ],
@@ -148,12 +148,6 @@ window.PLAYOFFS_DATA = {
       "tag": "🚨 Luka 最新傷情更新",
       "detail": "Luka Dončić（左腿筋二級拉傷 Grade 2，樂觀預估 5/6-5/10 回歸）、Austin Reaves（✅ 回歸出戰）",
       "impact": "Reaves 回歸大幅提升湖人第二持球點與末節解題能力，Luka 缺陣壓力明顯減輕。若 Reaves 狀態在線，湖人收官能力回升一個等級"
-    },
-    {
-      "team": "Rockets",
-      "tag": "傷兵觀察",
-      "detail": "Fred VanVleet（Out）、Kevin Durant（Day-to-Day）",
-      "impact": "Durant 若能出戰將是系列賽最大變數，全力上陣火箭反撲機會大增"
     },
     {
       "team": "Thunder ✅",
@@ -264,8 +258,8 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(4) Los Angeles vs (5) Houston",
-        "leader": "⚠️ Lakers 3-2（火箭追回一城）",
-        "angle": "火箭 G5 客場 99-93 勝出！Durant 仍缺陣，靠 Jabari Smith Jr. 三分爆發、Tari Eason 強攻禁區、Sheppard 第四節急救 4 分，成功把系列賽拉成 3-2。Reaves 回歸砍 13 分仍不敵，湖人末節失守。G6 回休士頓主場，Luka 缺陣的湖人能否在客場封關？系列賽完全打開。",
+        "leader": "✅ Lakers 4-2 晉二輪",
+        "angle": "湖人 G6 客場 98-78 封關！Durant 缺陣的火箭火力全面熄火，湖人主控全場。Luka 缺陣仍靠 Reaves + LeBron 帶隊，以 4-2 淘汰火箭，等待西區二輪對手。",
         "power": 74
       }
     ]
@@ -348,15 +342,6 @@ window.PLAYOFFS_DATA = {
       "note": "三分 1/7 不好看，但 5/5 罰球代表他持續往籃框衝。Jokic 大三元的夜裡灰狼還能贏，Shannon Jr. 的 24 分是不讓隊伍崩潰的那根釘子。職業心態超齡"
     },
     {
-      "player": "Jabari Smith Jr.",
-      "team": "Rockets",
-      "role": "起始前鋒（Durant 缺陣後扛大旗）",
-      "index": 83,
-      "fire": 4,
-      "highlight": "G5：22分 · 三分 4/9 · 關鍵一箭｜Durant 缺陣仍贏湖人",
-      "note": "Durant 傷缺，Jabari 站出來三分開轟，帶領火箭客場 99-93 逆轉湖人。從第一輪選秀到季後賽扛旗，這場 G5 是他個人最重要的宣言"
-    },
-    {
       "player": "Julian Champagnie",
       "team": "Spurs",
       "role": "替補前鋒",
@@ -382,15 +367,6 @@ window.PLAYOFFS_DATA = {
       "fire": 4,
       "highlight": "G5：15分 · 3顆三分｜雙核缺陣頂住金塊反撲",
       "note": "Edwards + Randle 不在，Hyland 在板凳填補得分真空，G5 三分穩住節奏，確保灰狼主動權不失手"
-    },
-    {
-      "player": "Tari Eason",
-      "team": "Rockets",
-      "role": "替補前鋒（禁區砲台）",
-      "index": 76,
-      "fire": 4,
-      "highlight": "G5：18分 · 強攻禁區 · 對位 LeBron 不落下風",
-      "note": "Durant 缺陣時禁區依賴 Eason 身體對抗，G5 砍 18 分讓湖人防線疲於奔命。搭配 Jabari 三分威脅，兩人共同撐起逆轉"
     },
     {
       "player": "Luke Kennard",
