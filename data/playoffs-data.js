@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "May 1, 2026（更新：灰狼三核重傷仍 4-2 淘汰金塊晉二輪 · 76人 G7 · 等騎士 G6 · 活塞/湖人 G6）",
+  "scheduleDate": "May 2, 2026（更新：活塞 G6 93-79 封關魔術晉二輪 · 76人 G7 · 等騎士 G6 · 湖人 G6）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -38,6 +38,10 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Timberwolves 💪",
           "score": 75
+        },
+        {
+          "name": "Pistons 🔥",
+          "score": 80
         }
       ]
     },
@@ -57,14 +61,6 @@ window.PLAYOFFS_DATA = {
       "title": "穩定領先梯",
       "note": "系列賽主導權明確，板凳亦有可用爆發點，但傷兵或對位仍有變數。",
       "teams": [
-        {
-          "name": "Pistons 🔥",
-          "score": 80
-        },
-        {
-          "name": "Magic 🪄",
-          "score": 82
-        },
         {
           "name": "Cavaliers 🔥",
           "score": 82
@@ -120,6 +116,10 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Trail Blazers ❌",
           "score": 52
+        },
+        {
+          "name": "Magic ❌",
+          "score": 82
         }
       ]
     }
@@ -136,12 +136,6 @@ window.PLAYOFFS_DATA = {
       "tag": "🚑 Gordon 反覆受傷・G6 賽前決定",
       "detail": "Aaron Gordon（左小腿緊繃，本季僅出賽 36 場）：G3 缺陣 → G4 帶傷復出僅 23 分鐘且移動受限 → G5 再度缺陣。官方標記 G6（4/30）為 Game-time Decision。Peyton Watson 亦在傷兵名單",
       "impact": "強行復出有升級為嚴重拉傷或阿基里斯腱傷的風險，教練 Adelman 態度謹慎。Gordon 缺陣下金塊禁區護框與正面對抗大幅下滑，Jokic 需承擔更多無掩護的單打壓力。若晉二輪，Gordon 狀態將逐場觀察"
-    },
-    {
-      "team": "Magic",
-      "tag": "🆕 G5 傷兵",
-      "detail": "Franz Wagner（右小腿拉傷，Questionable G5）、Jonathan Isaac（膝蓋，Day-to-Day）",
-      "impact": "Wagner 若缺陣，Banchero 需獨撐封關大局，魔術進攻多樣性下降"
     },
     {
       "team": "Pistons",
@@ -182,9 +176,9 @@ window.PLAYOFFS_DATA = {
   ],
   "highlights": [
     {
-      "label": "🔥 東區史詩對決",
-      "title": "Magic vs Pistons（Magic 3-2 · G6 奧蘭多）",
-      "text": "G5 史詩：Cunningham 45分（13/23，5/8三分，14/14 罰球）vs Banchero 45分（17/31，6/11三分）——NBA 史上僅第二次兩位對手各砍 45 分。Cade 系列賽場均 30+，上半場 27 分創球隊季後賽紀錄，從 1-3 逼到 2-3。G6 奧蘭多，Wagner/Isaac 傷勢未定，活塞是 Vegas 盤口熱門（-3.5）——這是 #1 種子的反攻時刻。"
+      "label": "✅ 東區最強逆轉",
+      "title": "Pistons 4-3 逆轉淘汰 Magic ❌",
+      "text": "G6 活塞客場 93-79 封關！1-3 落後後連追三場，Cunningham 系列賽場均 30+ 分主宰終局。G5 史詩 45 vs 45 後，G6 活塞防守體系鎖死 Banchero，Wagner 傷缺成壓垮魔術的最後一根稻草。NBA 史上最精彩的首輪系列賽之一，活塞晉二輪。"
     },
     {
       "label": "🔥 東區最強逆轉劇本",
@@ -226,8 +220,8 @@ window.PLAYOFFS_DATA = {
     "east": [
       {
         "matchup": "(1) Detroit vs (8) Orlando",
-        "leader": "🔥 Magic 3-2（G6 奧蘭多主場 · 活塞客場封關挑戰）",
-        "angle": "G5 史詩對決：Cunningham 45分（14/14 罰球，上半場 27 分創球隊季後賽紀錄）vs Banchero 45分（6/11三分），活塞主場 116-109 逆轉保命！Cade 系列賽場均 30+ 分，Vegas 盤口活塞 G6 仍是熱門（-3.5）。Wagner、Isaac 傷勢不確定，Banchero 要一個人扛。",
+        "leader": "✅ Pistons 4-3 晉二輪",
+        "angle": "G6 活塞客場 93-79 封關！Cunningham 系列賽場均 30+ 分，從 1-3 落後連追三場完成逆轉。G5 史詩 45 vs 45 對決後，G6 活塞防守鎖死 Banchero，Wagner 傷勢終究成為魔術的致命傷。活塞晉二輪，東區 #1 種子守住門面。",
         "power": 80
       },
       {
