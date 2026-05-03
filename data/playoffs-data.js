@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
   "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "May 2, 2026（更新：湖人 4-2 晉二輪 · 活塞/魔術 3-3 G7 · 騎士/暴龍 3-3 G7 · 塞爾/76人 G7）",
+  "scheduleDate": "May 3, 2026（🚨 Tatum OUT · 湖人 4-2 晉二輪 · 活塞/魔術 G7 · 騎士/暴龍 G7 · 塞爾/76人 G7 今日）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -51,8 +51,8 @@ window.PLAYOFFS_DATA = {
       "note": "攻守效率、球星主導力與板凳深度同步在線，健康狀態也有緩衝，晉級幾乎無懸念。",
       "teams": [
         {
-          "name": "Celtics ⚠️",
-          "score": 88
+          "name": "Celtics 🚨",
+          "score": 72
         }
       ]
     },
@@ -162,10 +162,16 @@ window.PLAYOFFS_DATA = {
       "impact": "馬刺 4-1 晉二輪，等待灰狼/金塊勝者。G5 封關 Champagnie 三分爆發，士氣最高"
     },
     {
-      "team": "76ers / Raptors",
-      "tag": "⚠️ 術後復出",
-      "detail": "Joel Embiid 復出但狀態明顯未到位（闌尾炎術後）、Immanuel Quickley (Out，暴龍)",
-      "impact": "費城系列賽 1-3 落後，幾乎無力回天"
+      "team": "Celtics 🚨",
+      "tag": "🚨 Tatum G7 確定缺陣",
+      "detail": "Jayson Tatum（左膝不適，G7 OUT 確定缺陣）、Kristaps Porziņģis（小腿，QUESTIONABLE）",
+      "impact": "Tatum 本季前 62 場因阿基里斯腱傷缺陣後剛回歸，G6 第三節提早下場，G7 當天降成 OUT。無 Tatum 的塞爾提克面對 Embiid + Maxey 的費城，主場優勢大打折扣，系列賽劇情完全翻轉。"
+    },
+    {
+      "team": "76ers",
+      "tag": "⚠️ Embiid 術後復出",
+      "detail": "Joel Embiid（闌尾炎術後復出，從 1-3 打到 3-3）、Immanuel Quickley（Out，賽季報銷）",
+      "impact": "Embiid 術後狀態逐場上升，G6 費城主場 106-93 大勝，Maxey 全場主宰。Tatum 缺陣消息傳出後，費城 G7 奪冠賠率大幅上升。"
     }
   ],
   "highlights": [
@@ -175,9 +181,9 @@ window.PLAYOFFS_DATA = {
       "text": "活塞 G6 客場 93-79 扳平！從 1-3 落後連追三場，3-3 強迫 G7。Cunningham 系列賽場均 30+ 分，G5 史詩 45 vs 45 後繼續主宰，防守鎖死 Banchero。G7 回底特律主場，Wagner 傷勢成關鍵變數——這系列賽已成本屆最精彩首輪對決。"
     },
     {
-      "label": "🔥 東區最強逆轉劇本",
-      "title": "Celtics vs 76ers → G7！（3-3）",
-      "text": "76人 G6 費城主場 106-93！Maxey 大爆發主宰全場，塞爾提克從 3-1 領先被追到 3-3，竟然打進 G7！Embiid 術後復出從廢到神，費城主場 TD Garden 完全守不住，現在 G7 回波士頓，塞爾提克能否在主場完成終局？"
+      "label": "🚨 G7 最大震撼",
+      "title": "Tatum OUT！Celtics vs 76ers G7 今晚決戰",
+      "text": "Jayson Tatum 確定缺陣 G7！左膝不適讓塞爾提克主場優勢瞬間縮水。Embiid 術後從 1-3 追到 3-3，Maxey G6 爆發——費城今晚是最大黑馬。Brown、Pritchard、White 能在無 Tatum 的 TD Garden 扛起這場終局嗎？"
     },
     {
       "label": "✅ 東區封關屠殺",
@@ -220,9 +226,9 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(2) Boston vs (7) Philadelphia",
-        "leader": "🔥 3-3 打到 G7！",
-        "angle": "76人 G6 費城主場 106-93 大勝！Maxey 爆發主宰全場，塞爾提克主客場連續失守。Embiid 術後從 1-3 一路追到 3-3，費城奇蹟式重啟系列賽。G7 回 TD Garden，塞爾提克主場命運戰，這系列賽已徹底失控。",
-        "power": 88
+        "leader": "🚨 3-3 G7 今日決戰・Tatum OUT",
+        "angle": "G7 最大震撼：Jayson Tatum 確定缺陣！左膝不適讓主場優勢瞬間縮水。Embiid 術後從 1-3 追到 3-3，Maxey G6 爆發，費城氣勢如虹。無 Tatum 的波士頓能靠 Brown + Pritchard + White 在 TD Garden 完成奇蹟嗎？這場已是本屆首輪最大賭注。",
+        "power": 72
       },
       {
         "matchup": "(3) New York vs (6) Atlanta",
