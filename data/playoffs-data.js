@@ -1,6 +1,6 @@
 window.PLAYOFFS_DATA = {
-  "generatedAt": "2026-04-29T12:00:00",
-  "scheduleDate": "May 3, 2026（🚨 Tatum OUT · 湖人 4-2 晉二輪 · 活塞/魔術 G7 · 騎士/暴龍 G7 · 塞爾/76人 G7 今日）",
+  "generatedAt": "2026-05-03T17:45:00+08:00",
+  "scheduleDate": "May 3, 2026（更新：76人 109-100 擊敗 Celtics，4-3 晉二輪；Celtics 首輪出局；活塞/魔術 G7、騎士/暴龍 G7 仍待決）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
     "injuryReports": [
@@ -42,19 +42,18 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Lakers ⚠️",
           "score": 74
+        },
+        {
+          "name": "76ers 🔥",
+          "score": 86
         }
       ]
     },
     {
       "label": "Tier 1",
       "title": "爭冠第一梯",
-      "note": "攻守效率、球星主導力與板凳深度同步在線，健康狀態也有緩衝，晉級幾乎無懸念。",
-      "teams": [
-        {
-          "name": "Celtics 🚨",
-          "score": 72
-        }
-      ]
+      "note": "Tatum 缺陣後，原本第一梯隊出現大洗牌；目前晉級隊伍需重新按二輪對位校正。",
+      "teams": []
     },
     {
       "label": "Tier 2",
@@ -72,7 +71,7 @@ window.PLAYOFFS_DATA = {
         {
           "name": "Cavaliers 🔥",
           "score": 82
-        },
+        }
       ]
     },
     {
@@ -80,10 +79,6 @@ window.PLAYOFFS_DATA = {
       "title": "對位波動梯",
       "note": "板凳暴徒指數或傷兵狀況仍有波動，系列賽走向尚未定型。",
       "teams": [
-        {
-          "name": "76ers 🔥",
-          "score": 80
-        },
         {
           "name": "Raptors",
           "score": 68
@@ -101,6 +96,10 @@ window.PLAYOFFS_DATA = {
       "title": "首輪出局",
       "note": "賽季結束。評分僅供參考，不再更新。",
       "teams": [
+        {
+          "name": "Celtics ❌",
+          "score": 72
+        },
         {
           "name": "Nuggets ❌",
           "score": 79
@@ -162,16 +161,16 @@ window.PLAYOFFS_DATA = {
       "impact": "馬刺 4-1 晉二輪，等待灰狼/金塊勝者。G5 封關 Champagnie 三分爆發，士氣最高"
     },
     {
-      "team": "Celtics 🚨",
-      "tag": "🚨 Tatum G7 確定缺陣",
-      "detail": "Jayson Tatum（左膝不適，G7 OUT 確定缺陣）、Kristaps Porziņģis（小腿，QUESTIONABLE）",
-      "impact": "Tatum 本季前 62 場因阿基里斯腱傷缺陣後剛回歸，G6 第三節提早下場，G7 當天降成 OUT。無 Tatum 的塞爾提克面對 Embiid + Maxey 的費城，主場優勢大打折扣，系列賽劇情完全翻轉。"
+      "team": "Celtics ❌",
+      "tag": "首輪出局",
+      "detail": "G7 以 100-109 不敵 76ers，Tatum 缺陣成為系列賽最後轉折。",
+      "impact": "Boston 從 3-1 領先被 Philadelphia 逆轉到 4-3 淘汰，主場優勢與輪替深度都未能補上 Tatum 的缺口。"
     },
     {
-      "team": "76ers",
-      "tag": "⚠️ Embiid 術後復出",
-      "detail": "Joel Embiid（闌尾炎術後復出，從 1-3 打到 3-3）、Immanuel Quickley（Out，賽季報銷）",
-      "impact": "Embiid 術後狀態逐場上升，G6 費城主場 106-93 大勝，Maxey 全場主宰。Tatum 缺陣消息傳出後，費城 G7 奪冠賠率大幅上升。"
+      "team": "76ers ✅",
+      "tag": "109-100 晉二輪",
+      "detail": "Joel Embiid 術後復出帶隊完成 1-3 逆轉，G7 客場 109-100 淘汰 Celtics。",
+      "impact": "Philadelphia 從瀕臨淘汰一路翻盤，Embiid + Maxey 的半場解題能力正式進入二輪戰力評估。"
     }
   ],
   "highlights": [
@@ -181,9 +180,9 @@ window.PLAYOFFS_DATA = {
       "text": "活塞 G6 客場 93-79 扳平！從 1-3 落後連追三場，3-3 強迫 G7。Cunningham 系列賽場均 30+ 分，G5 史詩 45 vs 45 後繼續主宰，防守鎖死 Banchero。G7 回底特律主場，Wagner 傷勢成關鍵變數——這系列賽已成本屆最精彩首輪對決。"
     },
     {
-      "label": "🚨 G7 最大震撼",
-      "title": "Tatum OUT！Celtics vs 76ers G7 今晚決戰",
-      "text": "Jayson Tatum 確定缺陣 G7！左膝不適讓塞爾提克主場優勢瞬間縮水。Embiid 術後從 1-3 追到 3-3，Maxey G6 爆發——費城今晚是最大黑馬。Brown、Pritchard、White 能在無 Tatum 的 TD Garden 扛起這場終局嗎？"
+      "label": "✅ 東區最大逆轉",
+      "title": "76ers 109-100 淘汰 Celtics，4-3 晉二輪",
+      "text": "費城完成 1-3 大逆轉！G7 客場 109-100 擊敗塞爾提克，Tatum 缺陣讓 Boston 攻防核心崩塌，Embiid 術後復出與 Maxey 火力把系列賽硬生生翻過來。76ers 晉二輪，Celtics 首輪出局。"
     },
     {
       "label": "✅ 東區封關屠殺",
@@ -226,9 +225,9 @@ window.PLAYOFFS_DATA = {
       },
       {
         "matchup": "(2) Boston vs (7) Philadelphia",
-        "leader": "🚨 3-3 G7 今日決戰・Tatum OUT",
-        "angle": "G7 最大震撼：Jayson Tatum 確定缺陣！左膝不適讓主場優勢瞬間縮水。Embiid 術後從 1-3 追到 3-3，Maxey G6 爆發，費城氣勢如虹。無 Tatum 的波士頓能靠 Brown + Pritchard + White 在 TD Garden 完成奇蹟嗎？這場已是本屆首輪最大賭注。",
-        "power": 72
+        "leader": "✅ 76ers 4-3 晉二輪",
+        "angle": "G7 費城 109-100 客場擊敗 Boston，完成 1-3 落後後的逆轉晉級。Tatum 缺陣讓 Celtics 缺少最後解題手，Embiid 術後復出撐住半場攻防，Maxey 持續施壓，76ers 把本輪最大賭注變成晉級門票。Boston 首輪出局。",
+        "power": 86
       },
       {
         "matchup": "(3) New York vs (6) Atlanta",
@@ -277,9 +276,9 @@ window.PLAYOFFS_DATA = {
       "text": "G5 成為本輪最偉大的個人對決：Cunningham 45分（5/8三分，上半場 27 分平季後賽紀錄） vs Banchero 45分（17/31，6/11三分）。Wagner 缺陣反而讓 Banchero 全場主宰，但 Cade 更高效。系列賽 3-2，G6 回奧蘭多，這組對決已成本屆首輪最大看點。"
     },
     {
-      "eyebrow": "最後的救贖？還是歹戲拖棚？",
+      "eyebrow": "費城逆轉救贖 ✅",
       "title": "關鍵觀察 02",
-      "text": "76人從 1-3 打到 3-3——Embiid 術後帶傷、Maxey G6 費城主場大爆發，106-93 逼出 G7。這是 Embiid 生涯敘事的決定性時刻：G7 贏了，「術後逆轉 Celtics」值一千萬字；輸了，「差一點」的標籤再貼一層。歹戲拖棚跟救贖，差的只有一場比賽的距離。"
+      "text": "76人從 1-3 落後一路追到 G7，最後在客場 109-100 擊敗 Celtics。這不是「差一點」的劇本，而是 Embiid 術後復出後最硬的一輪救贖：Tatum 缺陣是轉折，但費城能把半場攻防、Maxey 的速度與 Embiid 的壓迫全部兌現，才是真正晉級原因。"
     },
     {
       "eyebrow": "Knicks 化學效應 🔥",
@@ -304,12 +303,12 @@ window.PLAYOFFS_DATA = {
     },
     {
       "player": "Payton Pritchard",
-      "team": "Celtics",
+      "team": "Celtics ❌",
       "role": "替補後衛",
       "index": 93,
       "fire": 5,
-      "highlight": "G4：32分 · 6顆三分 · +20｜Embiid 回歸也擋不住",
-      "note": "替補出場卻是全場最高分，三分雨打垮費城防線。塞爾提克系列賽關鍵先生，每到生死關頭就站出來"
+      "highlight": "系列賽前段爆發，G7 出局後成為遺憾亮點",
+      "note": "Pritchard 曾用三分雨撐起 Boston 板凳火力，但 Tatum 缺陣後，Celtics 最終仍以 100-109 在 G7 被 76ers 淘汰。"
     },
     {
       "player": "Dylan Harper",
