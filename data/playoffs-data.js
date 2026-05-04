@@ -1,426 +1,193 @@
 window.PLAYOFFS_DATA = {
-  "generatedAt": "2026-05-03T17:45:00+08:00",
-  "scheduleDate": "May 3, 2026（更新：76人 109-100 擊敗 Celtics，4-3 晉二輪；Celtics 首輪出局；活塞/魔術 G7、騎士/暴龍 G7 仍待決）",
+  "generatedAt": "2026-05-04T22:00:00+08:00",
+  "scheduleDate": "May 4, 2026（季後賽二輪四組對戰已確定）",
   "sources": {
     "schedule": "https://www.nba.com/news/2026-nba-playoffs-schedule",
-    "injuryReports": [
-      "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-04-26_09_00AM.pdf",
-      "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-04-25_12_45PM.pdf",
-      "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-04-24_12_45PM.pdf",
-      "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-04-23_12_45PM.pdf"
-    ]
+    "injuryReports": []
   },
   "featured": {
-    "team": "San Antonio Spurs 🌹",
-    "record": "4-1 晉二輪",
-    "score": "94 / 100",
-    "tier": "爭冠第一梯",
-    "summary": "首輪完成度最高的爭冠熱門：Wembanyama 傷癒全程健康，Fox 持球解題，Harper 新秀即戰力——三核齊備。板凳 Champagnie 封關三分爆發、Johnson 年度第六人穩定輸出，現正靜待灰狼/雷霆的二輪挑戰者。"
+    "team": "Oklahoma City Thunder",
+    "record": "4-0 晉二輪",
+    "score": "96 / 100",
+    "tier": "二輪爭冠第一梯",
+    "summary": "雷霆橫掃太陽後進入二輪，攻守轉換、持球壓迫與板凳深度仍是全場最穩的戰力訊號。"
   },
   "tiers": [
     {
-      "label": "✅ 已晉二輪",
-      "title": "首輪晉級確定",
-      "note": "系列賽已完成，等待第二輪對手。戰力評分供二輪對位參考。",
-      "teams": [
-        {
-          "name": "Spurs 🔥",
-          "score": 94
-        },
-        {
-          "name": "Thunder ⚡",
-          "score": 90
-        },
-        {
-          "name": "Knicks 🔥",
-          "score": 83
-        },
-        {
-          "name": "Timberwolves 💪",
-          "score": 75
-        },
-        {
-          "name": "Lakers ⚠️",
-          "score": 74
-        },
-        {
-          "name": "76ers 🔥",
-          "score": 86
-        }
-      ]
-    },
-    {
       "label": "Tier 1",
-      "title": "爭冠第一梯",
-      "note": "Tatum 缺陣後，原本第一梯隊出現大洗牌；目前晉級隊伍需重新按二輪對位校正。",
-      "teams": []
+      "title": "二輪爭冠第一梯",
+      "note": "首輪完成度高，二輪仍有主場或戰力結構優勢。",
+      "teams": [
+        { "name": "Thunder ⚡", "score": 96 },
+        { "name": "Spurs 🌹", "score": 94 },
+        { "name": "Knicks 🔥", "score": 87 },
+        { "name": "Cavaliers ⚔️", "score": 85 }
+      ]
     },
     {
       "label": "Tier 2",
-      "title": "穩定領先梯",
-      "note": "系列賽主導權明確，板凳亦有可用爆發點，但傷兵或對位仍有變數。",
+      "title": "高變數挑戰梯",
+      "note": "有球星硬解或防守強點，但健康、輪替或對位仍會拉高波動。",
       "teams": [
-        {
-          "name": "Pistons 🔥",
-          "score": 80
-        },
-        {
-          "name": "Magic 🪄",
-          "score": 82
-        },
-        {
-          "name": "Cavaliers 🔥",
-          "score": 82
-        }
+        { "name": "Lakers 💜", "score": 82 },
+        { "name": "76ers 🔵", "score": 86 },
+        { "name": "Pistons 🔩", "score": 80 },
+        { "name": "Timberwolves 🐺", "score": 78 }
       ]
-    },
-    {
-      "label": "Tier 3",
-      "title": "對位波動梯",
-      "note": "板凳暴徒指數或傷兵狀況仍有波動，系列賽走向尚未定型。",
-      "teams": [
-        {
-          "name": "Raptors",
-          "score": 68
-        }
-      ]
-    },
-    {
-      "label": "Tier 4",
-      "title": "危險邊緣梯",
-      "note": "系列賽落後且核心傷兵壓力大，板凳難以彌補差距，逆轉難度極高。",
-      "teams": []
     },
     {
       "label": "❌ 已淘汰",
       "title": "首輪出局",
-      "note": "賽季結束。評分僅供參考，不再更新。",
+      "note": "賽季結束，不列入二輪預測。",
       "teams": [
-        {
-          "name": "Celtics ❌",
-          "score": 72
-        },
-        {
-          "name": "Nuggets ❌",
-          "score": 79
-        },
-        {
-          "name": "Hawks ❌",
-          "score": 77
-        },
-        {
-          "name": "Suns ❌",
-          "score": 55
-        },
-        {
-          "name": "Trail Blazers ❌",
-          "score": 52
-        },
-        {
-          "name": "Rockets ❌",
-          "score": 70
-        }
+        { "name": "Suns", "score": 55 },
+        { "name": "Trail Blazers", "score": 52 },
+        { "name": "Nuggets", "score": 79 },
+        { "name": "Rockets", "score": 70 },
+        { "name": "Hawks", "score": 77 },
+        { "name": "Celtics", "score": 72 },
+        { "name": "Magic", "score": 78 },
+        { "name": "Raptors", "score": 68 }
       ]
     }
   ],
   "injuries": [
     {
-      "team": "Timberwolves",
-      "tag": "⚠️ 三核重傷",
-      "detail": "Anthony Edwards（左膝，賽季報銷）、Donte DiVincenzo（右跟腱撕裂，賽季報銷）、Naz Reid（右腳踝傷勢，G5 受傷 → G6 帶傷出賽 34 分鐘砍 15 分）",
-      "impact": "Reid 帶傷硬撐 G6 封關戰，34 分鐘 15 分證明傷勢不影響戰力。灰狼在三核重傷下仍 4-2 晉二輪，韌性令人嘆服"
-    },
-    {
-      "team": "Nuggets",
-      "tag": "🚑 Gordon 反覆受傷・G6 賽前決定",
-      "detail": "Aaron Gordon（左小腿緊繃，本季僅出賽 36 場）：G3 缺陣 → G4 帶傷復出僅 23 分鐘且移動受限 → G5 再度缺陣。官方標記 G6（4/30）為 Game-time Decision。Peyton Watson 亦在傷兵名單",
-      "impact": "強行復出有升級為嚴重拉傷或阿基里斯腱傷的風險，教練 Adelman 態度謹慎。Gordon 缺陣下金塊禁區護框與正面對抗大幅下滑，Jokic 需承擔更多無掩護的單打壓力。若晉二輪，Gordon 狀態將逐場觀察"
-    },
-    {
-      "team": "Magic",
-      "tag": "🚨 G7 關鍵傷勢",
-      "detail": "Franz Wagner（右小腿拉傷，G7 出賽狀況未定）、Jonathan Isaac（膝蓋，Day-to-Day）",
-      "impact": "Wagner 若缺席 G7，Banchero 需獨撐大局，魔術進攻多樣性大幅下降。活塞主場 G7 優勢加上魔術傷兵壓力，形勢對底特律有利"
-    },
-    {
       "team": "Lakers",
-      "tag": "🚨 Luka 最新傷情更新",
-      "detail": "Luka Dončić（左腿筋二級拉傷 Grade 2，樂觀預估 5/6-5/10 回歸）、Austin Reaves（✅ 回歸出戰）",
-      "impact": "Reaves 回歸大幅提升湖人第二持球點與末節解題能力，Luka 缺陣壓力明顯減輕。若 Reaves 狀態在線，湖人收官能力回升一個等級"
+      "tag": "⚠️ Luka 狀態觀察",
+      "detail": "Luka Dončić 左腿筋傷勢仍是二輪變數，Reaves 與 LeBron 的持球負擔會被放大。",
+      "impact": "若 Luka 無法穩定回歸，湖人對雷霆的半場解題會更依賴 LeBron 與外線手感。"
     },
     {
-      "team": "Thunder ✅",
-      "tag": "健康備戰二輪",
-      "detail": "Jalen Williams（Out）缺陣仍 4-0 掃蕩太陽，SGA 系列賽場均 38+ 分，目前全隊健康",
-      "impact": "首支晉二輪，等待灰狼/金塊勝者。Williams 若能回歸，雷霆戰力再上一層"
+      "team": "Timberwolves",
+      "tag": "⚠️ 傷兵續航",
+      "detail": "灰狼首輪在傷兵壓力下晉級，McDaniels、Reid 與替補群的負荷仍需觀察。",
+      "impact": "對上馬刺時，禁區與鋒線消耗會直接影響系列賽能否拖長。"
     },
     {
-      "team": "Spurs ✅",
-      "tag": "健康備戰二輪",
-      "detail": "Victor Wembanyama 傷癒全程健康，Wemby + Fox + Harper 三核齊備",
-      "impact": "馬刺 4-1 晉二輪，等待灰狼/金塊勝者。G5 封關 Champagnie 三分爆發，士氣最高"
+      "team": "76ers",
+      "tag": "✅ 109-100 晉級",
+      "detail": "76人 Game 7 客場 109-100 擊敗 Celtics，完成 1-3 逆轉並進入二輪。",
+      "impact": "Embiid + Maxey 的半場解題能力正式進入二輪戰力評估，將直接挑戰 Knicks 的防守硬度。"
     },
     {
-      "team": "Celtics ❌",
-      "tag": "首輪出局",
-      "detail": "G7 以 100-109 不敵 76ers，Tatum 缺陣成為系列賽最後轉折。",
-      "impact": "Boston 從 3-1 領先被 Philadelphia 逆轉到 4-3 淘汰，主場優勢與輪替深度都未能補上 Tatum 的缺口。"
-    },
-    {
-      "team": "76ers ✅",
-      "tag": "109-100 晉二輪",
-      "detail": "Joel Embiid 術後復出帶隊完成 1-3 逆轉，G7 客場 109-100 淘汰 Celtics。",
-      "impact": "Philadelphia 從瀕臨淘汰一路翻盤，Embiid + Maxey 的半場解題能力正式進入二輪戰力評估。"
+      "team": "Cavaliers",
+      "tag": "✅ 114-102 晉級",
+      "detail": "騎士 Game 7 以 114-102 擊敗暴龍，正式進入第二輪。",
+      "impact": "Mitchell、Garland 與 Mobley 的核心結構讓騎士在東區二輪保有主動權。"
     }
   ],
   "highlights": [
     {
-      "label": "🔥 東區生死大戰",
-      "title": "Pistons vs Magic → G7！（3-3）",
-      "text": "活塞 G6 客場 93-79 扳平！從 1-3 落後連追三場，3-3 強迫 G7。Cunningham 系列賽場均 30+ 分，G5 史詩 45 vs 45 後繼續主宰，防守鎖死 Banchero。G7 回底特律主場，Wagner 傷勢成關鍵變數——這系列賽已成本屆最精彩首輪對決。"
+      "label": "⚡ 西區焦點",
+      "title": "Thunder vs Lakers",
+      "text": "雷霆完整度最高，湖人勝負關鍵在球星硬解與能否把節奏拖進半場。"
     },
     {
-      "label": "✅ 東區最大逆轉",
-      "title": "76ers 109-100 淘汰 Celtics，4-3 晉二輪",
-      "text": "費城完成 1-3 大逆轉！G7 客場 109-100 擊敗塞爾提克，Tatum 缺陣讓 Boston 攻防核心崩塌，Embiid 術後復出與 Maxey 火力把系列賽硬生生翻過來。76ers 晉二輪，Celtics 首輪出局。"
+      "label": "🌹 西區硬仗",
+      "title": "Spurs vs Timberwolves",
+      "text": "馬刺健康與禁區天賦占優，灰狼則靠鋒線防守與傷兵逆境韌性挑戰上限。"
     },
     {
-      "label": "✅ 東區封關屠殺",
-      "title": "Knicks 4-2 淘汰 Hawks ❌",
-      "text": "G6 尼克 140-89 大屠殺！半場領先 47 分創 NBA 季後賽半場領先紀錄，全場差距 51 分。Robinson 與老鷹 Daniels 互毆雙雙被驅逐出場——這場根本是一面倒的處決。Brunson 主宰系列賽，尼克晉二輪。老鷹賽季結束。"
+      "label": "🔥 東區對抗",
+      "title": "Knicks vs 76ers",
+      "text": "76人 109-100 淘汰 Celtics 後進入二輪。尼克主場、籃板與整體防守穩定，76人則押在 Embiid 與 Maxey 的高壓解題。"
     },
     {
-      "label": "🔥 東區又一個 G7",
-      "title": "Raptors vs Cavaliers → G7！（3-3）",
-      "text": "暴龍 G6 主場 112-110 絕殺！騎士 3-2 領先本以為可以客場封關，卻被多倫多主場氣勢壓垮，兩分之差送進 G7。Barrett、Barnes 拚死守住主場，系列賽再起懸念。G7 回克里夫蘭，騎士主場優勢反撲，但暴龍已證明客場也能贏。"
-    },
-    {
-      "label": "⚡ 西區首支晉級",
-      "title": "Thunder vs Suns ✅ 4-0 掃蕩",
-      "text": "Thunder 131-122 完封太陽，4-0 率先晉級！SGA 系列賽場均 38+ 分，即便 Jalen Williams 缺陣，雷霆整體體系碾壓太陽全程，太陽在第一輪止步。雷霆成為全聯盟首支確定晉二輪的隊伍。"
-    },
-    {
-      "label": "✅ 西區最不可思議的晉級",
-      "title": "Timberwolves 4-2 淘汰 Nuggets ❌",
-      "text": "G6 灰狼 110-98！Jaden McDaniels 32分主宰全場，帶傷出戰的 Naz Reid 砍 15分，Shannon Jr. 24分，Randle 18分——三核盡失，雜牌軍用集體意志把金塊送回家。Jokic 縱有再多大三元，也救不了一支只剩他一個人的隊伍。灰狼 4-2 晉二輪，等待雷霆或馬刺。"
-    },
-    {
-      "label": "🔥 西區最大逆轉變數",
-      "title": "Lakers vs Rockets（3-2 湖人仍領先）",
-      "text": "火箭 G5 客場 99-93 勝出，Durant 缺陣照打！Jabari Smith Jr. 三分爆發、Tari Eason 禁區對抗、Reed Sheppard 第四節 4 分衝刺，雜牌軍硬把系列賽追成 3-2。Reaves 回歸仍砍 13 分，但湖人末節失守。G6 回火箭主場，沒有 Durant 的火箭已能逼出第六戰，懸念再起。"
-    },
-    {
-      "label": "✅ 西區第二支晉級",
-      "title": "Spurs vs Trail Blazers ✅ 4-1",
-      "text": "馬刺 4-1 淘汰拓荒者！G5 Wemby 17分/14籃板/6阻攻，Fox 21分，板凳 Champagnie 爆發 19分（5/7三分），全隊均衡輸出。下一輪等待灰狼/金塊勝者，年輕雙核 Wemby + Harper 令人期待。"
+      "label": "✅ 東區最後席位",
+      "title": "Pistons vs Cavaliers",
+      "text": "活塞與騎士都靠 Game 7 晉級。騎士 114-102 淘汰暴龍後，東區二輪對戰正式定案。"
     }
   ],
   "series": {
     "east": [
       {
-        "matchup": "(1) Detroit vs (8) Orlando",
-        "leader": "🔥 3-3 打到 G7！（活塞主場）",
-        "angle": "活塞 G6 客場 93-79 扳平！從 1-3 落後連追三場打成 3-3，Cunningham 系列賽場均 30+ 主宰攻防兩端。G7 回底特律主場，Wagner 傷勢是魔術最大隱憂，Banchero 恐需獨扛。活塞主場優勢加上氣勢，G7 是底特律的天時地利。",
-        "power": 80
+        "matchup": "(3) New York Knicks vs (7) Philadelphia 76ers",
+        "leader": "二輪對戰確定",
+        "angle": "尼克靠整體防守、籃板與主場能量建立下限；76人完成 1-3 逆轉後氣勢最高，若 Embiid 和 Maxey 能在半場持續解題，系列賽有機會被拖長。",
+        "power": 87
       },
       {
-        "matchup": "(2) Boston vs (7) Philadelphia",
-        "leader": "✅ 76ers 4-3 晉二輪",
-        "angle": "G7 費城 109-100 客場擊敗 Boston，完成 1-3 落後後的逆轉晉級。Tatum 缺陣讓 Celtics 缺少最後解題手，Embiid 術後復出撐住半場攻防，Maxey 持續施壓，76ers 把本輪最大賭注變成晉級門票。Boston 首輪出局。",
-        "power": 86
-      },
-      {
-        "matchup": "(3) New York vs (6) Atlanta",
-        "leader": "✅ Knicks 4-2 晉二輪",
-        "angle": "G6 尼克 140-89 屠殺！半場領先 47 分打破 NBA 季後賽半場領先紀錄，全場差距 51 分。Robinson 與老鷹 Daniels 互毆雙雙被驅逐，老鷹早早繳械。老鷹無緣二輪，尼克等待東區二輪對手。",
-        "power": 83
-      },
-      {
-        "matchup": "(4) Cleveland vs (5) Toronto",
-        "leader": "🔥 3-3 打到 G7！（騎士主場）",
-        "angle": "暴龍 G6 多倫多主場 112-110 逼平！騎士 3-2 領先後客場失守，系列賽再度懸念。G7 回克里夫蘭主場，騎士主場優勢是最大依仗，但暴龍 Barrett、Barnes 主場士氣正旺——東區第四席位 G7 見真章。",
-        "power": 82
+        "matchup": "(1) Detroit Pistons vs (4) Cleveland Cavaliers",
+        "leader": "騎士 G7 114-102 晉級",
+        "angle": "活塞的 Cade Cunningham 對上騎士 Donovan Mitchell、Garland、Mobley 核心群，這組會是東區最吃半場執行力的系列賽。",
+        "power": 85
       }
     ],
     "west": [
       {
-        "matchup": "(1) Oklahoma City vs (8) Phoenix",
-        "leader": "⚡ Thunder 4-0 ✅ 晉二輪",
-        "angle": "SGA 系列賽場均 38+ 分，G4 131-122 完封收官，全聯盟首支晉二輪。Jalen Williams 缺陣亦無礙，雷霆體系深度令人恐懼。太陽第一輪止步。",
-        "power": 90
+        "matchup": "(1) Oklahoma City Thunder vs (4) Los Angeles Lakers",
+        "leader": "Game 1：5/6 上午 8:30",
+        "angle": "雷霆攻守速度與深度占優，湖人必須用 LeBron、Reaves 與可能回歸的 Luka 把比賽帶進慢節奏。",
+        "power": 96
       },
       {
-        "matchup": "(2) San Antonio vs (7) Portland",
-        "leader": "✅ Spurs 4-1 晉二輪",
-        "angle": "馬刺封關！G5 Wemby 17/14/6，Fox 21分，板凳 Champagnie 19分（5/7三分）爆發。全隊均衡輸出，下一輪等灰狼/金塊勝者，Wemby + Harper 雙核令人期待。",
+        "matchup": "(2) San Antonio Spurs vs (6) Minnesota Timberwolves",
+        "leader": "Game 1：5/5 上午 9:30",
+        "angle": "馬刺有 Wembanyama 的禁區壓迫與健康優勢，灰狼則靠鋒線防守和首輪逆境韌性對抗。",
         "power": 94
-      },
-      {
-        "matchup": "(3) Denver vs (6) Minnesota",
-        "leader": "✅ Timberwolves 4-2 晉二輪",
-        "angle": "G6 灰狼 110-98 封關！McDaniels 32分主宰、帶傷的 Naz Reid 15分、Shannon Jr. 24分，Randle 18分。三核全倒仍拿下系列賽，Jokic 孤立無援，金塊衛冕夢碎。灰狼帶傷晉二輪，等待雷霆或馬刺。",
-        "power": 75
-      },
-      {
-        "matchup": "(4) Los Angeles vs (5) Houston",
-        "leader": "✅ Lakers 4-2 晉二輪",
-        "angle": "湖人 G6 客場 98-78 封關！Durant 缺陣的火箭火力全面熄火，湖人主控全場。Luka 缺陣仍靠 Reaves + LeBron 帶隊，以 4-2 淘汰火箭，等待西區二輪對手。",
-        "power": 74
       }
     ]
   },
   "analyses": [
     {
-      "eyebrow": "🔥 史詩對決 45 vs 45",
+      "eyebrow": "Second Round Control",
       "title": "關鍵觀察 01",
-      "text": "G5 成為本輪最偉大的個人對決：Cunningham 45分（5/8三分，上半場 27 分平季後賽紀錄） vs Banchero 45分（17/31，6/11三分）。Wagner 缺陣反而讓 Banchero 全場主宰，但 Cade 更高效。系列賽 3-2，G6 回奧蘭多，這組對決已成本屆首輪最大看點。"
+      "text": "第二輪不是比誰爆發一場，而是比誰能連續四場把對手拉進自己的節奏。雷霆與馬刺目前最接近這個標準。"
     },
     {
-      "eyebrow": "費城逆轉救贖 ✅",
+      "eyebrow": "East Pressure",
       "title": "關鍵觀察 02",
-      "text": "76人從 1-3 落後一路追到 G7，最後在客場 109-100 擊敗 Celtics。這不是「差一點」的劇本，而是 Embiid 術後復出後最硬的一輪救贖：Tatum 缺陣是轉折，但費城能把半場攻防、Maxey 的速度與 Embiid 的壓迫全部兌現，才是真正晉級原因。"
+      "text": "東區兩組都會被半場攻防放大：Knicks 要用身體對抗壓 76人，Pistons 與 Cavaliers 則看誰能在第四節穩住持球品質。"
     },
     {
-      "eyebrow": "Knicks 化學效應 🔥",
+      "eyebrow": "Series Length",
       "title": "關鍵觀察 03",
-      "text": "140-89 不是意外，是整隊同頻的產物。OG + Bridges 雙翼碾壓、Hart 拼搶文化、Brunson 真正的季後賽解題手——Thibodeau 把這支隊打成整體第一。但老鷹沒有 Trae Young 是軟 6 號種子，真正考驗是二輪碰上 Celtics 或 76人。化學效應能帶他們走到東區決賽門口，但要進去，Brunson 必須在逆境下交出一場 G7 等級的答案，KAT 的季後賽存在感也是最大未知數。"
-    },
-    {
-      "eyebrow": "三核全倒仍晉級 🐺",
-      "title": "關鍵觀察 04",
-      "text": "Edwards 左膝報銷、DiVincenzo 跟腱撕裂、Naz Reid 右腳踝傷勢帶傷出賽——灰狼用一群無名之輩打敗了 Jokic 大三元。Dosunmu G4 單場 43 分（替補史上第二高）、Randle 場場扛主攻、Hyland + Shannon Jr. 板凳各自補位，這支隊的韌性不靠天賦，靠的是沒有退路的人。金塊輸的不是系列賽，是輸給了傷痛下仍死戰的那種精神。"
+      "text": "這次預測改成猜系列賽幾場結束，會更考驗對戰力落差與臨場調整能力的判斷。"
     }
   ],
   "benchMob": [
     {
-      "player": "Ayo Dosunmu",
-      "team": "Timberwolves",
-      "role": "替補後衛",
-      "index": 98,
-      "fire": 5,
-      "highlight": "G4 單場 43 分｜季後賽替補史上第二高",
-      "note": "雙核重傷後一人扛起進攻，命中率 76%、三分 5/5、罰球 12/12。這不是爆發，這是在沒有退路的夜晚獨力撐住一支傷兵隊伍——史詩"
-    },
-    {
-      "player": "Payton Pritchard",
-      "team": "Celtics ❌",
-      "role": "替補後衛",
-      "index": 93,
-      "fire": 5,
-      "highlight": "系列賽前段爆發，G7 出局後成為遺憾亮點",
-      "note": "Pritchard 曾用三分雨撐起 Boston 板凳火力，但 Tatum 缺陣後，Celtics 最終仍以 100-109 在 G7 被 76ers 淘汰。"
-    },
-    {
-      "player": "Dylan Harper",
-      "team": "Spurs",
-      "role": "替補後衛（新秀）",
-      "index": 91,
-      "fire": 5,
-      "highlight": "G3 單場 27 分｜最年輕替補 25+ 分紀錄",
-      "note": "打破 Kobe Bryant 保持 29 年的紀錄，無 Wembanyama 仍帶隊逆轉 15 分差。新秀不該打出這種比賽，但他就是打了"
-    },
-    {
-      "player": "Jaden McDaniels",
-      "team": "Timberwolves",
-      "role": "新秀前鋒（臨危受命先發）",
-      "index": 90,
-      "fire": 5,
-      "highlight": "G6 封關戰：32分 · 10籃板 · 13/25投 · +16｜三核全倒下主宰全場",
-      "note": "Edwards、DiVincenzo、Reid 三核盡失，McDaniels 用 45 分鐘中距離切入主宰比賽。閱讀防線的能力遠超新秀應有的水準，這場 32 分是整個系列賽最關鍵的個人表演"
-    },
-    {
-      "player": "Marcus Smart",
+      "player": "Austin Reaves",
       "team": "Lakers",
-      "role": "替補後衛",
+      "role": "第二持球點",
       "index": 88,
       "fire": 5,
-      "highlight": "G3：20分+10助+5抄+2火鍋｜1991年後首見｜場均替補 28.6分",
-      "note": "G3 全能表現是歷史級別的替補攻守數據，但更難得的是整個系列賽持續輸出。湖人板凳有他，末節才有解題能力"
-    },
-    {
-      "player": "Terrence Shannon Jr.",
-      "team": "Timberwolves",
-      "role": "新秀後衛（心理保險絲）",
-      "index": 86,
-      "fire": 5,
-      "highlight": "G5：24分 · G6封關：24分 · 5/5罰球｜三核全倒下連場撐住底線",
-      "note": "三分 1/7 不好看，但 5/5 罰球代表他持續往籃框衝。Jokic 大三元的夜裡灰狼還能贏，Shannon Jr. 的 24 分是不讓隊伍崩潰的那根釘子。職業心態超齡"
+      "highlight": "湖人二輪節奏保險",
+      "note": "若 Luka 狀態未滿，Reaves 的持球與末節選擇會直接決定湖人能否偷下客場。"
     },
     {
       "player": "Julian Champagnie",
       "team": "Spurs",
       "role": "替補前鋒",
-      "index": 81,
+      "index": 82,
       "fire": 4,
-      "highlight": "G5 封關戰：19分 · 三分 5/7｜Spurs 4-1 晉二輪",
-      "note": "馬刺封關夜三分箭雨摧枯拉朽，前三節就奠定勝局。封關功臣，但影響力集中在一場——這是與 Harper 的最大差別"
+      "highlight": "首輪封關三分爆發",
+      "note": "馬刺替補火力若延續，能幫 Wembanyama 和 Fox 減少高壓回合負擔。"
+    },
+    {
+      "player": "Jaden McDaniels",
+      "team": "Timberwolves",
+      "role": "鋒線防守核心",
+      "index": 86,
+      "fire": 5,
+      "highlight": "首輪封關戰撐住灰狼",
+      "note": "灰狼要挑戰馬刺，最需要 McDaniels 維持高強度防守與穩定得分。"
     },
     {
       "player": "Max Strus",
       "team": "Cavaliers",
-      "role": "替補射手",
-      "index": 80,
+      "role": "外線拉扯",
+      "index": 78,
       "fire": 4,
-      "highlight": "G1：24分 · 4/6三分｜傷癒復出即爆發",
-      "note": "賽季缺陣 67 場後復出，首戰砍生涯季後賽新高，騎士系列賽定心丸"
-    },
-    {
-      "player": "Bones Hyland",
-      "team": "Timberwolves",
-      "role": "替補後衛",
-      "index": 77,
-      "fire": 4,
-      "highlight": "G5：15分 · 3顆三分｜雙核缺陣頂住金塊反撲",
-      "note": "Edwards + Randle 不在，Hyland 在板凳填補得分真空，G5 三分穩住節奏，確保灰狼主動權不失手"
-    },
-    {
-      "player": "Luke Kennard",
-      "team": "Lakers",
-      "role": "替補射手",
-      "index": 74,
-      "fire": 3,
-      "highlight": "G1：27分 · 5/5三分｜替補神射",
-      "note": "G1 神準五星全中，Durant 傷缺下製造了一個高光夜晚。後續場次的持續性是評分天花板的關鍵變數"
-    },
-    {
-      "player": "Keldon Johnson",
-      "team": "Spurs",
-      "role": "第六人（年度獎得主）",
-      "index": 73,
-      "fire": 3,
-      "highlight": "本季替補得分 1081 分｜年度第六人｜G3 回神 20 分",
-      "note": "馬刺隊史替補得分紀錄保持人，整個系列賽角色履行穩定，G3 有高光。年度獎加持，但季後賽爆發力不如 Harper、Champagnie"
-    },
-    {
-      "player": "Collin Murray-Boyles",
-      "team": "Raptors",
-      "role": "替補中鋒（新秀）",
-      "index": 72,
-      "fire": 3,
-      "highlight": "G4：15分+10籃板｜季後賽替補雙十",
-      "note": "暴龍新秀奇兵，G4 禁區撐起防線，替補雙十幫助多倫多 2-2 扳平騎士。系列賽仍在進行，天花板尚未揭曉"
+      "highlight": "騎士二輪空間點",
+      "note": "面對活塞收縮防線，Strus 的外線會影響 Mitchell 與 Garland 的切入空間。"
     }
   ],
   "method": [
-    {
-      "score": "35%",
-      "title": "攻守效率",
-      "text": "看高針對性回合下，球隊能否維持穩定得失分品質。"
-    },
-    {
-      "score": "30%",
-      "title": "球星主導力",
-      "text": "核心球員是否能在末節與半場攻防持續解題。"
-    },
-    {
-      "score": "20%",
-      "title": "健康折扣",
-      "text": "核心可用性與輪替完整度，直接影響戰力分數能不能兌現。"
-    },
-    {
-      "score": "15%",
-      "title": "板凳爆發力",
-      "text": "替補球員近況熱度與板凳暴徒指數，球是圓的——這一項常常改變系列賽走向。"
-    }
+    { "score": "35%", "title": "攻守效率", "text": "看高針對性回合下，球隊能否維持穩定得失分品質。" },
+    { "score": "30%", "title": "球星主導力", "text": "核心球員是否能在末節與半場攻防持續解題。" },
+    { "score": "20%", "title": "健康折扣", "text": "核心可用性與輪替完整度，直接影響戰力分數能不能兌現。" },
+    { "score": "15%", "title": "系列賽調整", "text": "二輪開始會更吃教練調整、替補延續性與每場後的對位修正。" }
   ]
 };
