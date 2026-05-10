@@ -1,15 +1,15 @@
 :root {
   --ink: #ffffff;
-  --muted: #cfd8ea;
-  --bg: #07142d;
-  --panel: rgba(8, 21, 50, 0.82);
-  --panel-strong: rgba(10, 28, 66, 0.94);
-  --line: rgba(255, 255, 255, 0.18);
+  --muted: #d7dfef;
+  --dim: #9fb1d6;
+  --bg: #050b17;
+  --panel: rgba(9, 20, 46, 0.86);
+  --panel-strong: rgba(11, 27, 64, 0.94);
+  --line: rgba(255, 255, 255, 0.16);
   --nba-blue: #17408b;
   --nba-red: #c9082a;
   --nba-white: #ffffff;
-  --silver: #d7dfef;
-  --shadow: 0 26px 70px rgba(3, 9, 24, 0.48);
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
 }
 
 * {
@@ -25,8 +25,8 @@ body {
   color: var(--ink);
   font-family: "Noto Sans TC", system-ui, sans-serif;
   background:
-    linear-gradient(135deg, rgba(201, 8, 42, 0.18), transparent 30%),
-    linear-gradient(225deg, rgba(23, 64, 139, 0.42), transparent 34%),
+    linear-gradient(135deg, rgba(23, 64, 139, 0.32), transparent 36%),
+    linear-gradient(225deg, rgba(201, 8, 42, 0.22), transparent 32%),
     var(--bg);
 }
 
@@ -35,14 +35,22 @@ a {
 }
 
 .hero {
-  min-height: 88vh;
+  min-height: 86vh;
   padding: 24px clamp(18px, 4vw, 56px) 48px;
   background:
-    linear-gradient(90deg, rgba(7, 20, 45, 0.98) 0%, rgba(23, 64, 139, 0.84) 46%, rgba(201, 8, 42, 0.58) 100%),
-    url("https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=2200&q=80") center / cover;
+    linear-gradient(90deg, rgba(5, 11, 23, 0.96), rgba(23, 64, 139, 0.78) 52%, rgba(201, 8, 42, 0.5)),
+    url("https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=2400&q=82") center / cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.topbar,
+.hero-grid,
+main,
+.footer {
+  width: min(1180px, 100%);
+  margin-inline: auto;
 }
 
 .topbar {
@@ -50,9 +58,6 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  max-width: 1180px;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .brand,
@@ -70,10 +75,11 @@ a {
 .brand span,
 .eyebrow,
 .card-label,
-.quick-stats span,
+.scoreboard span,
 .prospect-meta,
-.lottery-odds {
-  letter-spacing: 0.14em;
+.lottery-odds,
+.movement {
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -89,10 +95,10 @@ a {
 h1,
 h2,
 h3,
-.draft-card strong,
-.rank-number {
+.event-card strong,
+.pick-number {
   font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   line-height: 0.95;
 }
 
@@ -113,15 +119,14 @@ h3,
   align-items: center;
   padding: 0 14px;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.08);
   color: var(--ink);
   font-weight: 700;
 }
 
-.hero-content {
-  width: min(1180px, 100%);
-  margin: 72px auto 0;
+.hero-grid {
+  margin-top: 72px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 360px;
   gap: 28px;
@@ -129,16 +134,27 @@ h3,
 }
 
 .hero-copy h1 {
-  max-width: 780px;
+  max-width: 820px;
   margin: 10px 0 18px;
-  font-size: clamp(4.2rem, 10vw, 9rem);
+  font-size: clamp(4.2rem, 9vw, 8.6rem);
+}
+
+.hero-copy p:not(.eyebrow),
+.section-heading > p,
+.section-copy p,
+.timeline p,
+.lottery-card p,
+.prospect-card p,
+.note-card p,
+.sources li,
+.footer p {
+  color: var(--muted);
+  line-height: 1.72;
 }
 
 .hero-copy p:not(.eyebrow) {
-  max-width: 680px;
-  color: var(--muted);
+  max-width: 720px;
   font-size: 1.08rem;
-  line-height: 1.85;
   margin: 0;
 }
 
@@ -155,7 +171,7 @@ h3,
   align-items: center;
   justify-content: center;
   padding: 0 20px;
-  border-radius: 999px;
+  border-radius: 8px;
   font-weight: 900;
 }
 
@@ -171,25 +187,25 @@ h3,
   color: var(--nba-white);
 }
 
-.draft-card,
-.quick-stats article,
+.event-card,
+.scoreboard article,
 .timeline article,
 .lottery-card,
 .prospect-card,
-.board-panel,
+.note-card,
 .sources {
   border: 1px solid var(--line);
   background: var(--panel);
   box-shadow: var(--shadow);
   backdrop-filter: blur(18px);
+  border-radius: 8px;
 }
 
-.draft-card {
-  border-radius: 8px;
+.event-card {
   padding: 28px;
 }
 
-.draft-card strong {
+.event-card strong {
   display: block;
   margin-top: 18px;
   font-size: 4.4rem;
@@ -197,18 +213,18 @@ h3,
   text-shadow: 4px 0 0 var(--nba-red);
 }
 
-.draft-card p {
+.event-card p {
   margin: 8px 0 24px;
   color: var(--muted);
 }
 
-.draft-card dl {
+.event-card dl {
   display: grid;
   gap: 12px;
   margin: 0;
 }
 
-.draft-card dl div {
+.event-card dl div {
   display: flex;
   justify-content: space-between;
   gap: 12px;
@@ -216,11 +232,11 @@ h3,
   padding-top: 12px;
 }
 
-.draft-card dt {
-  color: var(--muted);
+.event-card dt {
+  color: var(--dim);
 }
 
-.draft-card dd {
+.event-card dd {
   margin: 0;
   font-weight: 900;
 }
@@ -228,10 +244,9 @@ h3,
 main,
 .footer {
   width: min(1180px, calc(100% - 32px));
-  margin: 0 auto;
 }
 
-.quick-stats {
+.scoreboard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
@@ -240,44 +255,42 @@ main,
   z-index: 2;
 }
 
-.quick-stats article {
-  border-radius: 8px;
+.scoreboard article {
   padding: 22px;
   background: var(--panel-strong);
 }
 
-.quick-stats span {
+.scoreboard span {
   color: var(--nba-red);
   font-size: 0.72rem;
 }
 
-.quick-stats strong {
+.scoreboard strong {
   display: block;
   margin: 8px 0;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
 }
 
-.quick-stats p,
-.section-copy p,
-.timeline p,
-.lottery-card p,
-.prospect-card p,
-.note-card p,
-.sources li,
-.footer p {
+.scoreboard p {
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .section {
-  margin-top: 68px;
+  margin-top: 72px;
 }
 
 .split {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: 0.82fr 1.18fr;
   gap: 28px;
   align-items: start;
+}
+
+.sticky-copy {
+  position: sticky;
+  top: 24px;
 }
 
 .section-heading {
@@ -288,12 +301,16 @@ main,
   margin-bottom: 22px;
 }
 
+.section-heading > p {
+  max-width: 360px;
+  margin: 0;
+}
+
 .section-copy h2,
 .section-heading h2,
-.board-panel h2,
 .sources h2 {
   margin: 8px 0 0;
-  font-size: clamp(3rem, 6vw, 5.4rem);
+  font-size: clamp(3rem, 6vw, 5.2rem);
 }
 
 .timeline {
@@ -302,10 +319,9 @@ main,
 }
 
 .timeline article {
-  border-radius: 8px;
   padding: 18px;
   display: grid;
-  grid-template-columns: 128px 1fr;
+  grid-template-columns: 130px 1fr;
   gap: 18px;
 }
 
@@ -327,13 +343,13 @@ main,
 
 .lottery-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 14px;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
 }
 
 .lottery-card {
-  border-radius: 8px;
-  padding: 18px;
+  min-height: 194px;
+  padding: 16px;
   position: relative;
   overflow: hidden;
 }
@@ -347,9 +363,9 @@ main,
   pointer-events: none;
 }
 
-.rank-number {
-  color: rgba(255, 255, 255, 0.18);
-  font-size: 4.5rem;
+.pick-number {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 4.1rem;
 }
 
 .lottery-card h3 {
@@ -359,9 +375,19 @@ main,
 
 .lottery-odds {
   display: inline-flex;
-  margin: 16px 0 8px;
+  margin: 14px 0 8px;
   color: var(--nba-white);
-  font-size: 0.9rem;
+  font-size: 0.78rem;
+  position: relative;
+}
+
+.movement {
+  display: inline-flex;
+  margin-top: 10px;
+  padding: 5px 7px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--dim);
+  font-size: 0.68rem;
   position: relative;
 }
 
@@ -370,7 +396,7 @@ main,
   margin-left: -34px;
   margin-right: -34px;
   background:
-    linear-gradient(135deg, rgba(23, 64, 139, 0.34), rgba(201, 8, 42, 0.2)),
+    linear-gradient(135deg, rgba(23, 64, 139, 0.36), rgba(201, 8, 42, 0.2)),
     rgba(255, 255, 255, 0.03);
   border-block: 1px solid var(--line);
 }
@@ -385,7 +411,7 @@ main,
 .filter-button {
   min-height: 40px;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 8px;
   padding: 0 16px;
   color: var(--ink);
   background: rgba(255, 255, 255, 0.06);
@@ -400,33 +426,30 @@ main,
   color: var(--nba-white);
 }
 
-.prospect-grid {
+.prospect-grid,
+.notes-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
 
-.prospect-card {
-  border-radius: 8px;
+.prospect-card,
+.note-card {
   padding: 22px;
-  min-height: 280px;
+}
+
+.prospect-card {
+  min-height: 286px;
   display: flex;
   flex-direction: column;
 }
 
-.prospect-card header {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  align-items: start;
-}
-
 .prospect-card h3 {
-  font-size: 2.35rem;
+  font-size: 2.3rem;
 }
 
 .prospect-meta {
-  color: var(--silver);
+  color: var(--dim);
   font-size: 0.72rem;
 }
 
@@ -441,38 +464,23 @@ main,
 .skill-tags span {
   padding: 7px 9px;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 8px;
   color: var(--muted);
   font-size: 0.8rem;
 }
 
-.board-panel {
-  border-radius: 8px;
-  padding: 30px;
-  background:
-    linear-gradient(120deg, rgba(201, 8, 42, 0.2), transparent 46%),
-    linear-gradient(300deg, rgba(23, 64, 139, 0.34), transparent 55%),
-    var(--panel-strong);
-}
-
-.notes-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 20px;
-}
-
 .note-card {
   border-top: 3px solid var(--nba-red);
-  padding-top: 16px;
+  background:
+    linear-gradient(160deg, rgba(201, 8, 42, 0.16), transparent 44%),
+    var(--panel);
 }
 
 .note-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .sources {
-  border-radius: 8px;
   padding: 28px;
   display: grid;
   grid-template-columns: 0.7fr 1fr;
@@ -488,21 +496,30 @@ main,
   padding: 34px 0 46px;
 }
 
-@media (max-width: 980px) {
-  .hero-content,
+@media (max-width: 1080px) {
+  .lottery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
   .split,
   .sources {
     grid-template-columns: 1fr;
   }
 
-  .quick-stats,
-  .lottery-grid,
+  .sticky-copy {
+    position: static;
+  }
+
+  .scoreboard,
   .prospect-grid,
   .notes-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .draft-card {
+  .event-card {
     max-width: 520px;
   }
 }
@@ -517,15 +534,15 @@ main,
     flex-direction: column;
   }
 
-  .hero-content {
+  .hero-grid {
     margin-top: 44px;
   }
 
   .hero-copy h1 {
-    font-size: 4.2rem;
+    font-size: 4.1rem;
   }
 
-  .quick-stats,
+  .scoreboard,
   .lottery-grid,
   .prospect-grid,
   .notes-grid {
@@ -534,6 +551,11 @@ main,
 
   .timeline article {
     grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
   }
 
   .prospects-section {

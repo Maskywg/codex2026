@@ -6,7 +6,7 @@
     <title>2026 NBA 選秀觀戰指南</title>
     <meta
       name="description"
-      content="2026 NBA 選秀專題頁，整理選秀時間、樂透機率、熱門新秀與球隊看點。"
+      content="2026 NBA 選秀觀戰指南：整理樂透結果、關鍵時程、熱門新秀與球隊看點。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,27 +25,27 @@
         </a>
         <div class="nav-links">
           <a href="#timeline">時程</a>
-          <a href="#lottery">樂透</a>
-          <a href="#prospects">新秀</a>
-          <a href="#sources">來源</a>
+          <a href="#lottery">樂透結果</a>
+          <a href="#prospects">新秀看板</a>
+          <a href="#sources">資料來源</a>
         </div>
       </nav>
 
-      <section class="hero-content">
+      <section class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">NBA Draft 2026</p>
-          <h1>下一個門面，從布魯克林開始。</h1>
+          <h1>樂透已開獎，選秀夜進入倒數。</h1>
           <p>
-            6 月 23、24 日，NBA 選秀回到 Barclays Center。這份頁面把官方時程、樂透機率、
-            熱門新秀與球隊需求整理成一個可以快速瀏覽的選秀看板。
+            Washington 拿下狀元籤，Utah、Memphis、Chicago 擠進前四。
+            這份頁面把官方樂透結果、接下來時程、熱門新秀與球隊需求整理成一個快速觀戰看板。
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#prospects">看熱門新秀</a>
-            <a class="button secondary" href="#lottery">看樂透機率</a>
+            <a class="button primary" href="#lottery">看前 14 順位</a>
+            <a class="button secondary" href="#prospects">看熱門新秀</a>
           </div>
         </div>
 
-        <aside class="draft-card" aria-label="選秀主資訊">
+        <aside class="event-card" aria-label="選秀主資訊">
           <span class="card-label">Main Event</span>
           <strong>June 23-24</strong>
           <p>Barclays Center, Brooklyn</p>
@@ -68,48 +68,53 @@
     </header>
 
     <main>
-      <section class="quick-stats" aria-label="重點數字">
+      <section class="scoreboard" aria-label="重點數字">
         <article>
-          <span>Lottery Date</span>
-          <strong>May 10</strong>
-          <p>決定前 4 順位，抽籤球隊依機率競爭狀元籤。</p>
+          <span>Lottery Winner</span>
+          <strong>WAS</strong>
+          <p>巫師以 14.0% 機率抽中狀元籤，隊史上一次狀元籤是 John Wall。</p>
         </article>
         <article>
-          <span>Top Odds</span>
-          <strong>14.0%</strong>
-          <p>Washington、Indiana、Brooklyn 目前並列最高狀元機率。</p>
+          <span>Big Movers</span>
+          <strong>UTA / MEM / CHI</strong>
+          <p>Jazz、Grizzlies、Bulls 都抽進前四，改變高順位新秀落點。</p>
         </article>
         <article>
-          <span>Total Picks</span>
-          <strong>60</strong>
-          <p>兩輪完整選秀，每隊原則上各有一個首輪與次輪席位。</p>
+          <span>Draft Nights</span>
+          <strong>6/23-24</strong>
+          <p>兩晚制選秀，第一輪與第二輪都在美東晚間 8 點開始。</p>
         </article>
       </section>
 
       <section class="section split" id="timeline">
-        <div class="section-copy">
+        <div class="section-copy sticky-copy">
           <p class="eyebrow">Calendar</p>
           <h2>選秀前關鍵日程</h2>
           <p>
-            從 early entry 截止、G League Combine、正式 Combine 到退選期限，每個節點都會改變
-            球探報告與首輪排序。
+            Lottery 已經結束，接下來的重點會轉向 Combine 資訊、退選截止與選秀夜交易。
           </p>
         </div>
-        <div class="timeline" id="timeline-list"></div>
+        <div class="timeline" id="timeline-list" aria-live="polite"></div>
       </section>
 
       <section class="section" id="lottery">
         <div class="section-heading">
-          <p class="eyebrow">Lottery Watch</p>
-          <h2>狀元籤機率前段班</h2>
+          <div>
+            <p class="eyebrow">Lottery Results</p>
+            <h2>2026 樂透前 14 順位</h2>
+          </div>
+          <p>官方公布結果，括號內保留原本狀元籤機率作為背景參考。</p>
         </div>
         <div class="lottery-grid" id="lottery-grid"></div>
       </section>
 
       <section class="section prospects-section" id="prospects">
         <div class="section-heading">
-          <p class="eyebrow">Prospect Board</p>
-          <h2>熱門新秀看板</h2>
+          <div>
+            <p class="eyebrow">Prospect Board</p>
+            <h2>熱門新秀看板</h2>
+          </div>
+          <p>依球風快速篩選，方便對照前段球隊需求。</p>
         </div>
         <div class="prospect-controls" role="tablist" aria-label="新秀篩選">
           <button class="filter-button active" type="button" data-filter="all">全部</button>
@@ -120,12 +125,14 @@
         <div class="prospect-grid" id="prospect-grid"></div>
       </section>
 
-      <section class="section board-section">
-        <div class="board-panel">
-          <p class="eyebrow">Front Office Notes</p>
-          <h2>三個選秀夜觀察</h2>
-          <div class="notes-grid" id="notes-grid"></div>
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Front Office Notes</p>
+            <h2>三個選秀夜觀察</h2>
+          </div>
         </div>
+        <div class="notes-grid" id="notes-grid"></div>
       </section>
 
       <section class="section sources" id="sources">
@@ -134,21 +141,15 @@
           <h2>資料來源與更新說明</h2>
         </div>
         <ul>
-          <li>
-            NBA 官方：2026 選秀日期、場館、轉播、Combine 與 Lottery 時程。
-          </li>
-          <li>
-            NBA 官方：2026 選秀順位與樂透機率，頁面更新於 2026 年 4 月 20 日。
-          </li>
-          <li>
-            Sports Illustrated NBA Draft：熱門新秀趨勢與 Dybantsa、Peterson、Boozer 的球探概況。
-          </li>
+          <li>NBA 官方：2026 Draft Lottery 結果、抽籤規則與關鍵日程。</li>
+          <li>NBA 官方：2026 Draft Order 與各隊原始樂透機率。</li>
+          <li>頁面更新基準：2026-05-11，球員排序為觀戰整理，非正式 mock draft。</li>
         </ul>
       </section>
     </main>
 
     <footer class="footer">
-      <p>2026 NBA Draft Watch Page · 更新基準：2026-04-30</p>
+      <p>2026 NBA Draft Watch Page · Route: /codex2026/draft2026/</p>
     </footer>
 
     <script src="./script.js"></script>
