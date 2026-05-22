@@ -484,6 +484,19 @@ const pitches = [
     trajectory: 'gyroball',
   },
   {
+    id: 'sidearm',
+    en: 'Low-Slot Sidearm',
+    zh: '低肩側投',
+    abbr: 'LS',
+    speed: '120–145',
+    spin: '1800–2400',
+    break: '側移高',
+    desc: '低肩側投不是單一球種，而是一種特殊出手角度。投手從接近側肩甚至更低的位置釋放球，讓球路從打者視線側邊鑽進來，常搭配伸卡、滑球或掃描滑球，製造強烈橫移與不舒服的進壘角度。',
+    gripDesc: '握法可依球種調整，常見是二縫線、伸卡或滑球類握法。重點在低出手點與手臂橫向掃過，讓球帶有側旋與貼地滑行的視覺效果。',
+    color: '#38f2b5',
+    trajectory: 'sidearm',
+  },
+  {
     id: 'eephus',
     en: 'Eephus',
     zh: '拋物線球',
@@ -581,6 +594,7 @@ function buildGripSVG(p) {
     slurve:      { fingers: [[82,38],[82,38]], seams: 'slurve', thumb: [80,95] },
     screwball:   { fingers: [[72,40],[72,40]], seams: 'screw', thumb: [88,95] },
     gyroball:    { fingers: [[75,38],[85,38]], seams: 'cross', thumb: [80,95] },
+    sidearm:     { fingers: [[70,48],[88,44]], seams: 'side', thumb: [96,88] },
     eephus:      { fingers: [[74,38],[86,38]], seams: 'curve', thumb: [80,95] },
   };
   const cfg = configs[p.id] || configs.fastball;
@@ -686,6 +700,7 @@ const trajectories = {
   slurve:      { side: { curve: 0.22, sideMove: 0.18 }, top: { curve: 0.18 }, break: 'slurve',    color: '#c084fc' },
   screwball:   { side: { curve: 0.15, sideMove: -0.20}, top: { curve: 0.20 }, break: 'reverse',   color: '#fb923c' },
   gyroball:    { side: { curve: 0.04, sideMove: 0    }, top: { curve: 0.01 }, break: 'none',      color: '#67e8f9' },
+  sidearm:     { side: { curve: 0.07, sideMove: 0.42 }, top: { curve: 0.42 }, break: 'low-slot',  color: '#38f2b5', lowSlot: true },
   eephus:      { side: { curve: 0.13, sideMove: 0    }, top: { curve: 0.02 }, break: 'lob',       color: '#fde68a', eephus: true },
 };
 
@@ -693,15 +708,19 @@ const trajectories = {
 // 側面視角的真實世界 Y 座標（canvas 像素）
 // ground = h*0.78, strikeZone top ~ h*0.58, bottom ~ h*0.72
 // 球出手高度 = h*0.55（投手肩膀高度），終點落在好球帶內
+function getReleaseY(pid, h) {
+  return pid === 'sidearm' ? h * 0.66 : h * 0.55;
+}
+
 function calcDropY(frac, c, pid, h) {
   if (pid === 'eephus') {
     // 拋物線：先拋高再落下，最高點在 frac=0.45 時
     const arc = -Math.sin(frac * Math.PI) * 0.22 * h; // 向上弧
     const drop = c * h * frac * frac;
-    return h * 0.55 + arc + drop;
+    return getReleaseY(pid, h) + arc + drop;
   }
   const dropPow = (pid==='splitter'||pid==='sinker') ? frac*frac*frac : frac*frac;
-  return h * 0.55 + c * h * dropPow;
+  return getReleaseY(pid, h) + c * h * dropPow;
 }
 // 側面視角：球的最終 Y（frac=1 時）
 // 打者視角用同一個值換算到好球帶框內的相對位置
@@ -936,9 +955,9 @@ function drawHomeView(ctx, w, h, t, traj, pid) {
   if (t > 0) {
     const frac = Math.min(t, 1);
 
-    // 起點（遠處）：畫面正中央上方
-    const startX = w / 2;
-    const startY = traj.eephus ? h * 0.05 : h * 0.12;
+    // 起點（遠處）：低肩側投會從偏側邊、較低的位置進入視線
+    const startX = traj.lowSlot ? w * 0.34 : w / 2;
+    const startY = traj.eephus ? h * 0.05 : (traj.lowSlot ? h * 0.22 : h * 0.12);
 
     // 終點（本壘板前）：好球帶中心 + 側移 + 下墜
     // 側移：sm 正值往右（從打者角度，右投右打者會感受到球往外角跑）
