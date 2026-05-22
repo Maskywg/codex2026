@@ -970,6 +970,7 @@ function drawHomeView(ctx, w, h, t, traj, pid) {
 
 // ─── PITCH SOUND ──────────────────────────────────────────────
 let audioCtx = null;
+const pitchAudioCache = new Map();
 
 function getAudioContext() {
   const AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -983,6 +984,99 @@ function parseAverageSpeed(speedText) {
   const nums = (speedText.match(/\d+/g) || []).map(Number);
   if (!nums.length) return 130;
   return nums.reduce((sum, n) => sum + n, 0) / nums.length;
+}
+
+function getPitchSoundProfile(pid) {
+  const pitch = pitches.find(p => p.id === pid) || pitches[0];
+  const traj = trajectories[pid] || trajectories.fastball;
+  const averageSpeed = parseAverageSpeed(pitch.speed);
+  const speedFactor = Math.max(0, Math.min(1, (averageSpeed - 100) / 65));
+  const travelTime = 0.46 - speedFactor * 0.16 + (traj.eephus ? 0.22 : 0);
+  return { speedFactor, travelTime };
+}
+
+function encodeWav(samples, sampleRate) {
+  const dataBytes = samples.length * 2;
+  const buffer = new ArrayBuffer(44 + dataBytes);
+  const view = new DataView(buffer);
+
+  function writeString(offset, value) {
+    for (let i = 0; i < value.length; i++) view.setUint8(offset + i, value.charCodeAt(i));
+  }
+
+  writeString(0, 'RIFF');
+  view.setUint32(4, 36 + dataBytes, true);
+  writeString(8, 'WAVE');
+  writeString(12, 'fmt ');
+  view.setUint32(16, 16, true);
+  view.setUint16(20, 1, true);
+  view.setUint16(22, 1, true);
+  view.setUint32(24, sampleRate, true);
+  view.setUint32(28, sampleRate * 2, true);
+  view.setUint16(32, 2, true);
+  view.setUint16(34, 16, true);
+  writeString(36, 'data');
+  view.setUint32(40, dataBytes, true);
+
+  for (let i = 0; i < samples.length; i++) {
+    const s = Math.max(-1, Math.min(1, samples[i]));
+    view.setInt16(44 + i * 2, s < 0 ? s * 0x8000 : s * 0x7fff, true);
+  }
+
+  let binary = '';
+  const bytes = new Uint8Array(buffer);
+  for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+  return `data:audio/wav;base64,${btoa(binary)}`;
+}
+
+function makePitchAudioElement(pid) {
+  if (pitchAudioCache.has(pid)) return pitchAudioCache.get(pid);
+
+  const sampleRate = 44100;
+  const { speedFactor, travelTime } = getPitchSoundProfile(pid);
+  const duration = travelTime + 0.22;
+  const length = Math.floor(sampleRate * duration);
+  const samples = new Float32Array(length);
+  const whooshFreq = 180 + speedFactor * 180;
+  const popFreq = 90 + speedFactor * 45;
+
+  for (let i = 0; i < length; i++) {
+    const t = i / sampleRate;
+    let sample = 0;
+
+    if (t < travelTime) {
+      const progress = t / travelTime;
+      const env = Math.sin(progress * Math.PI) * (0.22 + speedFactor * 0.16);
+      const noise = (Math.random() * 2 - 1) * env;
+      const hum = Math.sin(Math.PI * 2 * (whooshFreq + progress * 180) * t) * env * 0.28;
+      sample += noise * 0.55 + hum;
+    }
+
+    if (t >= travelTime) {
+      const popT = t - travelTime;
+      const env = Math.exp(-popT * 38) * (0.78 + speedFactor * 0.18);
+      const slap = (Math.random() * 2 - 1) * env * 0.72;
+      const thump = Math.sin(Math.PI * 2 * popFreq * popT) * env * 0.48;
+      sample += slap + thump;
+    }
+
+    samples[i] = sample * 0.72;
+  }
+
+  const audio = new Audio(encodeWav(samples, sampleRate));
+  audio.preload = 'auto';
+  audio.volume = 1;
+  pitchAudioCache.set(pid, audio);
+  return audio;
+}
+
+function playHtmlAudioPitchSound(pid) {
+  const baseAudio = makePitchAudioElement(pid);
+  const audio = baseAudio.cloneNode();
+  audio.volume = 1;
+  audio.currentTime = 0;
+  audio.playbackRate = 1;
+  return audio.play();
 }
 
 function makeNoiseBuffer(ctx, duration) {
@@ -1029,21 +1123,24 @@ function playTone(ctx, start, frequency, duration, gainValue, type = 'sine') {
   osc.stop(start + duration + 0.02);
 }
 
-function playPitchSound(pid) {
+function playWebAudioPitchSound(pid) {
   const ctx = getAudioContext();
   if (!ctx) return;
 
-  const pitch = pitches.find(p => p.id === pid) || pitches[0];
-  const traj = trajectories[pid] || trajectories.fastball;
-  const averageSpeed = parseAverageSpeed(pitch.speed);
-  const speedFactor = Math.max(0, Math.min(1, (averageSpeed - 100) / 65));
-  const travelTime = 0.46 - speedFactor * 0.16 + (traj.eephus ? 0.22 : 0);
+  const { speedFactor, travelTime } = getPitchSoundProfile(pid);
   const now = ctx.currentTime + 0.015;
 
   playNoise(ctx, now, travelTime, 0.035 + speedFactor * 0.035, 'highpass', 420 + speedFactor * 900);
   playTone(ctx, now + 0.02, 150 + speedFactor * 95, travelTime * 0.72, 0.018, 'triangle');
   playNoise(ctx, now + travelTime, 0.075, 0.16 + speedFactor * 0.06, 'bandpass', 950 + speedFactor * 700);
   playTone(ctx, now + travelTime, 90 + speedFactor * 35, 0.09, 0.09, 'sine');
+}
+
+function playPitchSound(pid) {
+  const playPromise = playHtmlAudioPitchSound(pid);
+  if (playPromise && typeof playPromise.catch === 'function') {
+    playPromise.catch(() => playWebAudioPitchSound(pid));
+  }
 }
 
 // ─── ANIMATION LOOP ───────────────────────────────────────────
