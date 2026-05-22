@@ -98,6 +98,62 @@
     text-shadow: none;
   }
 
+  .delivery-panel {
+    max-width: 900px;
+    margin: -16px auto 36px;
+    padding: 0 20px;
+  }
+  .delivery-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .delivery-bar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .delivery-pill {
+    border: 1px solid #344057;
+    background: rgba(255,255,255,0.04);
+    color: var(--muted);
+    cursor: pointer;
+    padding: 12px 14px;
+    text-align: left;
+    transition: all .25s;
+  }
+  .delivery-pill strong {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #eef3ff;
+    margin-bottom: 4px;
+  }
+  .delivery-pill span {
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+  .delivery-pill:hover {
+    border-color: #657189;
+    background: rgba(255,255,255,0.08);
+  }
+  .delivery-pill.active {
+    border-color: var(--accent);
+    background: rgba(232,200,74,0.13);
+  }
+  .delivery-pill.active strong { color: var(--accent); }
+  @media (max-width: 700px) {
+    .delivery-bar { grid-template-columns: 1fr; }
+  }
+
   /* ── MAIN LAYOUT ── */
   .main {
     max-width: 1100px;
@@ -307,6 +363,11 @@
 
 <nav class="nav-bar" id="navBar"></nav>
 
+<section class="delivery-panel" aria-label="投球姿勢選擇">
+  <div class="delivery-label">投球姿勢 DELIVERY SLOT</div>
+  <div class="delivery-bar" id="deliveryBar"></div>
+</section>
+
 <main class="main" id="cardContainer"></main>
 
 <footer>製作人：Masky Wang &nbsp;·&nbsp; Baseball Pitch Guide</footer>
@@ -484,19 +545,6 @@ const pitches = [
     trajectory: 'gyroball',
   },
   {
-    id: 'sidearm',
-    en: 'Low-Slot Sidearm',
-    zh: '低肩側投',
-    abbr: 'LS',
-    speed: '120–145',
-    spin: '1800–2400',
-    break: '側移高',
-    desc: '低肩側投不是單一球種，而是一種特殊出手角度。投手從接近側肩甚至更低的位置釋放球，讓球路從打者視線側邊鑽進來，常搭配伸卡、滑球或掃描滑球，製造強烈橫移與不舒服的進壘角度。',
-    gripDesc: '握法可依球種調整，常見是二縫線、伸卡或滑球類握法。重點在低出手點與手臂橫向掃過，讓球帶有側旋與貼地滑行的視覺效果。',
-    color: '#38f2b5',
-    trajectory: 'sidearm',
-  },
-  {
     id: 'eephus',
     en: 'Eephus',
     zh: '拋物線球',
@@ -511,8 +559,78 @@ const pitches = [
   },
 ];
 
+const deliveryModes = [
+  {
+    id: 'overhand',
+    zh: '高壓投法',
+    en: 'OVERHAND',
+    desc: '出手點最高，強化垂直落差與下壓感，肩肘負擔也較高。',
+  },
+  {
+    id: 'threequarter',
+    zh: '四分之三',
+    en: 'THREE-QUARTERS',
+    desc: '最常見的斜肩出手，在球速、控球與變化幅度之間取得平衡。',
+  },
+  {
+    id: 'sidearm',
+    zh: '側投',
+    en: 'SIDEARM',
+    desc: '手臂接近水平揮出，放大橫向位移，對同側打者壓迫感強。',
+  },
+  {
+    id: 'submarine',
+    zh: '下勾 / 低肩',
+    en: 'SUBMARINE LOW-SLOT',
+    desc: '出手點低於肩膀甚至接近地面，球會從下方鑽出並帶上竄錯覺。',
+  },
+];
+
+const deliveryEffects = {
+  overhand: {
+    releaseRatio: 0.46,
+    curveScale: 1.16,
+    sideScale: 0.72,
+    sideAdd: 0,
+    homeStartX: 0.50,
+    homeStartY: 0.10,
+    homeEndY: null,
+  },
+  threequarter: {
+    releaseRatio: 0.55,
+    curveScale: 1,
+    sideScale: 1,
+    sideAdd: 0,
+    homeStartX: 0.50,
+    homeStartY: 0.12,
+    homeEndY: null,
+  },
+  sidearm: {
+    releaseRatio: 0.64,
+    curveScale: 0.58,
+    sideScale: 1.38,
+    sideAdd: 0.08,
+    homeStartX: 0.34,
+    homeStartY: 0.42,
+    homeEndY: 0.48,
+  },
+  submarine: {
+    releaseRatio: 0.72,
+    curveScale: 0.42,
+    sideScale: 1.55,
+    sideAdd: 0.18,
+    homeStartX: 0.30,
+    homeStartY: 0.62,
+    homeEndY: 0.38,
+    rises: true,
+  },
+};
+
+let activeDelivery = 'threequarter';
+
 // ─── BUILD NAV ────────────────────────────────────────────────
 const navBar = document.getElementById('navBar');
+const deliveryBar = document.getElementById('deliveryBar');
 const container = document.getElementById('cardContainer');
 
 pitches.forEach((p, i) => {
@@ -522,6 +640,15 @@ pitches.forEach((p, i) => {
   pill.dataset.id = p.id;
   pill.addEventListener('click', () => switchPitch(p.id));
   navBar.appendChild(pill);
+});
+
+deliveryModes.forEach((mode, i) => {
+  const button = document.createElement('button');
+  button.className = 'delivery-pill' + (mode.id === activeDelivery ? ' active' : '');
+  button.dataset.delivery = mode.id;
+  button.innerHTML = `<strong>${mode.zh}</strong><span>${mode.en} · ${mode.desc}</span>`;
+  button.addEventListener('click', () => switchDelivery(mode.id));
+  deliveryBar.appendChild(button);
 });
 
 // ─── BUILD CARDS ──────────────────────────────────────────────
@@ -594,7 +721,6 @@ function buildGripSVG(p) {
     slurve:      { fingers: [[82,38],[82,38]], seams: 'slurve', thumb: [80,95] },
     screwball:   { fingers: [[72,40],[72,40]], seams: 'screw', thumb: [88,95] },
     gyroball:    { fingers: [[75,38],[85,38]], seams: 'cross', thumb: [80,95] },
-    sidearm:     { fingers: [[70,48],[88,44]], seams: 'side', thumb: [96,88] },
     eephus:      { fingers: [[74,38],[86,38]], seams: 'curve', thumb: [80,95] },
   };
   const cfg = configs[p.id] || configs.fastball;
@@ -700,32 +826,55 @@ const trajectories = {
   slurve:      { side: { curve: 0.22, sideMove: 0.18 }, top: { curve: 0.18 }, break: 'slurve',    color: '#c084fc' },
   screwball:   { side: { curve: 0.15, sideMove: -0.20}, top: { curve: 0.20 }, break: 'reverse',   color: '#fb923c' },
   gyroball:    { side: { curve: 0.04, sideMove: 0    }, top: { curve: 0.01 }, break: 'none',      color: '#67e8f9' },
-  sidearm:     { side: { curve: -0.13, sideMove: 0.42 }, top: { curve: 0.42 }, break: 'low-rise',  color: '#38f2b5', lowSlot: true },
   eephus:      { side: { curve: 0.13, sideMove: 0    }, top: { curve: 0.02 }, break: 'lob',       color: '#fde68a', eephus: true },
 };
+
+function getTrajectory(pid) {
+  const base = trajectories[pid] || trajectories.fastball;
+  const delivery = deliveryEffects[activeDelivery] || deliveryEffects.threequarter;
+  const traj = {
+    ...base,
+    side: { ...base.side },
+    top: { ...base.top },
+    delivery,
+  };
+
+  const sideDirection = traj.side.sideMove < 0 ? -1 : 1;
+  traj.break = `${traj.break}-${activeDelivery}`;
+  traj.side.curve = traj.side.curve * delivery.curveScale;
+  traj.side.sideMove = (traj.side.sideMove * delivery.sideScale) + delivery.sideAdd * sideDirection;
+  traj.top.curve = Math.max(Math.abs(traj.top.curve), Math.abs(traj.side.sideMove));
+
+  if (delivery.rises) {
+    traj.lowSlot = true;
+    traj.side.curve = Math.min(traj.side.curve - 0.11, -0.06);
+  }
+
+  return traj;
+}
 
 // ─── 共用物理座標系 ─────────────────────────────────────────
 // 側面視角的真實世界 Y 座標（canvas 像素）
 // ground = h*0.78, strikeZone top ~ h*0.58, bottom ~ h*0.72
 // 球出手高度 = h*0.55（投手肩膀高度），終點落在好球帶內
-function getReleaseY(pid, h) {
-  return pid === 'sidearm' ? h * 0.72 : h * 0.55;
+function getReleaseY(traj, h) {
+  return h * (traj.delivery?.releaseRatio ?? 0.55);
 }
 
-function calcDropY(frac, c, pid, h) {
+function calcDropY(frac, c, pid, h, traj) {
+  if (traj.delivery?.rises) {
+    const lift = c * h * (0.25 + 0.75 * frac);
+    const lateSink = 0.018 * h * frac * frac;
+    return getReleaseY(traj, h) + lift + lateSink;
+  }
   if (pid === 'eephus') {
     // 拋物線：先拋高再落下，最高點在 frac=0.45 時
     const arc = -Math.sin(frac * Math.PI) * 0.22 * h; // 向上弧
     const drop = c * h * frac * frac;
-    return getReleaseY(pid, h) + arc + drop;
-  }
-  if (pid === 'sidearm') {
-    const lift = c * h * (0.25 + 0.75 * frac);
-    const lateSink = 0.018 * h * frac * frac;
-    return getReleaseY(pid, h) + lift + lateSink;
+    return getReleaseY(traj, h) + arc + drop;
   }
   const dropPow = (pid==='splitter'||pid==='sinker') ? frac*frac*frac : frac*frac;
-  return getReleaseY(pid, h) + c * h * dropPow;
+  return getReleaseY(traj, h) + c * h * dropPow;
 }
 // 側面視角：球的最終 Y（frac=1 時）
 // 打者視角用同一個值換算到好球帶框內的相對位置
@@ -742,7 +891,7 @@ function drawFrame(pid) {
   cv.width = w; cv.height = h;
   const ctx = cv.getContext('2d');
   const st = animStates[pid];
-  const traj = trajectories[pid] || trajectories.fastball;
+  const traj = getTrajectory(pid);
   const t = st ? st.t : 0;
   const view = st ? st.view : 'side';
 
@@ -817,7 +966,7 @@ function drawSideView(ctx, w, h, t, traj, pid) {
     const frac = i / steps;
     const sideX = w * (0.12 + frac * 0.78) + sm * w * 0.08 * frac * frac;
     const x = sideX + (isKnuckle ? knuckleOffset(frac,'x') : 0);
-    const y = calcDropY(frac, c, pid, h) + (isKnuckle ? knuckleOffset(frac,'y') : 0);
+    const y = calcDropY(frac, c, pid, h, traj) + (isKnuckle ? knuckleOffset(frac,'y') : 0);
     const alpha = 0.06 + frac * 0.04;
     ctx.fillStyle = `rgba(${hexToRgb(col)}, ${alpha})`;
     ctx.beginPath(); ctx.arc(x, y, 3 + frac*2, 0, Math.PI*2); ctx.fill();
@@ -828,7 +977,7 @@ function drawSideView(ctx, w, h, t, traj, pid) {
     const frac = Math.min(t, 1);
     const sideX = w * (0.12 + frac * 0.78) + sm * w * 0.08 * frac * frac;
     const x = sideX + (isKnuckle ? knuckleOffset(frac,'x') : 0);
-    const y = calcDropY(frac, c, pid, h) + (isKnuckle ? knuckleOffset(frac,'y') : 0);
+    const y = calcDropY(frac, c, pid, h, traj) + (isKnuckle ? knuckleOffset(frac,'y') : 0);
 
     // glow
     const glow = ctx.createRadialGradient(x, y, 0, x, y, 18);
@@ -960,9 +1109,11 @@ function drawHomeView(ctx, w, h, t, traj, pid) {
   if (t > 0) {
     const frac = Math.min(t, 1);
 
-    // 起點（遠處）：低肩側投會從偏側邊、低點往上鑽進視線
-    const startX = traj.lowSlot ? w * 0.30 : w / 2;
-    const startY = traj.eephus ? h * 0.05 : (traj.lowSlot ? h * 0.62 : h * 0.12);
+    const delivery = traj.delivery || deliveryEffects.threequarter;
+
+    // 起點（遠處）：不同投球姿勢改變出手高度與水平角度
+    const startX = w * delivery.homeStartX;
+    const startY = traj.eephus ? h * 0.05 : h * delivery.homeStartY;
 
     // 終點（本壘板前）：好球帶中心 + 側移 + 下墜
     // 側移：sm 正值往右（從打者角度，右投右打者會感受到球往外角跑）
@@ -971,8 +1122,8 @@ function drawHomeView(ctx, w, h, t, traj, pid) {
     // 側面 baseY=h*0.55（無下墜）→ 打者視角好球帶中上 szY+szH*0.2
     // 側面 ground h*0.72（最大下墜）→ 打者視角好球帶底 szY+szH*0.95
     let endY;
-    if (traj.lowSlot) {
-      endY = szY + szH * 0.38;
+    if (delivery.homeEndY !== null) {
+      endY = szY + szH * delivery.homeEndY;
     } else {
       const sideBaseY = 0.55;   // h 的比例
       const sideGndY  = 0.72;
@@ -1036,7 +1187,7 @@ function parseAverageSpeed(speedText) {
 
 function getPitchSoundProfile(pid) {
   const pitch = pitches.find(p => p.id === pid) || pitches[0];
-  const traj = trajectories[pid] || trajectories.fastball;
+  const traj = getTrajectory(pid);
   const averageSpeed = parseAverageSpeed(pitch.speed);
   const speedFactor = Math.max(0, Math.min(1, (averageSpeed - 100) / 65));
   const travelTime = 0.46 - speedFactor * 0.16 + (traj.eephus ? 0.22 : 0);
@@ -1248,6 +1399,18 @@ function switchPitch(id) {
   document.querySelectorAll('.pitch-card').forEach(c => c.classList.toggle('active', c.id === 'card-' + id));
   if (!animStates[id]) { setTimeout(() => initCanvas(id), 50); }
   else { setTimeout(() => drawFrame(id), 50); }
+}
+
+function switchDelivery(id) {
+  activeDelivery = id;
+  document.querySelectorAll('.delivery-pill').forEach(p => p.classList.toggle('active', p.dataset.delivery === id));
+  Object.values(animStates).forEach(st => {
+    st.t = 0;
+    st.playing = false;
+    cancelAnimationFrame(st.raf);
+  });
+  const active = document.querySelector('.pitch-card.active');
+  if (active) drawFrame(active.id.replace('card-', ''));
 }
 
 // ─── HELPERS ──────────────────────────────────────────────────
