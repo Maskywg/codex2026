@@ -700,7 +700,7 @@ const trajectories = {
   slurve:      { side: { curve: 0.22, sideMove: 0.18 }, top: { curve: 0.18 }, break: 'slurve',    color: '#c084fc' },
   screwball:   { side: { curve: 0.15, sideMove: -0.20}, top: { curve: 0.20 }, break: 'reverse',   color: '#fb923c' },
   gyroball:    { side: { curve: 0.04, sideMove: 0    }, top: { curve: 0.01 }, break: 'none',      color: '#67e8f9' },
-  sidearm:     { side: { curve: 0.07, sideMove: 0.42 }, top: { curve: 0.42 }, break: 'low-slot',  color: '#38f2b5', lowSlot: true },
+  sidearm:     { side: { curve: -0.13, sideMove: 0.42 }, top: { curve: 0.42 }, break: 'low-rise',  color: '#38f2b5', lowSlot: true },
   eephus:      { side: { curve: 0.13, sideMove: 0    }, top: { curve: 0.02 }, break: 'lob',       color: '#fde68a', eephus: true },
 };
 
@@ -709,7 +709,7 @@ const trajectories = {
 // ground = h*0.78, strikeZone top ~ h*0.58, bottom ~ h*0.72
 // 球出手高度 = h*0.55（投手肩膀高度），終點落在好球帶內
 function getReleaseY(pid, h) {
-  return pid === 'sidearm' ? h * 0.66 : h * 0.55;
+  return pid === 'sidearm' ? h * 0.72 : h * 0.55;
 }
 
 function calcDropY(frac, c, pid, h) {
@@ -718,6 +718,11 @@ function calcDropY(frac, c, pid, h) {
     const arc = -Math.sin(frac * Math.PI) * 0.22 * h; // 向上弧
     const drop = c * h * frac * frac;
     return getReleaseY(pid, h) + arc + drop;
+  }
+  if (pid === 'sidearm') {
+    const lift = c * h * (0.25 + 0.75 * frac);
+    const lateSink = 0.018 * h * frac * frac;
+    return getReleaseY(pid, h) + lift + lateSink;
   }
   const dropPow = (pid==='splitter'||pid==='sinker') ? frac*frac*frac : frac*frac;
   return getReleaseY(pid, h) + c * h * dropPow;
@@ -955,9 +960,9 @@ function drawHomeView(ctx, w, h, t, traj, pid) {
   if (t > 0) {
     const frac = Math.min(t, 1);
 
-    // 起點（遠處）：低肩側投會從偏側邊、較低的位置進入視線
-    const startX = traj.lowSlot ? w * 0.34 : w / 2;
-    const startY = traj.eephus ? h * 0.05 : (traj.lowSlot ? h * 0.22 : h * 0.12);
+    // 起點（遠處）：低肩側投會從偏側邊、低點往上鑽進視線
+    const startX = traj.lowSlot ? w * 0.30 : w / 2;
+    const startY = traj.eephus ? h * 0.05 : (traj.lowSlot ? h * 0.62 : h * 0.12);
 
     // 終點（本壘板前）：好球帶中心 + 側移 + 下墜
     // 側移：sm 正值往右（從打者角度，右投右打者會感受到球往外角跑）
@@ -965,11 +970,16 @@ function drawHomeView(ctx, w, h, t, traj, pid) {
     // 下墜：與側面視角對齊
     // 側面 baseY=h*0.55（無下墜）→ 打者視角好球帶中上 szY+szH*0.2
     // 側面 ground h*0.72（最大下墜）→ 打者視角好球帶底 szY+szH*0.95
-    const sideBaseY = 0.55;   // h 的比例
-    const sideGndY  = 0.72;
-    const sideFinalY = sideBaseY + c; // frac=1, dropPow=1
-    const t01 = Math.min(1, Math.max(0, (sideFinalY - sideBaseY) / (sideGndY - sideBaseY)));
-    const endY = szY + szH * (0.15 + t01 * 0.75);
+    let endY;
+    if (traj.lowSlot) {
+      endY = szY + szH * 0.38;
+    } else {
+      const sideBaseY = 0.55;   // h 的比例
+      const sideGndY  = 0.72;
+      const sideFinalY = sideBaseY + c; // frac=1, dropPow=1
+      const t01 = Math.min(1, Math.max(0, (sideFinalY - sideBaseY) / (sideGndY - sideBaseY)));
+      endY = szY + szH * (0.15 + t01 * 0.75);
+    }
 
     // 目前球的位置（線性插值）
     const isKnuckleH = !!traj.knuckle;
