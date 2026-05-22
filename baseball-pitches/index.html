@@ -535,7 +535,7 @@ pitches.forEach((p, i) => {
         <canvas id="cv-${p.id}"></canvas>
       </div>
       <div class="ctrl-bar">
-        <button class="btn-play" data-card="${p.id}">▶ 播放動畫</button>
+        <button class="btn-play" data-card="${p.id}">▶ 播放動畫 🔊</button>
         <span class="speed-label">速度</span>
         <input type="range" min="0.5" max="2" step="0.1" value="1" data-card="${p.id}" class="speed-slider">
         <span class="speed-label" id="spd-${p.id}">×1.0</span>
@@ -968,6 +968,84 @@ function drawHomeView(ctx, w, h, t, traj, pid) {
   ctx.textAlign='left';
 }
 
+// ─── PITCH SOUND ──────────────────────────────────────────────
+let audioCtx = null;
+
+function getAudioContext() {
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContext) return null;
+  if (!audioCtx) audioCtx = new AudioContext();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+  return audioCtx;
+}
+
+function parseAverageSpeed(speedText) {
+  const nums = (speedText.match(/\d+/g) || []).map(Number);
+  if (!nums.length) return 130;
+  return nums.reduce((sum, n) => sum + n, 0) / nums.length;
+}
+
+function makeNoiseBuffer(ctx, duration) {
+  const length = Math.max(1, Math.floor(ctx.sampleRate * duration));
+  const buffer = ctx.createBuffer(1, length, ctx.sampleRate);
+  const data = buffer.getChannelData(0);
+  for (let i = 0; i < length; i++) data[i] = Math.random() * 2 - 1;
+  return buffer;
+}
+
+function playNoise(ctx, start, duration, gainValue, filterType, frequency) {
+  const source = ctx.createBufferSource();
+  const filter = ctx.createBiquadFilter();
+  const gain = ctx.createGain();
+
+  source.buffer = makeNoiseBuffer(ctx, duration);
+  filter.type = filterType;
+  filter.frequency.setValueAtTime(frequency, start);
+  gain.gain.setValueAtTime(0.0001, start);
+  gain.gain.exponentialRampToValueAtTime(gainValue, start + 0.025);
+  gain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+
+  source.connect(filter);
+  filter.connect(gain);
+  gain.connect(ctx.destination);
+  source.start(start);
+  source.stop(start + duration + 0.02);
+}
+
+function playTone(ctx, start, frequency, duration, gainValue, type = 'sine') {
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+
+  osc.type = type;
+  osc.frequency.setValueAtTime(frequency, start);
+  osc.frequency.exponentialRampToValueAtTime(Math.max(40, frequency * 0.62), start + duration);
+  gain.gain.setValueAtTime(0.0001, start);
+  gain.gain.exponentialRampToValueAtTime(gainValue, start + 0.01);
+  gain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+
+  osc.connect(gain);
+  gain.connect(ctx.destination);
+  osc.start(start);
+  osc.stop(start + duration + 0.02);
+}
+
+function playPitchSound(pid) {
+  const ctx = getAudioContext();
+  if (!ctx) return;
+
+  const pitch = pitches.find(p => p.id === pid) || pitches[0];
+  const traj = trajectories[pid] || trajectories.fastball;
+  const averageSpeed = parseAverageSpeed(pitch.speed);
+  const speedFactor = Math.max(0, Math.min(1, (averageSpeed - 100) / 65));
+  const travelTime = 0.46 - speedFactor * 0.16 + (traj.eephus ? 0.22 : 0);
+  const now = ctx.currentTime + 0.015;
+
+  playNoise(ctx, now, travelTime, 0.035 + speedFactor * 0.035, 'highpass', 420 + speedFactor * 900);
+  playTone(ctx, now + 0.02, 150 + speedFactor * 95, travelTime * 0.72, 0.018, 'triangle');
+  playNoise(ctx, now + travelTime, 0.075, 0.16 + speedFactor * 0.06, 'bandpass', 950 + speedFactor * 700);
+  playTone(ctx, now + travelTime, 90 + speedFactor * 35, 0.09, 0.09, 'sine');
+}
+
 // ─── ANIMATION LOOP ───────────────────────────────────────────
 function animate(pid) {
   const st = animStates[pid];
@@ -1004,6 +1082,7 @@ document.addEventListener('click', e => {
     const st = animStates[pid];
     st.t = 0;
     st.playing = true;
+    playPitchSound(pid);
     animate(pid);
     return;
   }
