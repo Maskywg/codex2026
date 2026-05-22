@@ -14,7 +14,8 @@
     --accent2: #e05a2b;
     --accent3: #4ab8e8;
     --text: #d4dde8;
-    --muted: #5a6880;
+    --muted: #a9b7cf;
+    --muted-soft: #7f8ca3;
     --grass: #1a3a1a;
   }
 
@@ -52,11 +53,13 @@
   }
   .hero-sub {
     font-family: 'Oswald', sans-serif;
-    font-size: 14px;
-    letter-spacing: 8px;
-    color: var(--muted);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 7px;
+    color: #c2cad8;
     margin-top: 8px;
     position: relative;
+    text-shadow: 0 0 18px rgba(194,202,216,0.28);
   }
 
   /* ── NAV PILLS ── */
@@ -71,20 +74,28 @@
   }
   .nav-pill {
     font-family: 'Oswald', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 600;
     letter-spacing: 2px;
-    padding: 6px 16px;
+    padding: 9px 18px;
     border-radius: 2px;
-    border: 1px solid var(--border);
-    background: transparent;
+    border: 1px solid #344057;
+    background: rgba(255,255,255,0.035);
     color: var(--muted);
     cursor: pointer;
     transition: all .25s;
+    text-shadow: 0 0 10px rgba(169,183,207,0.18);
   }
-  .nav-pill:hover, .nav-pill.active {
+  .nav-pill:hover {
+    border-color: #657189;
+    color: #eef3ff;
+    background: rgba(255,255,255,0.08);
+  }
+  .nav-pill.active {
     background: var(--accent);
     color: #000;
     border-color: var(--accent);
+    text-shadow: none;
   }
 
   /* ── MAIN LAYOUT ── */
@@ -142,9 +153,9 @@
   .abbr-badge {
     display: inline-block;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 2px;
-    padding: 3px 10px;
+    padding: 5px 12px;
     border: 1px solid var(--accent2);
     color: var(--accent2);
     margin-top: 6px;
@@ -156,8 +167,8 @@
     gap: 12px;
   }
   .stat-box {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.055);
+    border: 1px solid #2c374d;
     padding: 12px;
     text-align: center;
   }
@@ -167,21 +178,24 @@
     color: var(--accent3);
   }
   .stat-lbl {
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: 700;
     letter-spacing: 2px;
     color: var(--muted);
     margin-top: 2px;
   }
 
   .pitch-desc {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 1.9;
-    color: #9aaabb;
+    color: #c2ccda;
   }
 
   .grip-section h4 {
     font-family: 'Oswald', sans-serif;
-    font-size: 11px;
+    font-size: 13px;
+    font-weight: 600;
     letter-spacing: 4px;
     color: var(--muted);
     margin-bottom: 10px;
@@ -202,7 +216,8 @@
   .ctab {
     flex: 1;
     font-family: 'Oswald', sans-serif;
-    font-size: 11px;
+    font-size: 13px;
+    font-weight: 600;
     letter-spacing: 3px;
     padding: 14px;
     text-align: center;
@@ -216,6 +231,7 @@
   .ctab.active {
     color: var(--accent);
     border-bottom-color: var(--accent);
+    background: rgba(232,200,74,0.08);
   }
   .canvas-area {
     flex: 1;
@@ -239,9 +255,10 @@
   }
   .btn-play {
     font-family: 'Oswald', sans-serif;
-    font-size: 11px;
+    font-size: 13px;
+    font-weight: 600;
     letter-spacing: 3px;
-    padding: 8px 20px;
+    padding: 10px 22px;
     background: var(--accent);
     color: #000;
     border: none;
@@ -250,7 +267,8 @@
   }
   .btn-play:hover { opacity: .8; }
   .speed-label {
-    font-size: 11px;
+    font-size: 13px;
+    font-weight: 700;
     letter-spacing: 2px;
     color: var(--muted);
   }
@@ -271,7 +289,8 @@
   footer {
     text-align: center;
     padding: 24px;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 700;
     letter-spacing: 2px;
     color: var(--muted);
     border-top: 1px solid var(--border);
@@ -622,7 +641,7 @@ function buildGripSVG(p) {
     ${fingerDots}
     ${thumbDot}
     <!-- labels -->
-    <text x="80" y="128" text-anchor="middle" font-size="8" fill="#5a6880" font-family="sans-serif" letter-spacing="1">拇指 ▲</text>
+    <text x="80" y="128" text-anchor="middle" font-size="10" font-weight="700" fill="#a9b7cf" font-family="sans-serif" letter-spacing="1">拇指 ▲</text>
   </svg>`;
 }
 
@@ -731,7 +750,7 @@ function drawSideView(ctx, w, h, t, traj, pid) {
   ctx.strokeStyle = 'rgba(255,255,255,0.15)';
   ctx.lineWidth = 1.5;
   ctx.strokeRect(szX - szW/2, szY, szW, szH);
-  ctx.fillStyle = 'rgba(255,255,255,0.03)';
+  ctx.fillStyle = 'rgba(255,255,255,0.07)';
   ctx.fillRect(szX - szW/2, szY, szW, szH);
   ctx.fillStyle = '#3a3a4a';
   ctx.font = '9px Oswald';
@@ -744,7 +763,7 @@ function drawSideView(ctx, w, h, t, traj, pid) {
   ctx.fill();
 
   // Labels
-  ctx.fillStyle = '#3a4555';
+  ctx.fillStyle = '#8f9db5';
   ctx.font = '9px Oswald';
   ctx.fillText('PITCHER', w*0.04, h*0.84);
   ctx.fillText('HOME PLATE', w*0.82, h*0.84);
@@ -820,7 +839,7 @@ function drawSideView(ctx, w, h, t, traj, pid) {
     ctx.font = 'bold 11px Oswald';
     ctx.letterSpacing = '2px';
     ctx.fillText(pitch.speed + ' km/h', 16, 24);
-    ctx.fillStyle = '#3a4555';
+    ctx.fillStyle = '#8f9db5';
     ctx.font = '9px Oswald';
     ctx.fillText('VELOCITY RANGE', 16, 36);
   }
@@ -872,7 +891,7 @@ function drawTopView(ctx, w, h, t, traj, pid) {
     ctx.strokeStyle=col; ctx.lineWidth=1.5; ctx.stroke();
   }
 
-  ctx.fillStyle='#3a4555'; ctx.font='9px Oswald';
+  ctx.fillStyle='#8f9db5'; ctx.font='bold 10px Oswald';
   ctx.textAlign='center';
   ctx.fillText('TOP VIEW — 俯視視角', w/2, h-12);
   ctx.textAlign='left';
@@ -909,9 +928,9 @@ function drawHomeView(ctx, w, h, t, traj, pid) {
     ctx.beginPath(); ctx.moveTo(szX-szW/2, szY+szH/3*i); ctx.lineTo(szX+szW/2, szY+szH/3*i); ctx.stroke();
     ctx.beginPath(); ctx.moveTo(szX-szW/2+szW/3*i, szY); ctx.lineTo(szX-szW/2+szW/3*i, szY+szH); ctx.stroke();
   }
-  ctx.fillStyle='rgba(255,255,255,0.03)';
+  ctx.fillStyle='rgba(255,255,255,0.07)';
   ctx.fillRect(szX-szW/2, szY, szW, szH);
-  ctx.fillStyle='#3a4555'; ctx.font='9px Oswald'; ctx.textAlign='center';
+  ctx.fillStyle='#8f9db5'; ctx.font='bold 10px Oswald'; ctx.textAlign='center';
   ctx.fillText('好球帶 STRIKE ZONE', szX, szY - 8);
 
   if (t > 0) {
