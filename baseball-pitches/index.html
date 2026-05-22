@@ -103,6 +103,9 @@
     margin: -16px auto 36px;
     padding: 0 20px;
   }
+  .delivery-panel + .delivery-panel {
+    margin-top: -22px;
+  }
   .delivery-label {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
@@ -116,6 +119,10 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
+  }
+  .handedness-bar {
+    max-width: 520px;
+    margin: 0 auto;
   }
   .delivery-pill {
     border: 1px solid #344057;
@@ -366,6 +373,11 @@
 <section class="delivery-panel" aria-label="投球姿勢選擇">
   <div class="delivery-label">投球姿勢 DELIVERY SLOT</div>
   <div class="delivery-bar" id="deliveryBar"></div>
+</section>
+
+<section class="delivery-panel" aria-label="投手慣用手選擇">
+  <div class="delivery-label">投手慣用手 HANDEDNESS</div>
+  <div class="delivery-bar handedness-bar" id="handednessBar"></div>
 </section>
 
 <main class="main" id="cardContainer"></main>
@@ -626,11 +638,28 @@ const deliveryEffects = {
   },
 };
 
+const handednessModes = [
+  {
+    id: 'right',
+    zh: '右投',
+    en: 'RIGHT-HANDED',
+    desc: '維持預設出手側，橫向位移依右投手視角呈現。',
+  },
+  {
+    id: 'left',
+    zh: '左投',
+    en: 'LEFT-HANDED',
+    desc: '鏡像出手角度，橫向位移與打者視角左右反轉。',
+  },
+];
+
 let activeDelivery = 'threequarter';
+let activeHandedness = 'right';
 
 // ─── BUILD NAV ────────────────────────────────────────────────
 const navBar = document.getElementById('navBar');
 const deliveryBar = document.getElementById('deliveryBar');
+const handednessBar = document.getElementById('handednessBar');
 const container = document.getElementById('cardContainer');
 
 pitches.forEach((p, i) => {
@@ -649,6 +678,15 @@ deliveryModes.forEach((mode, i) => {
   button.innerHTML = `<strong>${mode.zh}</strong><span>${mode.en} · ${mode.desc}</span>`;
   button.addEventListener('click', () => switchDelivery(mode.id));
   deliveryBar.appendChild(button);
+});
+
+handednessModes.forEach((mode) => {
+  const button = document.createElement('button');
+  button.className = 'delivery-pill' + (mode.id === activeHandedness ? ' active' : '');
+  button.dataset.hand = mode.id;
+  button.innerHTML = `<strong>${mode.zh}</strong><span>${mode.en} · ${mode.desc}</span>`;
+  button.addEventListener('click', () => switchHandedness(mode.id));
+  handednessBar.appendChild(button);
 });
 
 // ─── BUILD CARDS ──────────────────────────────────────────────
@@ -832,17 +870,19 @@ const trajectories = {
 function getTrajectory(pid) {
   const base = trajectories[pid] || trajectories.fastball;
   const delivery = deliveryEffects[activeDelivery] || deliveryEffects.threequarter;
+  const handednessSign = activeHandedness === 'left' ? -1 : 1;
   const traj = {
     ...base,
     side: { ...base.side },
     top: { ...base.top },
     delivery,
+    handedness: activeHandedness,
   };
 
   const sideDirection = traj.side.sideMove < 0 ? -1 : 1;
-  traj.break = `${traj.break}-${activeDelivery}`;
+  traj.break = `${traj.break}-${activeDelivery}-${activeHandedness}`;
   traj.side.curve = traj.side.curve * delivery.curveScale;
-  traj.side.sideMove = (traj.side.sideMove * delivery.sideScale) + delivery.sideAdd * sideDirection;
+  traj.side.sideMove = ((traj.side.sideMove * delivery.sideScale) + delivery.sideAdd * sideDirection) * handednessSign;
   traj.top.curve = Math.max(Math.abs(traj.top.curve), Math.abs(traj.side.sideMove));
 
   if (delivery.rises) {
@@ -1110,9 +1150,11 @@ function drawHomeView(ctx, w, h, t, traj, pid) {
     const frac = Math.min(t, 1);
 
     const delivery = traj.delivery || deliveryEffects.threequarter;
+    const handednessSign = traj.handedness === 'left' ? -1 : 1;
+    const startXRatio = handednessSign === -1 ? 1 - delivery.homeStartX : delivery.homeStartX;
 
     // 起點（遠處）：不同投球姿勢改變出手高度與水平角度
-    const startX = w * delivery.homeStartX;
+    const startX = w * startXRatio;
     const startY = traj.eephus ? h * 0.05 : h * delivery.homeStartY;
 
     // 終點（本壘板前）：好球帶中心 + 側移 + 下墜
@@ -1403,7 +1445,17 @@ function switchPitch(id) {
 
 function switchDelivery(id) {
   activeDelivery = id;
-  document.querySelectorAll('.delivery-pill').forEach(p => p.classList.toggle('active', p.dataset.delivery === id));
+  document.querySelectorAll('.delivery-pill[data-delivery]').forEach(p => p.classList.toggle('active', p.dataset.delivery === id));
+  resetActiveAnimation();
+}
+
+function switchHandedness(id) {
+  activeHandedness = id;
+  document.querySelectorAll('.delivery-pill[data-hand]').forEach(p => p.classList.toggle('active', p.dataset.hand === id));
+  resetActiveAnimation();
+}
+
+function resetActiveAnimation() {
   Object.values(animStates).forEach(st => {
     st.t = 0;
     st.playing = false;
