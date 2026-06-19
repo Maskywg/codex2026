@@ -191,6 +191,7 @@ h3,
 .scoreboard article,
 .timeline article,
 .lottery-card,
+.update-card,
 .prospect-card,
 .note-card,
 .sources {
@@ -426,11 +427,48 @@ main,
   color: var(--nba-white);
 }
 
+.update-grid,
 .prospect-grid,
 .notes-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+
+.update-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.update-card {
+  min-height: 240px;
+  padding: 22px;
+  background:
+    linear-gradient(150deg, rgba(255, 255, 255, 0.1), transparent 42%),
+    var(--panel-strong);
+}
+
+.update-card span {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  padding: 0 9px;
+  border-radius: 8px;
+  background: var(--nba-red);
+  color: var(--nba-white);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.update-card h3 {
+  margin: 18px 0 10px;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.update-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.68;
 }
 
 .prospect-card,
@@ -500,6 +538,10 @@ main,
   .lottery-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .update-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 900px) {
@@ -514,6 +556,7 @@ main,
   }
 
   .scoreboard,
+  .update-grid,
   .prospect-grid,
   .notes-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -544,6 +587,7 @@ main,
 
   .scoreboard,
   .lottery-grid,
+  .update-grid,
   .prospect-grid,
   .notes-grid {
     grid-template-columns: 1fr;

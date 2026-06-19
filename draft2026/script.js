@@ -21,20 +21,42 @@ const draftData = {
     {
       date: "May 10-17",
       title: "NBA Draft Combine",
-      status: "進行中",
-      text: "體測、面試、對抗賽與醫療資訊會重塑首輪排序，尤其是中段首輪。"
+      status: "已結束",
+      text: "體測、面試、對抗賽與醫療資訊已進入各隊內部板塊，尤其影響樂透後段到首輪中段。"
     },
     {
       date: "Jun 13",
       title: "Early Entry 退選截止",
-      status: "下一個關卡",
-      text: "球員需在美東時間 5 PM 前決定是否保留選秀資格。"
+      status: "已截止",
+      text: "最終退選期限已過，參選名單大致定案，球隊開始把注意力放在最後試訓與交易報價。"
     },
     {
       date: "Jun 23-24",
       title: "Draft Nights",
-      status: "選秀夜",
-      text: "第一輪 6 月 23 日，第二輪 6 月 24 日，兩晚皆於 8 PM ET 開始。"
+      status: "倒數中",
+      text: "第一輪 6 月 24 日台灣時間早上 8 點，第二輪 6 月 25 日台灣時間早上 8 點。"
+    }
+  ],
+  updates: [
+    {
+      label: "狀元籤最後風向",
+      title: "Washington 仍以 Dybantsa 為主線，但 Peterson 已進入真討論",
+      text: "最新報導指出 Wizards 內部對 Darryn Peterson 的興趣升溫，讓原本偏向 AJ Dybantsa 的狀元討論出現最後懸念。"
+    },
+    {
+      label: "樂透第 11 順位",
+      title: "Golden State 成為交易觀察點",
+      text: "Warriors 持有第 11 順位，管理層公開表示會評估自選、向後交易或搭配其他操作補強陣容。"
+    },
+    {
+      label: "名單狀態",
+      title: "退選截止已過，板塊進入最後收斂",
+      text: "6 月 13 日退選期限後，球隊更能鎖定可選名單；接下來的變化多半來自醫療資訊、試訓回饋與選秀夜交易。"
+    },
+    {
+      label: "觀戰提醒",
+      title: "台灣觀眾是 6/24、6/25 早上 8 點",
+      text: "美東 6/23、6/24 晚間 8 點開選，換算台灣時間分別是 6/24、6/25 早上 8 點。"
     }
   ],
   lottery: [
@@ -48,7 +70,7 @@ const draftData = {
     { pick: 8, team: "Atlanta via New Orleans", original: "6.8%", movement: "可能轉讓" },
     { pick: 9, team: "Dallas", original: "6.7%", movement: "原區間" },
     { pick: 10, team: "Milwaukee", original: "3.0%", movement: "待轉讓註記" },
-    { pick: 11, team: "Miami", original: "1.0%", movement: "上升" },
+    { pick: 11, team: "Golden State", original: "2.0%", movement: "交易觀察點" },
     { pick: 12, team: "Oklahoma City via LA Clippers", original: "1.5%", movement: "由 Clippers 籤轉讓" },
     { pick: 13, team: "Miami", original: "1.0%", movement: "第二支樂透籤" },
     { pick: 14, team: "Charlotte", original: "0.5%", movement: "樂透末段" }
@@ -67,7 +89,7 @@ const draftData = {
       school: "Kansas",
       role: "後衛",
       type: "guard",
-      text: "純得分能力突出，能持球、接球與高難度投籃；適合需要半場進攻主引擎的球隊。",
+      text: "純得分能力突出，能持球、接球與高難度投籃；最新風向讓他成為 Washington 狀元籤的真正變數。",
       tags: ["pull-up scoring", "handle", "tough shots"]
     },
     {
@@ -95,29 +117,76 @@ const draftData = {
       tags: ["length", "switching", "finishing"]
     },
     {
+      name: "Nate Ament",
+      school: "Tennessee",
+      role: "側翼前場",
+      type: "wing",
+      text: "具備尺寸、投射與防守想像空間，是樂透區後段最容易被交易上搶的高上限拼圖之一。",
+      tags: ["size", "shooting", "upside"]
+    },
+    {
+      name: "Darius Acuff Jr.",
+      school: "Arkansas",
+      role: "後衛",
+      type: "guard",
+      text: "具備得分爆發與持球侵略性，若球隊需要第二波創造者，他會是首輪前段到中段的熱門名字。",
+      tags: ["rim pressure", "scoring", "creator"]
+    },
+    {
       name: "Mikel Brown Jr.",
       school: "Louisville",
       role: "控球後衛",
       type: "guard",
       text: "節奏感與傳控創造力讓他有首輪上升空間，關鍵在於對抗與防守承受度。",
       tags: ["playmaking", "tempo", "touch"]
+    },
+    {
+      name: "Chris Cenac Jr.",
+      school: "Houston",
+      role: "前場",
+      type: "frontcourt",
+      text: "身材與活動力讓他成為中後段樂透到首輪中段的長線投資，最後順位會取決於球隊對養成時間的耐心。",
+      tags: ["mobility", "rim play", "development"]
+    },
+    {
+      name: "Labaron Philon Jr.",
+      school: "Alabama",
+      role: "後衛",
+      type: "guard",
+      text: "近期多支中段首輪球隊被連在一起，賣點是進攻直覺、節奏變化與能否補上後場火力。",
+      tags: ["pace", "touch", "guard depth"]
     }
   ],
   notes: [
     {
-      title: "狀元籤變成 Washington 的重建方向題",
-      text: "巫師可以選最高天花板側翼，也可以用狀元籤重塑持球核心；真正問題不是誰最有名，而是誰能成為第一進攻選項。"
+      title: "狀元籤不只是 Dybantsa 單選題",
+      text: "Dybantsa 的側翼天花板仍最直觀，但 Peterson 的持球得分與半場主攻能力讓 Washington 必須重新確認重建核心的形狀。"
     },
     {
       title: "Utah、Memphis、Chicago 抽進前四，交易市場會更吵",
       text: "這三隊的位置都足以進入 Dybantsa、Peterson、Boozer 討論區，也會讓想搶高順位的隊伍開始報價。"
     },
     {
-      title: "Brooklyn 下滑到第六，選擇會更偏向板塊補洞",
-      text: "第六順位仍有好球員，但很可能從狀元級三人討論，轉成後衛、側翼或長人哪個更補陣容缺口。"
+      title: "第 11 順位可能是樂透區交易開關",
+      text: "Golden State 的位置剛好卡在樂透後段，若有球隊想跳上來搶 Ament、Acuff、Burries 或前場長人，這裡會是熱門電話區。"
     }
   ]
 };
+
+function renderUpdates() {
+  const root = document.getElementById("update-grid");
+  root.innerHTML = draftData.updates
+    .map(
+      (item) => `
+        <article class="update-card">
+          <span>${item.label}</span>
+          <h3>${item.title}</h3>
+          <p>${item.text}</p>
+        </article>
+      `
+    )
+    .join("");
+}
 
 function renderTimeline() {
   const root = document.getElementById("timeline-list");
@@ -201,6 +270,7 @@ function bindFilters() {
   });
 }
 
+renderUpdates();
 renderTimeline();
 renderLottery();
 renderProspects();
