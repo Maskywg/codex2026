@@ -236,6 +236,7 @@ h3,
 .lottery-card,
 .update-card,
 .prospect-card,
+.international-card,
 .note-card,
 .sources {
   border: 1px solid var(--line);
@@ -472,6 +473,7 @@ main,
 
 .update-grid,
 .prospect-grid,
+.international-grid,
 .notes-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -515,6 +517,7 @@ main,
 }
 
 .prospect-card,
+.international-card,
 .note-card {
   padding: 22px;
 }
@@ -525,13 +528,51 @@ main,
   flex-direction: column;
 }
 
+.international-section {
+  padding-bottom: 10px;
+}
+
+.international-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.international-card {
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  background:
+    linear-gradient(160deg, rgba(23, 64, 139, 0.18), rgba(201, 8, 42, 0.1) 48%, transparent),
+    var(--panel);
+}
+
 .prospect-card h3 {
   font-size: 2.3rem;
+}
+
+.international-card h3 {
+  margin: 12px 0 8px;
+  font-size: 2rem;
+}
+
+.international-card strong {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--nba-white);
 }
 
 .prospect-meta {
   color: var(--dim);
   font-size: 0.72rem;
+}
+
+.international-card p,
+.withdraw-note {
+  color: var(--muted);
+  line-height: 1.68;
+}
+
+.international-card p {
+  margin: 0;
 }
 
 .skill-tags {
@@ -548,6 +589,11 @@ main,
   border-radius: 8px;
   color: var(--muted);
   font-size: 0.8rem;
+}
+
+.withdraw-note {
+  margin: 18px 0 0;
+  padding-left: 2px;
 }
 
 .note-card {
@@ -585,6 +631,10 @@ main,
   .update-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .international-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 900px) {
@@ -601,6 +651,7 @@ main,
   .scoreboard,
   .update-grid,
   .prospect-grid,
+  .international-grid,
   .notes-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -638,6 +689,7 @@ main,
   .lottery-grid,
   .update-grid,
   .prospect-grid,
+  .international-grid,
   .notes-grid {
     grid-template-columns: 1fr;
   }

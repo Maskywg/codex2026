@@ -57,6 +57,11 @@ const draftData = {
       label: "觀戰提醒",
       title: "台灣觀眾是 6/24、6/25 早上 8 點",
       text: "美東 6/23、6/24 晚間 8 點開選，換算台灣時間分別是 6/24、6/25 早上 8 點。"
+    },
+    {
+      label: "國際球員",
+      title: "Karim Lopez、Sergio de Larrea 領銜 5 人名單",
+      text: "NBA 官方 6/15 更新後，仍有 5 位國際 early entry 球員保留參選資格，Suigo 等 3 人已退選。"
     }
   ],
   lottery: [
@@ -157,6 +162,53 @@ const draftData = {
       tags: ["pace", "touch", "guard depth"]
     }
   ],
+  international: [
+    {
+      name: "Karim Lopez",
+      team: "New Zealand Breakers",
+      country: "Mexico / Australia",
+      height: "6'8",
+      status: "2007 DOB",
+      text: "墨西哥側翼，NBL 職業賽經驗與年齡優勢是賣點；若球隊願意押國際養成，會是今年最值得追的國際名字。",
+      tags: ["wing size", "NBL reps", "first-round watch"]
+    },
+    {
+      name: "Sergio de Larrea",
+      team: "Valencia",
+      country: "Spain",
+      height: "6'6",
+      status: "2005 DOB",
+      text: "西班牙大型後衛，具備 ACB 與 EuroLeague 背景；成熟度、傳控視野與投射穩定性讓他適合後段首輪到二輪初觀察。",
+      tags: ["big guard", "EuroLeague", "playmaking"]
+    },
+    {
+      name: "Mohammad Amini",
+      team: "Nancy",
+      country: "Iran / France",
+      height: "6'7",
+      status: "2005 DOB",
+      text: "具備側翼尺寸的後場球員，若能展現防守對位彈性與穩定外線，會是二輪與雙向合約區間的國際觀察點。",
+      tags: ["size", "guard wing", "development"]
+    },
+    {
+      name: "Vsevolod Ishchenko",
+      team: "Lokomotiv",
+      country: "Russia",
+      height: "6'3",
+      status: "2005 DOB",
+      text: "俄羅斯後衛，仍保留 early entry 資格；重點會在控場、投射與是否有足夠 NBA 後場身材對抗。",
+      tags: ["guard", "shooting", "stash watch"]
+    },
+    {
+      name: "Jack Kayil",
+      team: "Alba Berlin",
+      country: "Germany",
+      height: "6'3",
+      status: "2006 DOB",
+      text: "德國後衛，Alba Berlin 體系出身；年齡與歐洲養成背景讓他偏向長線觀察或 draft-and-stash 討論。",
+      tags: ["Germany", "guard", "stash upside"]
+    }
+  ],
   notes: [
     {
       title: "狀元籤不只是 Dybantsa 單選題",
@@ -246,6 +298,25 @@ function renderProspects(filter = "all") {
     .join("");
 }
 
+function renderInternational() {
+  const root = document.getElementById("international-grid");
+  root.innerHTML = draftData.international
+    .map(
+      (player) => `
+        <article class="international-card">
+          <span class="prospect-meta">${player.country} · ${player.height} · ${player.status}</span>
+          <h3>${player.name}</h3>
+          <strong>${player.team}</strong>
+          <p>${player.text}</p>
+          <div class="skill-tags">
+            ${player.tags.map((tag) => `<span>${tag}</span>`).join("")}
+          </div>
+        </article>
+      `
+    )
+    .join("");
+}
+
 function renderNotes() {
   const root = document.getElementById("notes-grid");
   root.innerHTML = draftData.notes
@@ -320,6 +391,7 @@ renderUpdates();
 renderTimeline();
 renderLottery();
 renderProspects();
+renderInternational();
 renderNotes();
 bindFilters();
 bindMusic();
