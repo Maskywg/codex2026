@@ -270,9 +270,56 @@ function bindFilters() {
   });
 }
 
+function bindMusic() {
+  const audio = document.getElementById("page-music");
+  const button = document.getElementById("music-toggle");
+  const label = document.getElementById("music-toggle-text");
+
+  if (!audio || !button || !label) return;
+
+  audio.volume = 0.45;
+
+  const syncButton = () => {
+    const isPlaying = !audio.paused;
+    button.classList.toggle("is-playing", isPlaying);
+    button.setAttribute("aria-pressed", String(isPlaying));
+    button.setAttribute("aria-label", isPlaying ? "暫停背景音樂" : "播放背景音樂");
+    label.textContent = isPlaying ? "暫停音樂" : "播放音樂";
+  };
+
+  const startMusic = () => {
+    audio.play().then(syncButton).catch(syncButton);
+  };
+
+  button.addEventListener("click", () => {
+    if (audio.paused) {
+      startMusic();
+      return;
+    }
+
+    audio.pause();
+    syncButton();
+  });
+
+  audio.addEventListener("play", syncButton);
+  audio.addEventListener("pause", syncButton);
+  startMusic();
+
+  ["pointerdown", "keydown", "touchstart", "scroll"].forEach((eventName) => {
+    window.addEventListener(
+      eventName,
+      () => {
+        if (audio.paused) startMusic();
+      },
+      { once: true, passive: true }
+    );
+  });
+}
+
 renderUpdates();
 renderTimeline();
 renderLottery();
 renderProspects();
 renderNotes();
 bindFilters();
+bindMusic();

@@ -34,6 +34,49 @@ a {
   color: inherit;
 }
 
+.music-toggle {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 20;
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  padding: 0 14px;
+  background: rgba(5, 11, 23, 0.88);
+  color: var(--nba-white);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.music-icon {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  display: inline-block;
+  border-left: 4px solid var(--nba-white);
+  border-right: 4px solid var(--nba-white);
+}
+
+.music-toggle:not(.is-playing) .music-icon {
+  width: 0;
+  height: 0;
+  border-left: 16px solid var(--nba-white);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 0;
+}
+
+.music-toggle.is-playing {
+  background: var(--nba-red);
+}
+
 .hero {
   min-height: 86vh;
   padding: 24px clamp(18px, 4vw, 56px) 48px;
@@ -568,6 +611,12 @@ main,
 }
 
 @media (max-width: 680px) {
+  .music-toggle {
+    right: 12px;
+    bottom: 12px;
+    max-width: calc(100% - 24px);
+  }
+
   .hero {
     min-height: auto;
   }
